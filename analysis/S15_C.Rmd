@@ -1,0 +1,80 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r}
+d<-fread(here("data","deconvolution_replicates.csv"))
+d<-d[,2:6]
+
+d$cell_type<-d$V1
+d<-d %>% select(-V1)
+d<-d %>% gather(key=id,val=perc,-cell_type)
+d$sample<-d$id
+d$id<-sapply(str_split(d$id,"_"),"[",1)
+
+
+meta<-fread(here("data","Methylation_IDs.csv"),header=T)
+meta<-meta %>% select(-V1)
+
+meta<-meta %>% filter(Analyte=="plasma cfDNA")
+
+meta<-meta %>% mutate(Type=if_else(Source=="Loyfer et. al., Nature 2023","Loyfer et al. - Healthy",Type))
+
+d<-d %>% mutate(id=if_else(id=="CGAD476P","CGAD476P_2",id))
+d<-d %>% mutate(id=if_else(id=="CGLI409P","CGLI409P_2",id))
+
+meta<-meta %>% mutate(ID=if_else(Type=="Loyfer et al. - Healthy",sapply(str_split(ID,"_"),"[",1),ID))
+
+
+
+d<-inner_join(d,meta %>% select(ID,Type),by=c("id"="ID"))
+
+d<-d %>% mutate(sample=if_else(grepl("rep",sample),"Cell Type Proportions - Library 2","Cell Type Proportions - Library 1"))
+
+d<-d %>% spread(key=sample,value=perc)
+
+
+
+d<-d %>% mutate(cell_type=if_else(cell_type %in% c("loyfer_Blood-T-CD4","loyfer_Blood-T-CD8"),"Blood T",cell_type))
+d<-d %>% group_by(id,Type,cell_type) %>% summarize(`Cell Type Proportions - Library 1`=sum(`Cell Type Proportions - Library 1`),`Cell Type Proportions - Library 2`=sum(`Cell Type Proportions - Library 2`))
+
+```
+
+
+```{r prep, echo=FALSE, fig.width=4, fig.height=3, dev=c("png", "pdf")}
+d$id<-gsub("P_2","P",d$id)
+ggplot(d,aes(y=`Cell Type Proportions - Library 1`/100,x=`Cell Type Proportions - Library 2`/100,color=id))+geom_point()+theme_classic()+geom_abline(slope=1,intercept=0,linetype="dashed")+xlab("Cell type proportions - Library 2")+ylab("Cell type proportions - Library 1")+stat_cor(method="spearman")+scale_color_manual(values=c("gray50","darkblue"))
+
+write.csv(d,here("output","15C_Data.csv"))
+```
+
+
+
+

@@ -1,0 +1,324 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Describe your project.
+```{r}
+library(plyr)
+library(dplyr)
+library(devtools)
+library(tidyverse)
+library(data.table)
+library(here)
+library(readxl)
+library(ggpubr)
+library(ggrepel)
+library(caret)
+library(glmnet)
+library(recipes)
+library(devtools)
+
+```
+
+
+MICA
+```{r MICA_Mean, echo=FALSE, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+library(survival)
+library(survminer)
+
+preds<-fread(here("data","All_MICA_withscores.csv"))
+surv_cv<-preds
+surv_cv<-surv_cv %>% mutate(censor=if_else(`Death status`==1,0,1)) #changing to 0,1 coding. 1 was alive and 2 was dead in original
+surv_cv$surv<-surv_cv$`Time to death from blood sample`
+
+
+
+
+d<-as.data.frame(surv_cv)
+med<-median(d$score)
+#med<-0.734
+#med<-d %>% group_by(Project) %>% summarize(med=median(SINE))
+#d<-inner_join(d,med,by="Project")
+
+d$survival <- with(d, Surv(surv, censor))
+d<-d %>% mutate(med_grp=if_else(score<=med,0,1))
+fit <- survfit(survival ~ med_grp, data = d)
+fig <- ggsurvplot(fit, data = d,
+           #surv.median.line = "hv", ## Add medians survival
+           ## Add p-value and tervals
+           pval = FALSE,
+           conf.int = FALSE,
+           ## Add risk table
+           risk.table = FALSE,
+           tables.height = 0.2,
+           tables.theme = theme_cleantable(),
+           axes.offset=FALSE,
+           ## Color palettes. Use custom color: c("#E7B800", "#2E9FDF"),
+           ## or brewer color (e.g.: "Dark2"), or ggsci color (e.g.: "jco")
+           ##palette = c("#E7B800", "#2E9FDF"),
+           legend=c(0.75, 0.2),
+           legend.title="", 
+           palette=c("gray20", "darkgreen"),
+           legend.labs=c("Below Median", "Above Median"),
+           ##legend.labs=labels,
+           ggtheme = theme_classic(base_size=12) # Change ggplot2 theme
+           ) +
+    ylab("Overall Survival") +
+    xlab("Days")
+  medians <- surv_median(fit)$median
+  breaks <- round(sort(c(seq(0, max(d$surv), by=max(d$surv)/2), medians)),0)
+breaks <- breaks[ breaks != 1000 ]
+  breaks<-round(breaks,1)
+  fig$plot <- fig$plot  +
+    scale_x_continuous(breaks=breaks, expand=expansion(mult=c(0, 0.01)))
+  X2 <- survdiff(Surv(surv,censor) ~ med_grp, data=d)$chisq
+  p <- round(1-pchisq(X2, df=1), 4)
+  if(p < 0.001){
+      plabel <- "P < 0.001"
+  } else {
+      plabel <- paste0("P = ", round(p, 3))
+  }
+  
+  
+  
+  fig$plot <- fig$plot + annotate("text", x=max(d$surv)/3, y=0.75, label=plabel,
+                                size=5)
+  a<-fig$plot
+  
+
+
+  a+ggtitle("MICA Morbidity Cohort")+theme(plot.title = element_text(hjust = 0.5))
+
+
+```
+
+By decile
+```{r MICA_Decile, echo=FALSE, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+
+
+preds<-fread(here("data","All_MICA_withscores.csv"))
+surv_cv<-preds
+surv_cv<-surv_cv %>% mutate(censor=if_else(`Death status`==1,0,1)) #changing to 0,1 coding. 1 was alive and 2 was dead in original
+surv_cv$surv<-surv_cv$`Time to death from blood sample`
+
+
+d<-as.data.frame(surv_cv)
+
+
+
+l<-quantile(d$score,seq(0,1,.1))[2]
+h<-quantile(d$score,seq(0,1,.1))[10]
+
+surv_cv<-surv_cv %>% filter(score>=h|score<=l)
+d<-as.data.frame(surv_cv)
+
+d$survival <- with(d, Surv(surv, censor))
+d<-d %>% mutate(med_grp=if_else(score<=l,0,1))
+fit <- survfit(survival ~ med_grp, data = d)
+fig <- ggsurvplot(fit, data = d,
+           #surv.median.line = "hv", ## Add medians survival
+           ## Add p-value and tervals
+           pval = FALSE,
+           conf.int = FALSE,
+           ## Add risk table
+           risk.table = FALSE,
+           tables.height = 0.2,
+           tables.theme = theme_cleantable(),
+           axes.offset=FALSE,
+           ## Color palettes. Use custom color: c("#E7B800", "#2E9FDF"),
+           ## or brewer color (e.g.: "Dark2"), or ggsci color (e.g.: "jco")
+           ##palette = c("#E7B800", "#2E9FDF"),
+           legend=c(0.75, 0.2),
+           legend.title="", 
+           palette=c("gray20", "darkgreen"),
+           legend.labs=c("Lowest Decile", "Highest Decile"),
+           ##legend.labs=labels,
+           ggtheme = theme_classic(base_size=11) # Change ggplot2 theme
+           ) +
+    ylab("Overall Survival") +
+    xlab("Days")
+  medians <- surv_median(fit)$median
+  breaks <- round(sort(c(seq(0, max(d$surv), by=max(d$surv)/2), medians)),0)
+breaks <- breaks[ breaks != 1000 ]
+  breaks<-round(breaks,1)
+  fig$plot <- fig$plot  +
+    scale_x_continuous(breaks=breaks, expand=expansion(mult=c(0, 0.01)))
+  X2 <- survdiff(Surv(surv,censor) ~ med_grp, data=d)$chisq
+  p <- round(1-pchisq(X2, df=1), 4)
+  if(p < 0.001){
+      plabel <- "P < 0.001"
+  } else {
+      plabel <- paste0("P = ", round(p, 3))
+  }
+  
+  
+  
+  fig$plot <- fig$plot + annotate("text", x=max(d$surv)/3, y=0.75, label=plabel,
+                                size=5)
+  a<-fig$plot
+  
+
+
+  a+ggtitle("MICA Morbidity Cohort")+theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+By median score
+```{r lucas_Mean, echo=FALSE, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+library(survival)
+library(survminer)
+
+preds<-fread(here("data","All_MICA_Val_withscores.csv")) %>% select(-V1)
+
+surv_cv<-preds #%>% filter(group=="MICA CV, no cancer")
+surv_cv<-surv_cv %>% mutate(censor=if_else(`Survival status`=="Deceased",1,0))
+surv_cv$surv<-surv_cv$`Days alive`
+
+
+d<-as.data.frame(surv_cv)
+
+#Use the median score from the MICA cohort
+#med<-mean(d$score)
+#med<-0.734
+#med<-d %>% group_by(Project) %>% summarize(med=median(SINE))
+#d<-inner_join(d,med,by="Project")
+
+d$survival <- with(d, Surv(surv, censor))
+d<-d %>% mutate(med_grp=if_else(score<=med,0,1))
+fit <- survfit(survival ~ med_grp, data = d)
+
+fig <- ggsurvplot(fit, data = d,
+           #surv.median.line = "hv", ## Add medians survival
+           ## Add p-value and tervals
+           pval = FALSE,
+           conf.int = FALSE,
+           ## Add risk table
+           risk.table = FALSE,
+           tables.height = 0.2,
+           tables.theme = theme_cleantable(),
+           axes.offset=FALSE,
+           ## Color palettes. Use custom color: c("#E7B800", "#2E9FDF"),
+           ## or brewer color (e.g.: "Dark2"), or ggsci color (e.g.: "jco")
+           ##palette = c("#E7B800", "#2E9FDF"),
+           legend=c(0.75, 0.2),
+           legend.title="", 
+           palette=c("gray20", "darkgreen"),
+           legend.labs=c("Below Median\n(Locked Threshold)", "Above Median\n(Locked Threshold)"),
+           ##legend.labs=labels,
+           ggtheme = theme_classic(base_size=12) # Change ggplot2 theme
+           ) +
+    ylab("Overall Survival") +
+    xlab("Days")
+  medians <- surv_median(fit)$median
+  breaks <- round(sort(c(seq(0, max(d$surv), by=max(d$surv)/2), medians)),0)
+breaks <- breaks[ breaks != 1000 ]
+  breaks<-round(breaks,1)
+  fig$plot <- fig$plot  +
+    scale_x_continuous(breaks=breaks, expand=expansion(mult=c(0, 0.01)))
+  X2 <- survdiff(Surv(surv,censor) ~ med_grp, data=d)$chisq
+  p <- round(1-pchisq(X2, df=1), 4)
+  if(p < 0.001){
+      plabel <- "P < 0.001"
+  } else {
+      plabel <- paste0("P = ", round(p, 3))
+  }
+  
+  
+  
+  fig$plot <- fig$plot + annotate("text", x=max(d$surv)/3, y=0.75, label=plabel,
+                                size=5)
+  a<-fig$plot
+  
+
+
+  a+ggtitle("External Validation")+theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+by decile
+
+```{r lucas_decile, echo=FALSE, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+library(survival)
+library(survminer)
+
+preds<-fread(here("data","All_MICA_Val_withscores.csv")) %>% select(-V1)
+
+surv_cv<-preds #%>% filter(group=="MICA CV, no cancer")
+surv_cv<-surv_cv %>% mutate(censor=if_else(`Survival status`=="Deceased",1,0))
+surv_cv$surv<-surv_cv$`Days alive`
+
+
+d<-as.data.frame(surv_cv)
+
+#Use the thresholds from the Discovery Cohort
+#l<-quantile(d$score,seq(0,1,.1))[2]
+#h<-quantile(d$score,seq(0,1,.1))[10]
+
+surv_cv<-surv_cv %>% filter(score>=h|score<=l)
+d<-as.data.frame(surv_cv)
+
+#med<-0.734
+#med<-d %>% group_by(Project) %>% summarize(med=median(SINE))
+#d<-inner_join(d,med,by="Project")
+
+d$survival <- with(d, Surv(surv, censor))
+d<-d %>% mutate(med_grp=if_else(score<=l,0,1))
+fit <- survfit(survival ~ med_grp, data = d)
+
+fig <- ggsurvplot(fit, data = d,
+           #surv.median.line = "hv", ## Add medians survival
+           ## Add p-value and tervals
+           pval = FALSE,
+           conf.int = FALSE,
+           ## Add risk table
+           risk.table = FALSE,
+           tables.height = 0.2,
+           tables.theme = theme_cleantable(),
+           axes.offset=FALSE,
+           ## Color palettes. Use custom color: c("#E7B800", "#2E9FDF"),
+           ## or brewer color (e.g.: "Dark2"), or ggsci color (e.g.: "jco")
+           ##palette = c("#E7B800", "#2E9FDF"),
+           legend=c(0.75, 0.2),
+           legend.title="", 
+           palette=c("gray20", "darkgreen"),
+           legend.labs=c("Lowest Decile\n(Locked Threshold)", "Highest Decile\n(Locked Threshold)"),
+           ##legend.labs=labels,
+           ggtheme = theme_classic(base_size=12) # Change ggplot2 theme
+           ) +
+    ylab("Overall Survival") +
+    xlab("Days")
+  medians <- surv_median(fit)$median
+  breaks <- round(sort(c(seq(0, max(d$surv), by=max(d$surv)/2), medians)),0)
+breaks <- breaks[ breaks != 1000 ]
+  breaks<-round(breaks,1)
+  fig$plot <- fig$plot  +
+    scale_x_continuous(breaks=breaks, expand=expansion(mult=c(0, 0.01)))
+  X2 <- survdiff(Surv(surv,censor) ~ med_grp, data=d)$chisq
+  p <- round(1-pchisq(X2, df=1), 4)
+  if(p < 0.001){
+      plabel <- "P < 0.001"
+  } else {
+      plabel <- paste0("P = ", round(p, 3))
+  }
+  
+  
+  
+  fig$plot <- fig$plot + annotate("text", x=max(d$surv)/3, y=0.75, label=plabel,
+                                size=5)
+  a<-fig$plot
+  
+
+
+  a+ggtitle("External Validation")+theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+
+
+
+

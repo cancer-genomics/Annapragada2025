@@ -1,0 +1,113 @@
+---
+title: "Performance"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+This makes the LUCAS ARTEMIS figure
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(RColorBrewer)
+library(pROC)
+
+
+colors<-c("darkblue","steelblue","gray50")
+
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+```
+
+
+```{r liver_set, echo=FALSE, fig.width=8, fig.height=4, dev=c("png", "pdf")}
+t<-fread(here("data","score_threshold.csv"))$thresh[1]
+f<-dat %>% filter(!is.na(fib4) & fib4 != "unknown")
+f$fib4<-as.numeric(f$fib4)
+
+f<-f %>% filter(type != "No Known Liver Disease")
+f$type<-factor(f$type,levels=c("Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+ggplot(f,aes(x=fib4,y=score,color=type))+geom_point()+theme_classic()+facet_grid(training~type)+scale_color_manual(values=c("steelblue","darkblue"))+theme(legend.position="none",strip.background = element_blank())+xlab("Fib-4")+ylab("cfDNA Fragmentome LCr Score")+geom_hline(yintercept=t)+geom_vline(xintercept=1.45)+geom_vline(xintercept=3.25)
+```
+
+
+
+```{r liver_set3a, echo=FALSE, fig.width=4, fig.height=8, dev=c("png", "pdf")}
+
+f1<-f %>% group_by(training,type) %>% summarize(n=n(),`Positive`=sum(score>=t)/n,`Negative`=sum(score<t)/n) %>% select(-n) %>% gather(key=res,value=perc,-type,-training) %>% mutate(set="cfDNA\nFragmentome\nLCr Score")
+
+f2<-f %>% group_by(training,type) %>% summarize(n=n(),`Positive`=sum(fib4>3.25)/n,`Negative`=sum(fib4<1.45)/n,`Indeterminate`=sum(fib4>=1.45 & fib4<=3.25)/n) %>% select(-n) %>% gather(key=res,value=perc,-type,-training) %>% mutate(set="FIB-4")
+
+
+f3<-rbind(f1,f2)
+f3$set<-factor(f3$set,levels=c("cfDNA\nFragmentome\nLCr Score","FIB-4"))
+f3$res<-factor(f3$res,levels=rev(c("Positive","Indeterminate","Negative")))
+f3<-f3 %>% ungroup()
+f3 <- f3 %>% group_by(training,type,set) %>% arrange(desc(res)) %>% 
+  mutate(prop = perc / sum(perc)) %>%
+  mutate(ypos = cumsum(prop)-.5*prop)
+
+f3$l<-paste0(round(f3$perc,2)*100,"%")
+
+n<-f %>% group_by(type,training) %>% summarize(n=n())
+
+f3<-inner_join(f3,n,by=c("type","training"))
+
+f3<-f3 %>% mutate(type=gsub("/","\nand ",type))
+f3$type<-paste0(f3$type,"\n(n = ",f3$n,")")
+
+f3$type<-factor(f3$type,levels=c("Liver Disease\nand Early Fibrosis\n(n = 31)","Liver Disease\nand Early Fibrosis\n(n = 30)","Advanced Fibrosis\nand Cirrhosis\n(n = 54)","Advanced Fibrosis\nand Cirrhosis\n(n = 83)"))
+
+
+ggplot(f3 %>% filter(res == "Positive"), aes(x=set, y=perc, fill=set)) +
+  geom_bar(stat="identity", width=1) + facet_wrap(vars(training,type))+theme_classic()+scale_fill_manual(values=c("hotpink","pink"))+theme(legend.position="bottom",axis.text.x=element_text(size=8),axis.text.y=element_text(size=8),strip.background=element_blank(),strip.text=element_text(size=8),axis.title = element_text(size=8))+geom_text(aes(y = ypos, label =l), color = "black", size=3)+xlab("")+ylab("")+labs(fill="")+ylim(0,1)+ylab("Proportion")
+
+
+
+```
+
+
+
+
+
+
+```{r}
+library(Hmisc)
+
+t<-fread(here("data","score_threshold.csv"))$thresh[1]
+f<-dat %>% filter(!is.na(fib4) & fib4 != "unknown")
+f$fib4<-as.numeric(f$fib4)
+
+
+f %>% group_by(training,type) %>% dplyr::summarize(n=n(),`Positive`=sum(score>=t),`Negative`=sum(score<t)) %>% gather(key=res,value=perc,-training,-type) %>% mutate(set="cfDNA Fragmentome LCr Score")
+
+
+binconf(61, 83, .05)
+binconf(15, 30, .05)
+binconf(12, 18, .05)
+
+f %>% group_by(training,type) %>% dplyr::summarize(n=n(),`Positive`=sum(fib4>3.25),`Negative`=sum(fib4<=3.25)) %>% gather(key=res,value=perc,-training,-type) %>% mutate(set="cfDNA Fragmentome LCr Score")
+
+
+binconf(53, 83, .05)
+binconf(2, 30, .05)
+binconf(16, 18, .05)
+
+
+f %>% group_by(training,type) %>% dplyr::summarize(n=n(),`Positive`=sum(fib4>1.45),`Negative`=sum(fib4<=1.45)) %>% gather(key=res,value=perc,-training,-type) %>% mutate(set="cfDNA Fragmentome LCr Score")
+binconf(74, 83, .05)
+binconf(13, 30, .05)
+binconf(5, 18, .05)
+
+```
+
+
+
+

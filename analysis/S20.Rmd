@@ -1,0 +1,113 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Describe your project.
+```{r}
+library(plyr)
+library(dplyr)
+library(devtools)
+library(tidyverse)
+library(data.table)
+library(here)
+library(readxl)
+library(ggpubr)
+library(ggrepel)
+library(caret)
+library(glmnet)
+library(recipes)
+library(devtools)
+
+```
+
+
+```{r}
+
+dat<-fread(here("data","All_MICA_withscores.csv"))
+
+d1<-dat %>% select(-V1)
+
+
+```
+
+
+
+
+```{r plot3, echo=FALSE, fig.width=4, fig.height=5, dev=c("png", "pdf")}
+
+dat<-d1 %>% select(type,`CCI score`,Con,id)
+dat<-dat %>% mutate(type=if_else(type=="low CCI","Low CCI",type))
+dat<-dat %>% mutate(type=if_else(type=="high CCI","High CCI",type))
+
+
+dat %>% group_by(type) %>% summarize(m=mean(Con),l=quantile(Con,seq(0,1,.025))[2],h=quantile(Con,seq(0,1,.025))[40])
+
+dat1<-d1 %>% filter(Diabetes=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Diabetes")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Earlier cancer`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Prior Cancer")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Cardiovascular disease`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="CV Disease")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Connective tissue diease`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Connective Tissue Disease")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Heart insufficient`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Heart Insufficient")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Cerebral vaskular disease`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Cerebral Vascular Disease")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(Dementia=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Dementia")
+dat<-rbind(dat,dat1)
+
+dat1<-d1 %>% filter(`Mild chronic liver disease`=="Yes")%>%select(type,`CCI score`,Con,id)%>%mutate(type="Mild Chronic Liver Disease")
+dat<-rbind(dat,dat1)
+
+
+
+dat$`CCI score`<-factor(dat$`CCI score`,levels=c(10,9,8,7,6,5,4,3,2,1,0))
+
+n<-dat %>% group_by(type) %>% summarize(n=n())
+dat<-inner_join(dat,n,by="type")
+dat$type<-paste0(dat$type,"\n(n = ",dat$n,")")
+dat$type<-factor(dat$type,levels=rev(unique(dat$type)))
+
+
+dat$type<-factor(dat$type,levels=c("Low CCI\n(n = 244)","High CCI\n(n = 326)","Mild Chronic Liver Disease\n(n = 9)","Dementia\n(n = 7)","Heart Insufficient\n(n = 38)","Connective Tissue Disease\n(n = 46)","Cerebral Vascular Disease\n(n = 25)","Diabetes\n(n = 74)","Prior Cancer\n(n = 90)","CV Disease\n(n = 139)"))
+
+
+dat %>% filter(type=="Low CCI\n(n = 244)") %>% summarize(median(Con))
+
+ps<-pairwise.wilcox.test(dat$Con,dat$type,p.adjust.method="none",label="p.signif")
+p<-data.table(ps$p.value)
+dat_p<-tibble(type=rownames(ps$p.value),p=p$`Low CCI\n(n = 244)`)
+dat_p$type<-factor(dat_p$type,levels=levels(dat$type))
+
+ggplot(dat,aes(x=Con,fill=type,color=type))+geom_density()+theme_classic()+scale_x_log10(breaks=c(1,10,100,1000))+facet_grid(type~.)+ylab("Density")+xlab("cfDNA Concentration (ng/mL)")+scale_fill_manual(values=c("gray50","darkgreen","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2"))+
+theme(legend.position="none",strip.text.y=element_text(angle=0),strip.background=element_blank())+scale_color_manual(values=c("gray50","darkgreen","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2"))+geom_vline(xintercept=4.209901,linetype="dashed")+ylim(0,1.7)+
+  geom_text(data=dat_p,color="black",size=2.5,aes(x=250,y=1.5,label=paste0("p=",signif(p,2)),group=type))
+
+
+```
+
+```{r plot_p, echo=FALSE, fig.width=10, fig.height=4, dev=c("png", "pdf")}
+
+m<-d1 %>% select(id,Con,YKL40,IL6,CRP) %>% gather(key=prot,value=m,-id,-Con)
+ggplot(m,aes(x=Con,y=m))+geom_jitter(size=.7)+theme_classic()+scale_y_log10()+scale_x_log10()+stat_cor()+facet_grid(.~prot)+xlab("cfDNA Concentration (ng/mL)")+ylab("Proteomic Measurement")
+
+
+m<-d1 %>% select(id,type,YKL40,IL6,CRP) %>% gather(key=prot,value=m,-id,-type)
+m<-m %>% mutate(type=if_else(type=="low CCI","Low CCI","High CCI"))
+m$type<-factor(m$type,levels=c("Low CCI","High CCI"))
+ggplot(m,aes(x=type,y=m,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5)+geom_jitter(size=.5)+theme_classic()+scale_y_log10()+stat_compare_means()+xlab("")+ylab("Proteomic Measurement")+scale_fill_manual(values=c("gray50","darkgreen"))+theme(legend.position="none")+facet_grid(.~prot)
+
+```
+

@@ -1,0 +1,23 @@
+"","id","Type","cell_type","Cell Type Proportions - Library 1","Cell Type Proportions - Library 2"
+"1","CGAD476P","No Known Liver Disease","Blood T",4.04,1.12
+"2","CGAD476P","No Known Liver Disease","loyfer_Blood-B",4.36,4.95
+"3","CGAD476P","No Known Liver Disease","loyfer_Blood-Granulocytes",35.32,28.7
+"4","CGAD476P","No Known Liver Disease","loyfer_Blood-Monocytes",2.54,0
+"5","CGAD476P","No Known Liver Disease","loyfer_Blood-NK",2.28,13.97
+"6","CGAD476P","No Known Liver Disease","loyfer_Bone_marrow-Erythrocyte_progenitors",14.82,17.76
+"7","CGAD476P","No Known Liver Disease","loyfer_Liver-Endothelium",2.94,0
+"8","CGAD476P","No Known Liver Disease","loyfer_Liver-Hepatocytes",0,0
+"9","CGAD476P","No Known Liver Disease","loyfer_Liver-Macrophages",6.75,4.52
+"10","CGAD476P","No Known Liver Disease","loyfer_Vascular-Endothelium-META",0,0
+"11","CGAD476P","No Known Liver Disease","moss_Blood-Megakaryocytes",26.95,28.98
+"12","CGLI409P","Fibrosis/Cirrhosis","Blood T",0,0
+"13","CGLI409P","Fibrosis/Cirrhosis","loyfer_Blood-B",0,0
+"14","CGLI409P","Fibrosis/Cirrhosis","loyfer_Blood-Granulocytes",26.59,23.08
+"15","CGLI409P","Fibrosis/Cirrhosis","loyfer_Blood-Monocytes",20.43,23.45
+"16","CGLI409P","Fibrosis/Cirrhosis","loyfer_Blood-NK",4.67,5.65
+"17","CGLI409P","Fibrosis/Cirrhosis","loyfer_Bone_marrow-Erythrocyte_progenitors",11.04,12.3
+"18","CGLI409P","Fibrosis/Cirrhosis","loyfer_Liver-Endothelium",6.73,0.98
+"19","CGLI409P","Fibrosis/Cirrhosis","loyfer_Liver-Hepatocytes",0,0
+"20","CGLI409P","Fibrosis/Cirrhosis","loyfer_Liver-Macrophages",5,6.59
+"21","CGLI409P","Fibrosis/Cirrhosis","loyfer_Vascular-Endothelium-META",0.16,3.48
+"22","CGLI409P","Fibrosis/Cirrhosis","moss_Blood-Megakaryocytes",25.37,24.47

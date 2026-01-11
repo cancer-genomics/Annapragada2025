@@ -1,0 +1,72 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r reads, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+meta<-fread(here("data","Methylation_IDs.csv"),header=T)
+
+meta<-meta %>% filter(grepl("JHU",Source))
+meta<-meta %>% filter(Source != "JHU Library Batch 1" & Source != "JHU Library Batch 3")
+
+meta<-meta %>% filter(ID != "CGLI414P") #this one might have cancer, it's for zack's study not mine
+meta<-meta %>% mutate(ID=if_else(ID=="CGLI409P_2","CGLI409P",ID))
+meta<-meta %>% mutate(ID=if_else(ID=="CGAD476P_2","CGAD476P",ID))
+
+
+
+
+c<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+c<-c %>% select(id,score) %>% filter(id %in% meta$ID)
+
+m<-inner_join(meta,c,by=c("ID"="id"))
+
+
+c2<-fread(here("data","All_Cross_Reactivity_Metadata_withscores.csv"))
+
+c2<-c2 %>% select(id,score) %>% filter(id %in% meta$ID)
+
+m2<-inner_join(meta,c2,by=c("ID"="id"))
+m<-rbind(m,m2)
+m<-m %>% filter(Type != "Liver Cancer")
+```
+
+
+
+```{r score, echo=FALSE, fig.width=4, fig.height=6, dev=c("png", "pdf")}
+m$Type<-factor(m$Type,levels=c("No Known Liver Disease","Fibrosis/Cirrhosis"))
+
+ggplot(m,aes(x=Type,y=score,fill=Type))+theme_classic()+scale_fill_manual(values=c("gray50","darkblue"))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="bottom",axis.text.x=element_blank(),axis.text.y=element_text(size=12))+geom_boxplot(alpha=.5,outlier.shape=NA,position=position_dodge(width=1),width=.3)+geom_point(position=position_jitterdodge(jitter.width=.15,dodge.width=1))+labs(fill="")
+```
+
+
+
+
+

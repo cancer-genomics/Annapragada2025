@@ -1,0 +1,98 @@
+---
+title: "Predictive distributions of performance in future studies"
+---
+
+# Goals
+
+In a future study of 100,000 participants, what is our predictive distribution for the following:
+- number individuals screened
+- liver cancers detected by delfi
+- liver cancers detected by ultrasound (US) + alpha fetal protein (AFP)
+- false positives leading to unnecessary follow-up procedures by these approaches
+- individuals with liver cancer not identified ( false negatives )
+
+The size of the screening study is determined by the number of samples collected in a finite period of time.  Studies with lower adherence to surveillance guidelines have fewer participants.
+
+
+# Best guesses
+
+```{r packages, message=FALSE, echo=FALSE}
+library(here)
+library(devtools)
+library(grid)
+library(gridExtra)
+library(gtools)
+library(tidyverse)
+library(mvtnorm)
+library(magrittr)
+library(ggplot2)
+library(epiR)
+library(readxl)
+library(data.table)
+library(patchwork)
+library(cowplot)
+
+```
+
+```{r contours, fig.width=8, fig.height=8, dev=c("png", "pdf")}
+
+panelA.data<-fread(here("data","LCr_contours.csv"))
+pt_esti<-fread(here("data","LCr_pt_esti.csv"))
+panelA <- panelA.data %>% 
+    ggplot(aes(specificity, sensitivity)) +
+    theme_classic(20) +
+    theme(panel.grid=element_blank()) +
+    geom_density2d(aes(color=tool),bins=25, size=.5) +
+    scale_y_continuous(expand=c(0, 0), limits=c(0, 1)) +
+    scale_x_continuous(expand=c(0, 0), limits=c(0, 1)) +
+    geom_point(data=pt_esti,aes(specificity, sensitivity), size=3) + labs(color="")+
+    ##xlim(c(0.15, 1)) +
+    ##ylim(c(0.15, 1)) +
+    ##facet_wrap(~population, ncol=1) +
+    theme(strip.background=element_blank(),
+          legend.position=c(0.3, 0.85)) +
+    #guides(color=guide_legend(title="",
+    #                          override.aes=list(size=1.5))) +
+    xlab("Specificity") +
+    ylab("Sensitivity")+coord_fixed()+
+  scale_color_manual(values=c("darkblue","hotpink","lightpink"))#,
+                     #labels=c("HE4 - 70 pM - Jacob et al., 2011","HE4 - 70 pM - JHU","CA125 - 30 U/mL - Menon et al., 2015","CA125 - 30 U/mL - JHU", "DELFI-Pro - >99% Specificity"))
+panelA
+#panelA <- ggplotGrob(panelA)
+```
+
+
+
+
+I want to plot all metrics
+```{r fpr, fig.width=10, fig.height=4, dev=c("png", "pdf")}
+
+dat<-fread(here("data","LCr_Metrics.csv"))
+
+dat$tool<-factor(dat$tool,levels=c("Han et al, 2022 - FIB-4 > 3.25","JHU - FIB-4 > 3.25","cfDNA Fragmentome LCr Score"))
+
+
+nm <- c(`npv` = "NPV",
+        `TP` = "TP",
+        `fnr`="FNR")
+
+set2<-ggplot(dat,aes(x=tool,y=score,fill=tool))+geom_boxplot(outlier.shape=NA)+theme_classic(base_size=20)+
+  scale_fill_manual(values=c("lightpink","hotpink","darkblue"))+xlab("")+theme(legend.position="right")+theme(axis.title = element_text(face = "bold"),
+        strip.background=element_blank(),axis.text.x=element_blank(),
+        axis.text.y=element_text(face = "bold"))+facet_wrap(vars(metric),nrow=1,scales="free_y",labeller = as_labeller(nm))+ylab("Performance")+labs(fill="")
+set2
+
+```
+
+
+```{r}
+
+dat %>% filter(metric=="TP") %>% group_by(tool) %>% dplyr::summarize(m=mean(score),l=quantile(score,seq(0,1,.025))[2],h=quantile(score,seq(0,1,.025))[40])
+
+```
+
+
+
+
+
+

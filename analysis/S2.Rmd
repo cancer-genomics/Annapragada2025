@@ -1,0 +1,185 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(ggpubr)
+library(pROC)
+load_all(here("output","useful.stuff.aa"))
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r}
+meta<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+#meta<-meta %>% filter(set=="Discovery")
+n<-meta %>% group_by(type,training) %>% summarize(n=n())
+meta<-inner_join(meta,n,by=c("type","training"))
+
+meta$type2<-paste0(meta$type,"\n(n=",meta$n,")")
+meta$conc<-meta$cfDNA_conc
+
+data<-meta
+
+data$type2<-factor(data$type2,levels=c("No Known Liver Disease\n(n=291)","No Known Liver Disease\n(n=106)","Liver Disease/Early Fibrosis\n(n=61)","Liver Disease/Early Fibrosis\n(n=30)",
+                                       "Advanced Fibrosis/Cirrhosis\n(n=71)","Advanced Fibrosis/Cirrhosis\n(n=85)"))
+
+data$conc<-as.numeric(data$conc)
+
+data_all<-data
+```
+
+```{r plot3, echo=FALSE, fig.width=5, fig.height=3, dev=c("png", "pdf")}
+
+data<-data_all %>% filter(training=="Discovery")
+ps<-pairwise.wilcox.test(data$conc,data$type2,p.adjust.method="none",label="p.signif",ref.group="No Known Liver Disease\n(n=291)")
+p<-data.table(ps$p.value)
+dat_p<-tibble(type2=rownames(ps$p.value),p=p$`No Known Liver Disease\n(n=291)`)
+dat_p$type2<-factor(dat_p$type2,levels=levels(data$type2))
+
+med<-(data %>% group_by(training,type2) %>% summarize(med=median(conc)) %>% filter(type2=="No Known Liver Disease\n(n=291)"))$med
+
+ggplot(data %>% filter(training=="Discovery") %>% filter(type !="Liver Disease/Early Fibrosis"),aes(x=conc,group=type2,color=type2,fill=type2))+geom_density()+theme_classic()+scale_color_manual(values=c("gray50","darkblue"))+facet_grid(type2~.)+theme(strip.text.y=element_text(angle=0),strip.background=element_blank(),legend.position="none")+scale_fill_manual(values=c("gray50","darkblue"))+xlab("cfDNA Concentration (ng/mL)")+ylab("Density")+geom_vline(xintercept=med,linetype="dashed")+geom_text(data=dat_p %>% filter(type2=="Advanced Fibrosis/Cirrhosis\n(n=71)"),color="black",size=2.5,aes(x=25,y=1.5,label=paste0("p=",signif(p,2)),group=type2))+scale_x_log10(breaks=c(1,10,100),limits=c(.2,100))
+
+
+
+```
+
+
+```{r plot3_v, echo=FALSE, fig.width=5, fig.height=3, dev=c("png", "pdf")}
+
+
+data<-data_all #%>% filter(training=="Discovery")
+ps<-pairwise.wilcox.test(data$conc,data$type2,p.adjust.method="none",label="p.signif",ref.group="No Known Liver Disease\n(n=291)")
+p<-data.table(ps$p.value)
+dat_p<-tibble(type2=rownames(ps$p.value),p=p$`No Known Liver Disease\n(n=291)`)
+dat_p$type2<-factor(dat_p$type2,levels=levels(data$type2))
+
+med<-(data %>% group_by(training,type2) %>% summarize(med=median(conc)) %>% filter(type2=="No Known Liver Disease\n(n=291)"))$med
+
+ggplot(data %>% filter(training=="Validation") %>% filter(type !="Liver Disease/Early Fibrosis"),aes(x=conc,group=type2,color=type2,fill=type2))+geom_density()+theme_classic()+scale_color_manual(values=c("gray50","darkblue"))+facet_grid(type2~.)+theme(strip.text.y=element_text(angle=0),strip.background=element_blank(),legend.position="none")+scale_fill_manual(values=c("gray50","darkblue"))+xlab("cfDNA Concentration (ng/mL)")+ylab("Density")+geom_vline(xintercept=med,linetype="dashed")+geom_text(data=dat_p %>% filter(type2=="Advanced Fibrosis/Cirrhosis\n(n=85)"|type2=="No Known Liver Disease\n(n=106)"),color="black",size=2.5,aes(x=25,y=1.5,label=paste0("p=",signif(p,2)),group=type2))+scale_x_log10(breaks=c(1,10,100),limits=c(.2,100))
+
+
+
+```
+
+```{r healthy_age, fig.width=16, fig.height=4, dev=c("png", "pdf")}
+
+dat<-data_all #%>% filter(type=="No Known Liver Disease")
+dat<-dat %>% mutate(Age_group=if_else(Age<50,"<50","50+"))
+dat<-dat %>% mutate(Age_group=if_else(Age<60 & Age>=50,"50-59",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age<70 & Age>=60,"60-69",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age<80 & Age>=70,"70-79",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age>=80,"80+",Age_group))
+dat$Age_group<-factor(dat$Age_group,levels=c("<50","50-59","60-69","70-79","80+"))
+n<-dat %>% group_by(training,type,Age_group) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat %>% select(-n),n,by=c("training","type","Age_group"))
+dat$name<-paste0(dat$Age_group,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c(unique(dat$name)[grep("<50",unique(dat$name))],
+                                   unique(dat$name)[grep("50-59",unique(dat$name))],
+                                   unique(dat$name)[grep("60-69",unique(dat$name))],
+                                   unique(dat$name)[grep("70-79",unique(dat$name))],
+                                   unique(dat$name)[grep("80+",unique(dat$name))]))
+
+cs1<-list(c("50-59\n(n=163)","60-69\n(n=101)"),c("50-59\n(n=163)","70-79\n(n=27)"))
+
+p1<-ggplot(dat %>% filter(training=="Discovery" & type == "No Known Liver Disease"),aes(x=name,y=conc,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Concentration (ng/mL)")+xlab("")+theme(legend.position="none")+stat_compare_means(comparisons=cs1)+scale_fill_manual(values=c("gray50"))+facet_grid(.~training)+scale_y_log10()+xlab("Age")
+
+
+cs2<-list(c("<50\n(n=13)","50-59\n(n=27)"),c("<50\n(n=13)","60-69\n(n=38)"),c("<50\n(n=13)","70-79\n(n=20)"),c("<50\n(n=13)","80+\n(n=8)"))
+
+p2<-ggplot(dat %>% filter(training=="Validation" & type == "No Known Liver Disease"),aes(x=name,y=conc,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Concentration (ng/mL)")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("gray50"))+facet_grid(.~training)+scale_y_log10()+stat_compare_means(comparisons=cs2)+xlab("Age")
+
+plot_grid(p1,p2,rel_widths=c(1,1.8))
+
+
+
+
+
+```
+
+
+
+```{r liver_set, echo=FALSE, fig.width=12, fig.height=12, dev=c("png", "pdf")}
+colors<-c("purple","violet")
+
+data<-data_all %>% select(-V1) %>% filter(training=="Discovery") %>% filter(type != "Liver Disease/Early Fibrosis")
+data<-data %>% mutate(type=if_else(type3=="Non-Cirrhotic Controls","healthy","cancer"))
+data$type<-factor(data$type,levels=c("healthy","cancer"))
+c2<-format_roc(data$type,data$conc,"")
+c2$model<-"Discovery Cohort"
+c2$type<-paste0("Discovery Cohort: ",round(roc(data$type,data$conc)$auc[1],2)," (95% CI: ",round(roc(data$type,data$conc,ci=T)$ci[1],2) ,"-",round(roc(data$type,data$conc,ci=T)$ci[3],2) ,")")
+#r1$type<-sapply(str_split(r1$type,": "),"[",2)
+r1<-c2
+r1<-r1 %>% group_by(model,type) %>% arrange(sens,spec)
+
+
+data<-data_all %>% select(-V1) %>% filter(training=="Validation") %>% filter(type != "Liver Disease/Early Fibrosis")
+data<-data %>% mutate(type=if_else(type3=="Non-Cirrhotic Controls","healthy","cancer"))
+data$type<-factor(data$type,levels=c("healthy","cancer"))
+c2<-format_roc(data$type,data$conc,"")
+c2$model<-"Validation Cohort"
+c2$type<-paste0("Validation Cohort: ",round(roc(data$type,data$conc)$auc[1],2)," (95% CI: ",round(roc(data$type,data$conc,ci=T)$ci[1],2) ,"-",round(roc(data$type,data$conc,ci=T)$ci[3],2) ,")")
+#r1$type<-sapply(str_split(r1$type,": "),"[",2)
+r1<-rbind(r1,c2)
+r1<-r1 %>% group_by(model,type) %>% arrange(sens)
+
+
+
+names(colors) <- c(unique(r1$type))
+
+r1$type<-factor(r1$type,levels=unique(r1$type))
+
+A <- r1 %>%
+    ggplot(aes(spec, sens, group=type)) +
+    geom_line(aes(color=type), size=1.1) +
+    scale_x_reverse(expand=c(0, 0.01),
+                    breaks=c(0, 0.25, 0.5, 0.80, 1),
+                    labels=as.character(
+                        c("0", ".25", ".50", ".80", "1.0"))) +
+    scale_y_continuous(expand=c(0, 0.01),
+                       breaks=c(0, 0.25, 0.5, 0.75, 1),
+                       labels=as.character(
+                           c("0", ".25", ".50", ".75", "1.0"))) +
+    scale_color_manual(values=colors) +
+    theme_classic(base_size=35) +
+    theme(panel.grid=element_blank(),
+          legend.position=c(.6,.25),
+          aspect.ratio=0.8,
+          legend.text.align=0,
+          legend.text=element_text(size=22),
+          legend.title=element_text(size=22)) +
+    xlab("Specificity") + ylab("Sensitivity") + 
+    guides(color=guide_legend(title="AUC: (95% CI)", hjust=0)) + theme( strip.background = element_blank(), plot.title = element_text(hjust = 0.5))+ggtitle("Advanced Fibrosis/Cirrhosis\ncfDNA Concentration")
+
+C3<-ggdraw(A)#+draw_plot(B,.5,.2,.4,.4)
+
+C3
+
+
+
+```
+
+

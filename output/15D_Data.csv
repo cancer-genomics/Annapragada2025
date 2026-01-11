@@ -1,0 +1,97 @@
+"","mix","cell_type","perc"
+"1","Expected Proportions in Admixture","Blood
+B",0.693
+"2","Expected Proportions in Admixture","Blood
+Granulocytes",55.35
+"3","Expected Proportions in Admixture","Blood
+Megakaryocytes",2.034
+"4","Expected Proportions in Admixture","Blood
+Monocytes",9.468
+"5","Expected Proportions in Admixture","Blood
+NK",3.627
+"6","Expected Proportions in Admixture","Blood
+T",19.5
+"7","Expected Proportions in Admixture","Bone
+marrow
+Erythrocyte
+progenitors",0.063
+"8","Expected Proportions in Admixture","Liver
+Endothelium",0.39
+"9","Expected Proportions in Admixture","Liver
+Hepatocytes",7.005
+"10","Expected Proportions in Admixture","Liver
+Macrophages",0.896
+"11","Expected Proportions in Admixture","Vascular
+Endothelium",0.964
+"12","Buffy Coat","Blood
+B",0.77
+"13","Buffy Coat","Blood
+Granulocytes",61.5
+"14","Buffy Coat","Blood
+Megakaryocytes",2.26
+"15","Buffy Coat","Blood
+Monocytes",10.52
+"16","Buffy Coat","Blood
+NK",4.03
+"17","Buffy Coat","Blood
+T",20.91
+"18","Buffy Coat","Bone
+marrow
+Erythrocyte
+progenitors",0
+"19","Buffy Coat","Liver
+Endothelium",0
+"20","Buffy Coat","Liver
+Hepatocytes",0
+"21","Buffy Coat","Liver
+Macrophages",0
+"22","Buffy Coat","Vascular
+Endothelium",0
+"23","90:10 Buffy Coat:Liver Admixture","Blood
+B",1.15
+"24","90:10 Buffy Coat:Liver Admixture","Blood
+Granulocytes",58.55
+"25","90:10 Buffy Coat:Liver Admixture","Blood
+Megakaryocytes",0
+"26","90:10 Buffy Coat:Liver Admixture","Blood
+Monocytes",7.06
+"27","90:10 Buffy Coat:Liver Admixture","Blood
+NK",3.85
+"28","90:10 Buffy Coat:Liver Admixture","Blood
+T",20.92
+"29","90:10 Buffy Coat:Liver Admixture","Bone
+marrow
+Erythrocyte
+progenitors",0.02
+"30","90:10 Buffy Coat:Liver Admixture","Liver
+Endothelium",1.27
+"31","90:10 Buffy Coat:Liver Admixture","Liver
+Hepatocytes",5.2
+"32","90:10 Buffy Coat:Liver Admixture","Liver
+Macrophages",1.96
+"33","90:10 Buffy Coat:Liver Admixture","Vascular
+Endothelium",0
+"34","Bulk Liver Tissue","Blood
+B",0
+"35","Bulk Liver Tissue","Blood
+Granulocytes",0
+"36","Bulk Liver Tissue","Blood
+Megakaryocytes",0
+"37","Bulk Liver Tissue","Blood
+Monocytes",0
+"38","Bulk Liver Tissue","Blood
+NK",0
+"39","Bulk Liver Tissue","Blood
+T",6.81
+"40","Bulk Liver Tissue","Bone
+marrow
+Erythrocyte
+progenitors",0.63
+"41","Bulk Liver Tissue","Liver
+Endothelium",3.9
+"42","Bulk Liver Tissue","Liver
+Hepatocytes",70.05
+"43","Bulk Liver Tissue","Liver
+Macrophages",8.96
+"44","Bulk Liver Tissue","Vascular
+Endothelium",9.64

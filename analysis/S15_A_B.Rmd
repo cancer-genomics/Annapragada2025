@@ -1,0 +1,91 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+Code from Hope
+
+```{r pca, echo=FALSE, fig.width=8, fig.height=6, dev=c("png", "pdf")}
+library(data.table)
+library(ggplot2)
+library(tidyverse)
+library(ggrepel)
+
+pca_df<-fread(here("data","MethID_Map_PCA.csv"))
+
+pca_df<-pca_df %>% select(-V1)
+pc1_prop<-unique(pca_df$pc1_prop)
+pc2_prop<-unique(pca_df$pc2_prop)
+
+pca_df<-pca_df %>% select(-pc1_prop,-pc2_prop)
+# The rest of your plotting code should now work as expected,
+# creating a label for each unique group name (e.g., "Blood-B", "Liver-Hepatocytes", "Lung-Alveolar-Endothel").
+label_points <- pca_df %>%
+  group_by(Sample) %>%
+  slice(1) %>%
+  ungroup()
+
+#Save pca_df to a file 
+#fwrite(pca_df, "/users/cnorton/7cnorton/meth_atlas_04_2025/deconv_results/liver_sidequest/PCA_df.tsv", sep = "\t", row.names = TRUE, col.names = TRUE, quote = FALSE)
+
+
+# Base scatter plot
+p <- ggplot(pca_df, aes(x = PC1, y = PC2, color = Sample)) +
+  geom_point(size = 3) +
+  geom_text_repel(
+    data = label_points,
+    aes(label = Sample),
+    color = "black",
+    size = 4,
+    max.overlaps = Inf
+  ) +
+  theme_classic() +
+  labs(title = "PCA of Methylation Atlas", x = paste0("PC1: ", pc1_prop, "%"), y = paste0("PC2: ", pc2_prop, "%"))
+
+p
+
+```
+
+
+```{r conf, echo=FALSE, fig.width=6, fig.height=2, dev=c("png", "pdf")}
+
+s<-fread(here("data","methIDmap_endothelium.csv")) %>% select(-V1)
+s$`Liver Endothelium`<-factor(s$`Liver Endothelium`,levels=c("Unmethylated","Methylated"))
+s$`Vascular Endothelium`<-factor(s$`Vascular Endothelium`,levels=c("Unmethylated","Methylated"))
+
+ggplot(s,aes(x=`Liver Endothelium`,y=`Vascular Endothelium`,fill=CpG_Sites))+geom_tile()+theme_classic()+scale_fill_gradient2(low="white",high="indianred")+geom_label(aes(label=paste0(round(CpG,2),"%")))+labs(fill="CpGs")
+
+
+
+
+
+
+```
+
+
+
+

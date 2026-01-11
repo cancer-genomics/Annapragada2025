@@ -1,0 +1,124 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+library(effsize)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+Atlas panel
+
+```{r reads, echo=FALSE, fig.width=15, fig.height=5, dev=c("png", "pdf")}
+
+#This is the top panel
+m<-fread(here("data","uniquecpg_perbin.csv")) 
+
+m2<-m %>% group_by(set,chr,bin) %>% filter(set=="Uniquely Unmethylated") %>% summarize(cell_type=n(),cpg=sum(n))
+
+m2<-m2 %>% mutate(chr=if_else(chr=="chr15","15",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr16","16",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr17","17",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr18","18",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr19","19",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr20","20",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr21","21",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr22","22",chr))
+
+m2$chr<-factor(m2$chr,levels=c(paste0("chr",1:14),"15","16","17","18","19","20","21","22"))
+
+
+p1<-ggplot(m2,aes(x=bin,y=cpg,color=cell_type)) + geom_line()+ facet_grid(.~chr,space="free",scales="free_x")+theme_classic()+
+  theme(legend.position="top",axis.text.x=element_blank(),strip.background=element_blank(),axis.ticks.x=element_blank())+
+  labs(color="Atlas cell types (of 11) with uniquely unmethylated CpG in bin")+xlab(NULL)+ylab("Uniquely\nUnmethylated\nCpGs")+scale_color_distiller(palette = "GnBu",direction=1)#+scale_color_viridis_c(direction=-1,option="D")
+
+####
+d2<- fread(here("data","bin_effectsize.csv"))
+
+d2<-d2 %>% mutate(chr=if_else(chr=="chr15","15",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr16","16",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr17","17",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr18","18",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr19","19",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr20","20",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr21","21",chr))
+d2<-d2 %>% mutate(chr=if_else(chr=="chr22","22",chr))
+
+d2<-d2 %>% filter(chr!="chrX")
+d2$chr<-factor(d2$chr,levels=c(paste0("chr",1:14),"15","16","17","18","19","20","21","22"))
+
+
+
+d2$bin<-as.numeric(d2$bin)
+
+m3<-inner_join(d2,m2,by=c("bin","chr"))
+
+m3<-m3 %>% group_by(chr,training) %>% summarize(r=cor(cpg,d2,method="spearman"))
+
+d2<-inner_join(d2,m3,by=c("training","chr"))
+
+p2<-ggplot(d2,aes(x=bin,y=d2,color=r)) + geom_line()+ facet_grid(training~chr,space="free_x",scales="free_x")+theme_classic()+
+  theme(legend.position="bottom",axis.text.x=element_blank(),strip.background=element_blank(),strip.text.x=element_blank(),axis.ticks.x=element_blank())+
+  labs(color="Spearman Correlation, Effect Size vs. Uniquely Unmethylated CpGs")+xlab("5Mb Genomic Bins")+ylab("Effect Size\nShort:Long Ratios\nLCr vs. Healthy")+scale_color_viridis_c(option="A",direction=1)
+  #scale_color_distiller(palette = "Spectral",direction=1)
+
+
+
+plot_grid(p1+theme(legend.position="top"),p2+theme(legend.position="bottom"),align="hv",axis="lr",ncol=1,rel_heights = c(1,1.5))
+
+```
+
+
+```{r reads2, echo=FALSE, fig.width=15, fig.height=9, dev=c("png", "pdf")}
+
+
+######
+m2<-m %>% group_by(set,chr,bin,cell_type) %>% filter(set=="Uniquely Unmethylated") %>% summarize(cpg=sum(n))
+
+m2<-m2 %>% mutate(chr=if_else(chr=="chr15","15",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr16","16",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr17","17",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr18","18",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr19","19",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr20","20",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr21","21",chr))
+m2<-m2 %>% mutate(chr=if_else(chr=="chr22","22",chr))
+
+m2$chr<-factor(m2$chr,levels=c(paste0("chr",1:14),"15","16","17","18","19","20","21","22"))
+
+m2<-m2 %>% mutate(cell_type=gsub("-","\n",cell_type))
+p1a<-ggplot(m2 %>% filter(cell_type %in% c("Blood\nMonocytes","Liver\nEndothelium","Liver\nHepatocytes","Liver\nMacrophages")),aes(x=bin,y=cpg)) + geom_line()+ facet_grid(cell_type~chr,space="free_x",scales="free")+theme_classic()+
+  theme(legend.position="top",axis.text.x=element_blank(),strip.background=element_blank(),axis.ticks.x=element_blank(),strip.text.x=element_blank())+
+  xlab(NULL)+ylab("Uniquely\nUnmethylated\nCpGs")
+
+
+
+
+#####
+plot_grid(p1+theme(legend.position="top"),p1a+theme(legend.position="none"),p2+theme(legend.position="bottom"),align="hv",axis="lr",ncol=1,rel_heights = c(1,2,1.5))
+
+```
+

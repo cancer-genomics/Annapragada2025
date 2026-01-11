@@ -1,0 +1,685 @@
+"","bin","arm","sd","dx","f"
+"1","1","1p",NA,"fake",FALSE
+"2","2","1p",NA,"fake",FALSE
+"3","3","1p",0.0452487123818188,"Diabetes",TRUE
+"4","4","1p",0.0478138392073419,"Diabetes",TRUE
+"5","4","1p",0.07882788081057,"Mild Chronic Liver Disease",TRUE
+"6","4","1p",0.0233474822748275,"Dementia",TRUE
+"7","4","1p",0.0474892545731744,"Heart insufficient",TRUE
+"8","4","1p",0.0585427415051906,"Connective tissue disease",TRUE
+"9","4","1p",0.0297212286664945,"Cerebral vascular disease",TRUE
+"10","4","1p",0.0419494849655545,"Prior Cancer",TRUE
+"11","4","1p",0.0474538567715084,"CV disease",TRUE
+"12","5","1p",NA,"fake",FALSE
+"13","6","1p",NA,"fake",FALSE
+"14","7","1p",0.0458433581298727,"Diabetes",TRUE
+"15","7","1p",0.0218832110566868,"Dementia",TRUE
+"16","7","1p",0.0454032771037846,"Heart insufficient",TRUE
+"17","7","1p",0.0292388307594331,"Cerebral vascular disease",TRUE
+"18","7","1p",0.0401961213188227,"Prior Cancer",TRUE
+"19","7","1p",0.0464908982887417,"CV disease",TRUE
+"20","8","1p",NA,"fake",FALSE
+"21","9","1p",NA,"fake",FALSE
+"22","10","1p",NA,"fake",FALSE
+"23","11","1p",NA,"fake",FALSE
+"24","12","1p",0.0230187291151942,"Dementia",TRUE
+"25","13","1p",NA,"fake",FALSE
+"26","14","1p",NA,"fake",FALSE
+"27","15","1p",0.0774088136734389,"Mild Chronic Liver Disease",TRUE
+"28","15","1p",0.0292521572053457,"Cerebral vascular disease",TRUE
+"29","16","1p",0.0785748608205327,"Mild Chronic Liver Disease",TRUE
+"30","17","1p",0.0217267918608098,"Dementia",TRUE
+"31","18","1p",0.0774296975835568,"Mild Chronic Liver Disease",TRUE
+"32","19","1p",NA,"fake",FALSE
+"33","20","1p",NA,"fake",FALSE
+"34","21","1p",0.0223880080739964,"Dementia",TRUE
+"35","21","1p",0.0456537742756566,"Heart insufficient",TRUE
+"36","21","1p",0.0399990927209201,"Prior Cancer",TRUE
+"37","22","1p",0.0214935746103519,"Dementia",TRUE
+"38","23","1q",0.0458588529497733,"Diabetes",TRUE
+"39","23","1q",0.0456881521443936,"Heart insufficient",TRUE
+"40","23","1q",0.0405053347313743,"Prior Cancer",TRUE
+"41","23","1q",0.0457298989992329,"CV disease",TRUE
+"42","24","1q",0.0454646316497954,"Diabetes",TRUE
+"43","24","1q",0.02354069879822,"Dementia",TRUE
+"44","24","1q",0.0469873472260157,"Heart insufficient",TRUE
+"45","24","1q",0.0305269614456747,"Cerebral vascular disease",TRUE
+"46","24","1q",0.041455621856037,"Prior Cancer",TRUE
+"47","24","1q",0.0469425938162967,"CV disease",TRUE
+"48","25","1q",0.0455753686045776,"Heart insufficient",TRUE
+"49","26","1q",NA,"fake",FALSE
+"50","27","1q",0.0450579288174805,"Diabetes",TRUE
+"51","27","1q",0.0577205237415841,"Connective tissue disease",TRUE
+"52","27","1q",0.0457079929062329,"CV disease",TRUE
+"53","28","1q",NA,"fake",FALSE
+"54","29","1q",0.0574068145621135,"Connective tissue disease",TRUE
+"55","30","1q",0.0786802355906377,"Mild Chronic Liver Disease",TRUE
+"56","31","1q",NA,"fake",FALSE
+"57","32","1q",0.0457891902878538,"Heart insufficient",TRUE
+"58","32","1q",0.0573549352401042,"Connective tissue disease",TRUE
+"59","33","1q",0.0223220206640923,"Dementia",TRUE
+"60","34","1q",0.0217497418457446,"Dementia",TRUE
+"61","34","1q",0.0456375503563925,"CV disease",TRUE
+"62","35","1q",NA,"fake",FALSE
+"63","36","1q",NA,"fake",FALSE
+"64","37","1q",NA,"fake",FALSE
+"65","38","1q",0.0451653723841854,"Diabetes",TRUE
+"66","38","1q",0.0289575218696845,"Cerebral vascular disease",TRUE
+"67","38","1q",0.0400800421234083,"Prior Cancer",TRUE
+"68","38","1q",0.0457547178290299,"CV disease",TRUE
+"69","39","1q",NA,"fake",FALSE
+"70","40","1q",NA,"fake",FALSE
+"71","41","1q",0.0793353554722202,"Mild Chronic Liver Disease",TRUE
+"72","42","2p",NA,"fake",FALSE
+"73","43","2p",NA,"fake",FALSE
+"74","44","2p",NA,"fake",FALSE
+"75","45","2p",0.0294118638972821,"Cerebral vascular disease",TRUE
+"76","46","2p",0.0400727669789914,"Prior Cancer",TRUE
+"77","47","2p",0.0778355839312099,"Mild Chronic Liver Disease",TRUE
+"78","48","2p",0.0213555514663864,"Dementia",TRUE
+"79","48","2p",0.0455693126041529,"Heart insufficient",TRUE
+"80","48","2p",0.057395148644418,"Connective tissue disease",TRUE
+"81","48","2p",0.0398444733891731,"Prior Cancer",TRUE
+"82","48","2p",0.045853529221182,"CV disease",TRUE
+"83","49","2p",0.0213472959832262,"Dementia",TRUE
+"84","50","2p",NA,"fake",FALSE
+"85","51","2p",0.0780565252884513,"Mild Chronic Liver Disease",TRUE
+"86","51","2p",0.0292273944257562,"Cerebral vascular disease",TRUE
+"87","52","2p",0.078444204736345,"Mild Chronic Liver Disease",TRUE
+"88","53","2p",0.0452664026087515,"Diabetes",TRUE
+"89","53","2p",0.0457014657869716,"Heart insufficient",TRUE
+"90","53","2p",0.0583494307096483,"Connective tissue disease",TRUE
+"91","53","2p",0.0289523617614476,"Cerebral vascular disease",TRUE
+"92","53","2p",0.0398123644954964,"Prior Cancer",TRUE
+"93","53","2p",0.0467778722642276,"CV disease",TRUE
+"94","54","2p",NA,"fake",FALSE
+"95","55","2p",0.0455453135140714,"Diabetes",TRUE
+"96","55","2p",0.0214591227079132,"Dementia",TRUE
+"97","55","2p",0.0455780651383248,"Heart insufficient",TRUE
+"98","55","2p",0.0457184729294834,"CV disease",TRUE
+"99","56","2p",NA,"fake",FALSE
+"100","57","2p",NA,"fake",FALSE
+"101","58","2q",NA,"fake",FALSE
+"102","59","2q",NA,"fake",FALSE
+"103","60","2q",NA,"fake",FALSE
+"104","61","2q",NA,"fake",FALSE
+"105","62","2q",NA,"fake",FALSE
+"106","63","2q",NA,"fake",FALSE
+"107","64","2q",NA,"fake",FALSE
+"108","65","2q",0.0454393556214662,"Heart insufficient",TRUE
+"109","65","2q",0.0571844100983612,"Connective tissue disease",TRUE
+"110","66","2q",NA,"fake",FALSE
+"111","67","2q",NA,"fake",FALSE
+"112","68","2q",NA,"fake",FALSE
+"113","69","2q",NA,"fake",FALSE
+"114","70","2q",0.0773924170500096,"Mild Chronic Liver Disease",TRUE
+"115","71","2q",NA,"fake",FALSE
+"116","72","2q",NA,"fake",FALSE
+"117","73","2q",NA,"fake",FALSE
+"118","74","2q",0.0775971749493075,"Mild Chronic Liver Disease",TRUE
+"119","74","2q",0.0453629433555602,"Heart insufficient",TRUE
+"120","75","2q",NA,"fake",FALSE
+"121","76","2q",0.0779786838176736,"Mild Chronic Liver Disease",TRUE
+"122","76","2q",0.0215382145906534,"Dementia",TRUE
+"123","76","2q",0.0456276852380251,"Heart insufficient",TRUE
+"124","76","2q",0.0578536147442743,"Connective tissue disease",TRUE
+"125","76","2q",0.029329841016282,"Cerebral vascular disease",TRUE
+"126","76","2q",0.0458594583415941,"CV disease",TRUE
+"127","77","2q",NA,"fake",FALSE
+"128","78","2q",NA,"fake",FALSE
+"129","79","2q",0.0217384296188803,"Dementia",TRUE
+"130","80","2q",NA,"fake",FALSE
+"131","81","2q",NA,"fake",FALSE
+"132","82","2q",0.0455942543386939,"Heart insufficient",TRUE
+"133","83","2q",NA,"fake",FALSE
+"134","84","3p",NA,"fake",FALSE
+"135","85","3p",NA,"fake",FALSE
+"136","86","3p",0.0579605369846618,"Connective tissue disease",TRUE
+"137","87","3p",NA,"fake",FALSE
+"138","88","3p",0.0454196735563644,"Heart insufficient",TRUE
+"139","89","3p",0.0214410971715379,"Dementia",TRUE
+"140","89","3p",0.0289830500386123,"Cerebral vascular disease",TRUE
+"141","89","3p",0.0399671065510119,"Prior Cancer",TRUE
+"142","90","3p",0.0229580981160544,"Dementia",TRUE
+"143","91","3p",NA,"fake",FALSE
+"144","92","3p",0.0462733876631007,"Diabetes",TRUE
+"145","92","3p",0.0461251690189773,"Heart insufficient",TRUE
+"146","92","3p",0.0413886309778491,"Prior Cancer",TRUE
+"147","92","3p",0.0466653329753398,"CV disease",TRUE
+"148","93","3p",NA,"fake",FALSE
+"149","94","3p",NA,"fake",FALSE
+"150","95","3p",NA,"fake",FALSE
+"151","96","3p",NA,"fake",FALSE
+"152","97","3p",0.0774742096100404,"Mild Chronic Liver Disease",TRUE
+"153","97","3p",0.057452617555445,"Connective tissue disease",TRUE
+"154","98","3p",0.0296298894032741,"Cerebral vascular disease",TRUE
+"155","99","3p",NA,"fake",FALSE
+"156","100","3p",NA,"fake",FALSE
+"157","101","3q",0.0292549860484271,"Cerebral vascular disease",TRUE
+"158","102","3q",NA,"fake",FALSE
+"159","103","3q",0.0292653746541558,"Cerebral vascular disease",TRUE
+"160","104","3q",0.0573074445630113,"Connective tissue disease",TRUE
+"161","105","3q",NA,"fake",FALSE
+"162","106","3q",0.0449824615754757,"Diabetes",TRUE
+"163","107","3q",0.0453108039169168,"Diabetes",TRUE
+"164","107","3q",0.0212674311669819,"Dementia",TRUE
+"165","107","3q",0.0399014689070843,"Prior Cancer",TRUE
+"166","108","3q",NA,"fake",FALSE
+"167","109","3q",NA,"fake",FALSE
+"168","110","3q",NA,"fake",FALSE
+"169","111","3q",0.0789437687166415,"Mild Chronic Liver Disease",TRUE
+"170","111","3q",0.0214495504231676,"Dementia",TRUE
+"171","112","3q",NA,"fake",FALSE
+"172","113","3q",0.0795299850333518,"Mild Chronic Liver Disease",TRUE
+"173","114","3q",NA,"fake",FALSE
+"174","115","3q",NA,"fake",FALSE
+"175","116","3q",NA,"fake",FALSE
+"176","117","3q",0.0574278849808253,"Connective tissue disease",TRUE
+"177","118","3q",NA,"fake",FALSE
+"178","119","3q",0.0788126668305282,"Mild Chronic Liver Disease",TRUE
+"179","119","3q",0.0591029400747108,"Connective tissue disease",TRUE
+"180","119","3q",0.0457967508261451,"CV disease",TRUE
+"181","120","3q",NA,"fake",FALSE
+"182","121","4p",NA,"fake",FALSE
+"183","122","4p",NA,"fake",FALSE
+"184","123","4p",NA,"fake",FALSE
+"185","124","4p",0.0289327331876674,"Cerebral vascular disease",TRUE
+"186","125","4p",NA,"fake",FALSE
+"187","126","4p",NA,"fake",FALSE
+"188","127","4p",0.0778999708686685,"Mild Chronic Liver Disease",TRUE
+"189","127","4p",0.046415095129479,"Heart insufficient",TRUE
+"190","127","4p",0.0577588238264185,"Connective tissue disease",TRUE
+"191","127","4p",0.045866559528695,"CV disease",TRUE
+"192","128","4p",NA,"fake",FALSE
+"193","129","4q",NA,"fake",FALSE
+"194","130","4q",NA,"fake",FALSE
+"195","131","4q",NA,"fake",FALSE
+"196","132","4q",0.0573751453158135,"Connective tissue disease",TRUE
+"197","133","4q",0.0775841444943999,"Mild Chronic Liver Disease",TRUE
+"198","133","4q",0.0214025967205848,"Dementia",TRUE
+"199","134","4q",0.0215189710106164,"Dementia",TRUE
+"200","135","4q",NA,"fake",FALSE
+"201","136","4q",NA,"fake",FALSE
+"202","137","4q",NA,"fake",FALSE
+"203","138","4q",0.0577397470203546,"Connective tissue disease",TRUE
+"204","139","4q",NA,"fake",FALSE
+"205","140","4q",NA,"fake",FALSE
+"206","141","4q",NA,"fake",FALSE
+"207","142","4q",0.0214699029140215,"Dementia",TRUE
+"208","143","4q",NA,"fake",FALSE
+"209","144","4q",NA,"fake",FALSE
+"210","145","4q",NA,"fake",FALSE
+"211","146","4q",0.0783359476189582,"Mild Chronic Liver Disease",TRUE
+"212","146","4q",0.0453936427828432,"Heart insufficient",TRUE
+"213","146","4q",0.0571307334009931,"Connective tissue disease",TRUE
+"214","146","4q",0.0290380947331598,"Cerebral vascular disease",TRUE
+"215","147","4q",NA,"fake",FALSE
+"216","148","4q",NA,"fake",FALSE
+"217","149","4q",0.0788132904051753,"Mild Chronic Liver Disease",TRUE
+"218","150","4q",NA,"fake",FALSE
+"219","151","4q",NA,"fake",FALSE
+"220","152","4q",NA,"fake",FALSE
+"221","153","4q",NA,"fake",FALSE
+"222","154","4q",NA,"fake",FALSE
+"223","155","4q",NA,"fake",FALSE
+"224","156","5p",NA,"fake",FALSE
+"225","157","5p",NA,"fake",FALSE
+"226","158","5p",NA,"fake",FALSE
+"227","159","5p",NA,"fake",FALSE
+"228","160","5p",NA,"fake",FALSE
+"229","161","5p",NA,"fake",FALSE
+"230","162","5p",NA,"fake",FALSE
+"231","163","5p",0.0776448283785713,"Mild Chronic Liver Disease",TRUE
+"232","163","5p",0.0581415190258986,"Connective tissue disease",TRUE
+"233","164","5q",NA,"fake",FALSE
+"234","165","5q",0.0224320680392808,"Dementia",TRUE
+"235","166","5q",NA,"fake",FALSE
+"236","167","5q",0.0212343745517897,"Dementia",TRUE
+"237","168","5q",0.029266680498254,"Cerebral vascular disease",TRUE
+"238","169","5q",NA,"fake",FALSE
+"239","170","5q",0.0782668397960474,"Mild Chronic Liver Disease",TRUE
+"240","171","5q",0.0572009835319838,"Connective tissue disease",TRUE
+"241","172","5q",NA,"fake",FALSE
+"242","173","5q",NA,"fake",FALSE
+"243","174","5q",NA,"fake",FALSE
+"244","175","5q",0.0777079526411469,"Mild Chronic Liver Disease",TRUE
+"245","175","5q",0.0578014871473857,"Connective tissue disease",TRUE
+"246","176","5q",NA,"fake",FALSE
+"247","177","5q",NA,"fake",FALSE
+"248","178","5q",0.0453694946864446,"Diabetes",TRUE
+"249","179","5q",NA,"fake",FALSE
+"250","180","5q",0.0289370141462884,"Cerebral vascular disease",TRUE
+"251","181","5q",0.0571361731946303,"Connective tissue disease",TRUE
+"252","182","5q",NA,"fake",FALSE
+"253","183","5q",NA,"fake",FALSE
+"254","184","5q",NA,"fake",FALSE
+"255","185","5q",NA,"fake",FALSE
+"256","186","5q",NA,"fake",FALSE
+"257","187","5q",NA,"fake",FALSE
+"258","188","6p",NA,"fake",FALSE
+"259","189","6p",0.0453653729455561,"Heart insufficient",TRUE
+"260","189","6p",0.040437436315158,"Prior Cancer",TRUE
+"261","190","6p",0.0774754844164719,"Mild Chronic Liver Disease",TRUE
+"262","190","6p",0.0454381345226487,"Heart insufficient",TRUE
+"263","191","6p",0.0217670869622714,"Dementia",TRUE
+"264","192","6p",0.0235796630488695,"Dementia",TRUE
+"265","192","6p",0.0457397561223922,"Heart insufficient",TRUE
+"266","192","6p",0.057515760459774,"Connective tissue disease",TRUE
+"267","192","6p",0.0293739070710648,"Cerebral vascular disease",TRUE
+"268","192","6p",0.0459288096860201,"CV disease",TRUE
+"269","193","6p",0.0464486669791644,"Diabetes",TRUE
+"270","193","6p",0.0456862982492354,"Heart insufficient",TRUE
+"271","193","6p",0.0572654997190791,"Connective tissue disease",TRUE
+"272","193","6p",0.0299169003375067,"Cerebral vascular disease",TRUE
+"273","193","6p",0.0420239764847465,"Prior Cancer",TRUE
+"274","193","6p",0.0467239803896424,"CV disease",TRUE
+"275","194","6p",0.0462927943799526,"Diabetes",TRUE
+"276","194","6p",0.0456809628747443,"Heart insufficient",TRUE
+"277","194","6p",0.0459750560422787,"CV disease",TRUE
+"278","195","6p",NA,"fake",FALSE
+"279","196","6p",NA,"fake",FALSE
+"280","197","6p",NA,"fake",FALSE
+"281","198","6q",NA,"fake",FALSE
+"282","199","6q",NA,"fake",FALSE
+"283","200","6q",0.0775926328569734,"Mild Chronic Liver Disease",TRUE
+"284","201","6q",NA,"fake",FALSE
+"285","202","6q",NA,"fake",FALSE
+"286","203","6q",0.077640924653121,"Mild Chronic Liver Disease",TRUE
+"287","204","6q",NA,"fake",FALSE
+"288","205","6q",NA,"fake",FALSE
+"289","206","6q",NA,"fake",FALSE
+"290","207","6q",NA,"fake",FALSE
+"291","208","6q",NA,"fake",FALSE
+"292","209","6q",NA,"fake",FALSE
+"293","210","6q",0.0289447537542786,"Cerebral vascular disease",TRUE
+"294","211","6q",NA,"fake",FALSE
+"295","212","6q",0.0456894250100871,"Heart insufficient",TRUE
+"296","212","6q",0.0458998348935158,"CV disease",TRUE
+"297","213","6q",NA,"fake",FALSE
+"298","214","6q",0.0775051217774588,"Mild Chronic Liver Disease",TRUE
+"299","214","6q",0.0574770634704946,"Connective tissue disease",TRUE
+"300","215","6q",NA,"fake",FALSE
+"301","216","6q",NA,"fake",FALSE
+"302","217","6q",NA,"fake",FALSE
+"303","218","6q",NA,"fake",FALSE
+"304","219","7p",NA,"fake",FALSE
+"305","220","7p",NA,"fake",FALSE
+"306","221","7p",NA,"fake",FALSE
+"307","222","7p",NA,"fake",FALSE
+"308","223","7p",NA,"fake",FALSE
+"309","224","7p",NA,"fake",FALSE
+"310","225","7p",0.021809612384479,"Dementia",TRUE
+"311","225","7p",0.045651554894557,"Heart insufficient",TRUE
+"312","225","7p",0.0575402278359161,"Connective tissue disease",TRUE
+"313","226","7p",NA,"fake",FALSE
+"314","227","7p",NA,"fake",FALSE
+"315","228","7p",0.0290648206192632,"Cerebral vascular disease",TRUE
+"316","229","7q",NA,"fake",FALSE
+"317","230","7q",NA,"fake",FALSE
+"318","231","7q",NA,"fake",FALSE
+"319","232","7q",NA,"fake",FALSE
+"320","233","7q",0.05740034990333,"Connective tissue disease",TRUE
+"321","234","7q",NA,"fake",FALSE
+"322","235","7q",NA,"fake",FALSE
+"323","236","7q",0.0572563842703595,"Connective tissue disease",TRUE
+"324","236","7q",0.0291496226177299,"Cerebral vascular disease",TRUE
+"325","237","7q",0.0778580208962319,"Mild Chronic Liver Disease",TRUE
+"326","237","7q",0.0574642256554745,"Connective tissue disease",TRUE
+"327","238","7q",0.0782106954161862,"Mild Chronic Liver Disease",TRUE
+"328","239","7q",NA,"fake",FALSE
+"329","240","7q",NA,"fake",FALSE
+"330","241","7q",NA,"fake",FALSE
+"331","242","7q",0.0218068540864608,"Dementia",TRUE
+"332","243","7q",NA,"fake",FALSE
+"333","244","7q",NA,"fake",FALSE
+"334","245","7q",NA,"fake",FALSE
+"335","246","8p",NA,"fake",FALSE
+"336","247","8p",NA,"fake",FALSE
+"337","248","8p",NA,"fake",FALSE
+"338","249","8p",0.0213430172722758,"Dementia",TRUE
+"339","249","8p",0.0571135151551722,"Connective tissue disease",TRUE
+"340","250","8p",NA,"fake",FALSE
+"341","251","8p",NA,"fake",FALSE
+"342","252","8q",NA,"fake",FALSE
+"343","253","8q",NA,"fake",FALSE
+"344","254","8q",NA,"fake",FALSE
+"345","255","8q",NA,"fake",FALSE
+"346","256","8q",NA,"fake",FALSE
+"347","257","8q",NA,"fake",FALSE
+"348","258","8q",NA,"fake",FALSE
+"349","259","8q",NA,"fake",FALSE
+"350","260","8q",NA,"fake",FALSE
+"351","261","8q",0.0776453647455589,"Mild Chronic Liver Disease",TRUE
+"352","262","8q",0.0778553354519247,"Mild Chronic Liver Disease",TRUE
+"353","263","8q",0.0223707403604221,"Dementia",TRUE
+"354","264","8q",NA,"fake",FALSE
+"355","265","8q",0.0778151633440844,"Mild Chronic Liver Disease",TRUE
+"356","266","8q",NA,"fake",FALSE
+"357","267","8q",NA,"fake",FALSE
+"358","268","8q",0.0455912930991174,"Heart insufficient",TRUE
+"359","269","8q",NA,"fake",FALSE
+"360","270","8q",NA,"fake",FALSE
+"361","271","9p",NA,"fake",FALSE
+"362","272","9p",NA,"fake",FALSE
+"363","273","9p",NA,"fake",FALSE
+"364","274","9p",NA,"fake",FALSE
+"365","275","9p",NA,"fake",FALSE
+"366","276","9p",NA,"fake",FALSE
+"367","277","9q",NA,"fake",FALSE
+"368","278","9q",NA,"fake",FALSE
+"369","279","9q",NA,"fake",FALSE
+"370","280","9q",0.0224593302273103,"Dementia",TRUE
+"371","281","9q",0.0214161024883155,"Dementia",TRUE
+"372","282","9q",NA,"fake",FALSE
+"373","283","9q",NA,"fake",FALSE
+"374","284","9q",NA,"fake",FALSE
+"375","285","9q",NA,"fake",FALSE
+"376","286","9q",NA,"fake",FALSE
+"377","287","9q",0.0453550986326266,"Diabetes",TRUE
+"378","287","9q",0.0459791421651598,"Heart insufficient",TRUE
+"379","287","9q",0.0399334647488095,"Prior Cancer",TRUE
+"380","287","9q",0.0459283821545366,"CV disease",TRUE
+"381","288","9q",0.047136404843975,"Diabetes",TRUE
+"382","288","9q",0.0291083797427621,"Cerebral vascular disease",TRUE
+"383","288","9q",0.0402601922577677,"Prior Cancer",TRUE
+"384","288","9q",0.0460927766403068,"CV disease",TRUE
+"385","289","9q",NA,"fake",FALSE
+"386","290","10p",NA,"fake",FALSE
+"387","291","10p",NA,"fake",FALSE
+"388","292","10p",NA,"fake",FALSE
+"389","293","10p",NA,"fake",FALSE
+"390","294","10p",0.0216074578748659,"Dementia",TRUE
+"391","295","10p",0.0292853811018728,"Cerebral vascular disease",TRUE
+"392","296","10q",NA,"fake",FALSE
+"393","297","10q",NA,"fake",FALSE
+"394","298","10q",NA,"fake",FALSE
+"395","299","10q",0.045146305120728,"Diabetes",TRUE
+"396","299","10q",0.0291637290954061,"Cerebral vascular disease",TRUE
+"397","299","10q",0.0399148963123459,"Prior Cancer",TRUE
+"398","299","10q",0.045828394294152,"CV disease",TRUE
+"399","300","10q",0.04571134214315,"Diabetes",TRUE
+"400","300","10q",0.0576730855787731,"Connective tissue disease",TRUE
+"401","300","10q",0.0397927073230293,"Prior Cancer",TRUE
+"402","300","10q",0.0459846722182042,"CV disease",TRUE
+"403","301","10q",0.0779586208003965,"Mild Chronic Liver Disease",TRUE
+"404","302","10q",NA,"fake",FALSE
+"405","303","10q",0.0782189844999021,"Mild Chronic Liver Disease",TRUE
+"406","303","10q",0.0572398029347123,"Connective tissue disease",TRUE
+"407","304","10q",0.0450032657855449,"Diabetes",TRUE
+"408","305","10q",NA,"fake",FALSE
+"409","306","10q",NA,"fake",FALSE
+"410","307","10q",NA,"fake",FALSE
+"411","308","10q",NA,"fake",FALSE
+"412","309","10q",NA,"fake",FALSE
+"413","310","10q",NA,"fake",FALSE
+"414","311","10q",NA,"fake",FALSE
+"415","312","11p",NA,"fake",FALSE
+"416","313","11p",NA,"fake",FALSE
+"417","314","11p",NA,"fake",FALSE
+"418","315","11p",NA,"fake",FALSE
+"419","316","11p",NA,"fake",FALSE
+"420","317","11p",NA,"fake",FALSE
+"421","318","11p",0.0290806547068576,"Cerebral vascular disease",TRUE
+"422","319","11p",NA,"fake",FALSE
+"423","320","11p",NA,"fake",FALSE
+"424","321","11q",0.0785253486771834,"Mild Chronic Liver Disease",TRUE
+"425","321","11q",0.0291249483641484,"Cerebral vascular disease",TRUE
+"426","322","11q",0.0465313736071081,"Diabetes",TRUE
+"427","322","11q",0.0464387133715516,"Heart insufficient",TRUE
+"428","322","11q",0.0290675484524301,"Cerebral vascular disease",TRUE
+"429","322","11q",0.0406228180432623,"Prior Cancer",TRUE
+"430","322","11q",0.0460939599103405,"CV disease",TRUE
+"431","323","11q",0.0474486810991677,"Diabetes",TRUE
+"432","323","11q",0.0221743522630435,"Dementia",TRUE
+"433","323","11q",0.0453532104949684,"Heart insufficient",TRUE
+"434","323","11q",0.041012831929493,"Prior Cancer",TRUE
+"435","323","11q",0.0466593625137829,"CV disease",TRUE
+"436","324","11q",0.0464377785287374,"Diabetes",TRUE
+"437","324","11q",0.0407608564561659,"Prior Cancer",TRUE
+"438","324","11q",0.0462140684882564,"CV disease",TRUE
+"439","325","11q",0.0773824366061285,"Mild Chronic Liver Disease",TRUE
+"440","326","11q",NA,"fake",FALSE
+"441","327","11q",NA,"fake",FALSE
+"442","328","11q",NA,"fake",FALSE
+"443","329","11q",0.0780989836826709,"Mild Chronic Liver Disease",TRUE
+"444","330","11q",0.0778039957010962,"Mild Chronic Liver Disease",TRUE
+"445","331","11q",NA,"fake",FALSE
+"446","332","11q",NA,"fake",FALSE
+"447","333","11q",NA,"fake",FALSE
+"448","334","11q",NA,"fake",FALSE
+"449","335","12p",0.0401469121822156,"Prior Cancer",TRUE
+"450","336","12p",0.0784630402348419,"Mild Chronic Liver Disease",TRUE
+"451","336","12p",0.0578223244034738,"Connective tissue disease",TRUE
+"452","337","12p",NA,"fake",FALSE
+"453","338","12p",0.0221595807881937,"Dementia",TRUE
+"454","339","12p",0.0212695579345501,"Dementia",TRUE
+"455","339","12p",0.0465310394001728,"Heart insufficient",TRUE
+"456","339","12p",0.0588071556127585,"Connective tissue disease",TRUE
+"457","339","12p",0.0401053456057728,"Prior Cancer",TRUE
+"458","339","12p",0.0463321785592967,"CV disease",TRUE
+"459","340","12q",NA,"fake",FALSE
+"460","341","12q",0.0453031111492663,"Diabetes",TRUE
+"461","341","12q",0.0457359549119714,"Heart insufficient",TRUE
+"462","341","12q",0.045859492858105,"CV disease",TRUE
+"463","342","12q",0.0405714566736462,"Prior Cancer",TRUE
+"464","343","12q",0.0457630691952643,"Heart insufficient",TRUE
+"465","344","12q",NA,"fake",FALSE
+"466","345","12q",NA,"fake",FALSE
+"467","346","12q",NA,"fake",FALSE
+"468","347","12q",0.0774528825307891,"Mild Chronic Liver Disease",TRUE
+"469","347","12q",0.0455722235891014,"Heart insufficient",TRUE
+"470","348","12q",0.0816497283970408,"Mild Chronic Liver Disease",TRUE
+"471","348","12q",0.0571677933417033,"Connective tissue disease",TRUE
+"472","349","12q",NA,"fake",FALSE
+"473","350","12q",NA,"fake",FALSE
+"474","351","12q",NA,"fake",FALSE
+"475","352","12q",0.0782907335336753,"Mild Chronic Liver Disease",TRUE
+"476","352","12q",0.0572059063958057,"Connective tissue disease",TRUE
+"477","353","12q",NA,"fake",FALSE
+"478","354","12q",0.028922309445268,"Cerebral vascular disease",TRUE
+"479","355","12q",NA,"fake",FALSE
+"480","356","12q",0.0463839760565467,"Diabetes",TRUE
+"481","356","12q",0.0456882957093796,"Heart insufficient",TRUE
+"482","356","12q",0.0573141768782999,"Connective tissue disease",TRUE
+"483","356","12q",0.0305024043307428,"Cerebral vascular disease",TRUE
+"484","356","12q",0.040870384962844,"Prior Cancer",TRUE
+"485","356","12q",0.0469531540644928,"CV disease",TRUE
+"486","357","12q",NA,"fake",FALSE
+"487","358","13q",NA,"fake",FALSE
+"488","359","13q",NA,"fake",FALSE
+"489","360","13q",NA,"fake",FALSE
+"490","361","13q",NA,"fake",FALSE
+"491","362","13q",0.0228825332924969,"Dementia",TRUE
+"492","363","13q",0.0451962395110345,"Diabetes",TRUE
+"493","363","13q",0.0457665703407173,"Heart insufficient",TRUE
+"494","363","13q",0.0398337604712095,"Prior Cancer",TRUE
+"495","363","13q",0.0458708752765093,"CV disease",TRUE
+"496","364","13q",0.0292968512069608,"Cerebral vascular disease",TRUE
+"497","365","13q",0.0572647889963343,"Connective tissue disease",TRUE
+"498","366","13q",NA,"fake",FALSE
+"499","367","13q",0.0779029108272611,"Mild Chronic Liver Disease",TRUE
+"500","368","13q",NA,"fake",FALSE
+"501","369","13q",NA,"fake",FALSE
+"502","370","13q",0.0775338915771777,"Mild Chronic Liver Disease",TRUE
+"503","370","13q",0.0290472811877334,"Cerebral vascular disease",TRUE
+"504","371","13q",NA,"fake",FALSE
+"505","372","13q",0.0778394574076692,"Mild Chronic Liver Disease",TRUE
+"506","372","13q",0.0581087828732273,"Connective tissue disease",TRUE
+"507","373","13q",NA,"fake",FALSE
+"508","374","13q",NA,"fake",FALSE
+"509","375","13q",NA,"fake",FALSE
+"510","376","13q",NA,"fake",FALSE
+"511","377","14q",0.0404672645204747,"Prior Cancer",TRUE
+"512","378","14q",NA,"fake",FALSE
+"513","379","14q",NA,"fake",FALSE
+"514","380","14q",NA,"fake",FALSE
+"515","381","14q",0.0289208400259102,"Cerebral vascular disease",TRUE
+"516","382","14q",NA,"fake",FALSE
+"517","383","14q",NA,"fake",FALSE
+"518","384","14q",NA,"fake",FALSE
+"519","385","14q",NA,"fake",FALSE
+"520","386","14q",0.0454817949088364,"Diabetes",TRUE
+"521","386","14q",0.0454401028972549,"Heart insufficient",TRUE
+"522","386","14q",0.057962706454363,"Connective tissue disease",TRUE
+"523","386","14q",0.0398034701914773,"Prior Cancer",TRUE
+"524","386","14q",0.045855791820363,"CV disease",TRUE
+"525","387","14q",0.0450678438103583,"Diabetes",TRUE
+"526","387","14q",0.0219628193243202,"Dementia",TRUE
+"527","387","14q",0.0399687635364582,"Prior Cancer",TRUE
+"528","388","14q",NA,"fake",FALSE
+"529","389","14q",NA,"fake",FALSE
+"530","390","14q",NA,"fake",FALSE
+"531","391","14q",0.0450854099311953,"Diabetes",TRUE
+"532","391","14q",0.0455888118022761,"Heart insufficient",TRUE
+"533","391","14q",0.040372982666035,"Prior Cancer",TRUE
+"534","391","14q",0.0456419799630182,"CV disease",TRUE
+"535","392","14q",NA,"fake",FALSE
+"536","393","14q",0.0300277834569629,"Cerebral vascular disease",TRUE
+"537","394","15q",NA,"fake",FALSE
+"538","395","15q",0.0574927024988914,"Connective tissue disease",TRUE
+"539","396","15q",0.0470274508171521,"Diabetes",TRUE
+"540","396","15q",0.0458826385284894,"Heart insufficient",TRUE
+"541","396","15q",0.0574671744658179,"Connective tissue disease",TRUE
+"542","396","15q",0.0405092572258264,"Prior Cancer",TRUE
+"543","396","15q",0.0462817719449079,"CV disease",TRUE
+"544","397","15q",NA,"fake",FALSE
+"545","398","15q",0.0779258818061636,"Mild Chronic Liver Disease",TRUE
+"546","398","15q",0.0575319687091544,"Connective tissue disease",TRUE
+"547","399","15q",0.0221306446126804,"Dementia",TRUE
+"548","399","15q",0.0575118013590707,"Connective tissue disease",TRUE
+"549","400","15q",NA,"fake",FALSE
+"550","401","15q",0.0461937826543256,"Diabetes",TRUE
+"551","401","15q",0.0214373826037075,"Dementia",TRUE
+"552","401","15q",0.0401918586288077,"Prior Cancer",TRUE
+"553","402","15q",NA,"fake",FALSE
+"554","403","15q",NA,"fake",FALSE
+"555","404","15q",NA,"fake",FALSE
+"556","405","15q",NA,"fake",FALSE
+"557","406","15q",NA,"fake",FALSE
+"558","407","16p",NA,"fake",FALSE
+"559","408","16p",0.0572475338265703,"Connective tissue disease",TRUE
+"560","409","16p",NA,"fake",FALSE
+"561","410","16q",NA,"fake",FALSE
+"562","411","16q",NA,"fake",FALSE
+"563","412","16q",NA,"fake",FALSE
+"564","413","16q",NA,"fake",FALSE
+"565","414","16q",0.0294956479056242,"Cerebral vascular disease",TRUE
+"566","415","16q",NA,"fake",FALSE
+"567","416","16q",NA,"fake",FALSE
+"568","417","16q",NA,"fake",FALSE
+"569","418","16q",0.0400635014595126,"Prior Cancer",TRUE
+"570","419","17p",0.0468199904854328,"Diabetes",TRUE
+"571","419","17p",0.0216170214416558,"Dementia",TRUE
+"572","419","17p",0.0463100653369283,"Heart insufficient",TRUE
+"573","419","17p",0.0577175421458949,"Connective tissue disease",TRUE
+"574","419","17p",0.0290761446929834,"Cerebral vascular disease",TRUE
+"575","419","17p",0.0410263222495215,"Prior Cancer",TRUE
+"576","419","17p",0.0467519148067862,"CV disease",TRUE
+"577","420","17p",NA,"fake",FALSE
+"578","421","17p",NA,"fake",FALSE
+"579","422","17q",NA,"fake",FALSE
+"580","423","17q",0.0450181106662716,"Diabetes",TRUE
+"581","424","17q",0.0469087649376902,"Diabetes",TRUE
+"582","424","17q",0.0218933747756994,"Dementia",TRUE
+"583","424","17q",0.0469763406920972,"Heart insufficient",TRUE
+"584","424","17q",0.0300866726974343,"Cerebral vascular disease",TRUE
+"585","424","17q",0.041167442029749,"Prior Cancer",TRUE
+"586","424","17q",0.0468278068580329,"CV disease",TRUE
+"587","425","17q",0.0451809587857508,"Diabetes",TRUE
+"588","425","17q",0.0460579637033815,"CV disease",TRUE
+"589","426","17q",NA,"fake",FALSE
+"590","427","17q",0.0456887723850121,"Diabetes",TRUE
+"591","427","17q",0.0455627314232078,"Heart insufficient",TRUE
+"592","427","17q",0.0575175942625728,"Connective tissue disease",TRUE
+"593","427","17q",0.0465670826787351,"CV disease",TRUE
+"594","428","17q",NA,"fake",FALSE
+"595","429","17q",NA,"fake",FALSE
+"596","430","17q",NA,"fake",FALSE
+"597","431","17q",0.0461288070331182,"Diabetes",TRUE
+"598","431","17q",0.0405746653981712,"Prior Cancer",TRUE
+"599","432","18p",NA,"fake",FALSE
+"600","433","18p",NA,"fake",FALSE
+"601","434","18q",NA,"fake",FALSE
+"602","435","18q",NA,"fake",FALSE
+"603","436","18q",NA,"fake",FALSE
+"604","437","18q",NA,"fake",FALSE
+"605","438","18q",NA,"fake",FALSE
+"606","439","18q",NA,"fake",FALSE
+"607","440","18q",NA,"fake",FALSE
+"608","441","18q",NA,"fake",FALSE
+"609","442","18q",NA,"fake",FALSE
+"610","443","18q",NA,"fake",FALSE
+"611","444","18q",NA,"fake",FALSE
+"612","445","19p",0.0458714222048162,"Diabetes",TRUE
+"613","445","19p",0.0292820268004454,"Cerebral vascular disease",TRUE
+"614","445","19p",0.040897554859963,"Prior Cancer",TRUE
+"615","445","19p",0.046033745724485,"CV disease",TRUE
+"616","446","19p",0.0476578670098082,"Diabetes",TRUE
+"617","446","19p",0.0795542978784751,"Mild Chronic Liver Disease",TRUE
+"618","446","19p",0.023684912657019,"Dementia",TRUE
+"619","446","19p",0.0485583432910175,"Heart insufficient",TRUE
+"620","446","19p",0.0309832689061703,"Cerebral vascular disease",TRUE
+"621","446","19p",0.0428241400000881,"Prior Cancer",TRUE
+"622","446","19p",0.0479055751322419,"CV disease",TRUE
+"623","447","19p",0.0474540335657565,"Diabetes",TRUE
+"624","447","19p",0.0214973661772855,"Dementia",TRUE
+"625","447","19p",0.0471453402107496,"Heart insufficient",TRUE
+"626","447","19p",0.0312209378351978,"Cerebral vascular disease",TRUE
+"627","447","19p",0.0423287076309123,"Prior Cancer",TRUE
+"628","447","19p",0.0473494660294375,"CV disease",TRUE
+"629","448","19q",NA,"fake",FALSE
+"630","449","19q",0.0482718272170603,"Diabetes",TRUE
+"631","449","19q",0.0217712627003212,"Dementia",TRUE
+"632","449","19q",0.0469107664062355,"Heart insufficient",TRUE
+"633","449","19q",0.0577338708751918,"Connective tissue disease",TRUE
+"634","449","19q",0.0293869602031443,"Cerebral vascular disease",TRUE
+"635","449","19q",0.0420639135476265,"Prior Cancer",TRUE
+"636","449","19q",0.0480832420988908,"CV disease",TRUE
+"637","450","19q",0.0462714118872702,"Diabetes",TRUE
+"638","450","19q",0.0459699844713597,"Heart insufficient",TRUE
+"639","450","19q",0.0302236427010583,"Cerebral vascular disease",TRUE
+"640","450","19q",0.0408912750048139,"Prior Cancer",TRUE
+"641","450","19q",0.0457836043680115,"CV disease",TRUE
+"642","451","19q",0.0479164089941254,"Diabetes",TRUE
+"643","451","19q",0.0463699164212325,"Heart insufficient",TRUE
+"644","451","19q",0.0302167292928836,"Cerebral vascular disease",TRUE
+"645","451","19q",0.0416366048621542,"Prior Cancer",TRUE
+"646","451","19q",0.047130781821732,"CV disease",TRUE
+"647","452","19q",0.0456385689505598,"Diabetes",TRUE
+"648","452","19q",0.0460387232335742,"Heart insufficient",TRUE
+"649","452","19q",0.0295402604077185,"Cerebral vascular disease",TRUE
+"650","452","19q",0.0417211681903174,"Prior Cancer",TRUE
+"651","452","19q",0.0461081907556158,"CV disease",TRUE
+"652","453","20p",NA,"fake",FALSE
+"653","454","20p",NA,"fake",FALSE
+"654","455","20p",NA,"fake",FALSE
+"655","456","20p",NA,"fake",FALSE
+"656","457","20q",0.0455645596512475,"Diabetes",TRUE
+"657","457","20q",0.0219054955661862,"Dementia",TRUE
+"658","457","20q",0.0296767411970078,"Cerebral vascular disease",TRUE
+"659","457","20q",0.0400475290114834,"Prior Cancer",TRUE
+"660","457","20q",0.0462218118592097,"CV disease",TRUE
+"661","458","20q",NA,"fake",FALSE
+"662","459","20q",NA,"fake",FALSE
+"663","460","20q",0.0292636075517715,"Cerebral vascular disease",TRUE
+"664","460","20q",0.0400625347455573,"Prior Cancer",TRUE
+"665","460","20q",0.0458778811153482,"CV disease",TRUE
+"666","461","20q",NA,"fake",FALSE
+"667","462","20q",NA,"fake",FALSE
+"668","463","21q",NA,"fake",FALSE
+"669","464","21q",NA,"fake",FALSE
+"670","465","21q",NA,"fake",FALSE
+"671","466","21q",NA,"fake",FALSE
+"672","467","21q",NA,"fake",FALSE
+"673","468","21q",NA,"fake",FALSE
+"674","469","22q",0.0227672047541606,"Dementia",TRUE
+"675","470","22q",NA,"fake",FALSE
+"676","471","22q",0.0459154244398011,"Diabetes",TRUE
+"677","471","22q",0.0414921336522074,"Prior Cancer",TRUE
+"678","471","22q",0.0457149672508112,"CV disease",TRUE
+"679","472","22q",0.0460206097428434,"Diabetes",TRUE
+"680","472","22q",0.0226494121068737,"Dementia",TRUE
+"681","472","22q",0.0291982954004055,"Cerebral vascular disease",TRUE
+"682","472","22q",0.0403180336802025,"Prior Cancer",TRUE
+"683","472","22q",0.0458724121789341,"CV disease",TRUE
+"684","473","22q",NA,"fake",FALSE

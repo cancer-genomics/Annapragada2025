@@ -1,0 +1,145 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r reads, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+d<-fread(here("data","deconvolution_cfdna.csv"))
+d<-d[,2:56]
+d$cell_type<-d$V1
+d<-d %>% select(-V1)
+d<-d %>% gather(key=id,val=perc,-cell_type)
+
+d$id<-sapply(str_split(d$id,"_"),"[",1)
+
+
+meta<-fread(here("data","Methylation_IDs.csv"),header=T)
+meta<-meta %>% select(-V1)
+
+meta<-meta %>% filter(Analyte=="plasma cfDNA")
+
+meta<-meta %>% mutate(Type=if_else(Source=="Loyfer et. al., Nature 2023","Loyfer et al. - Healthy",Type))
+
+d<-d %>% mutate(id=if_else(id=="CGAD476P","CGAD476P_2",id))
+d<-d %>% mutate(id=if_else(id=="CGLI409P","CGLI409P_2",id))
+d<-d %>% mutate(id=if_else(id=="CGPLH703P2","CGPLH703P_2",id))
+d<-d %>% mutate(id=if_else(id=="CGPLH800P2","CGPLH800P_2",id))
+d<-d %>% mutate(id=if_else(id=="CGPLH801P2","CGPLH801P_2",id))
+
+meta<-meta %>% mutate(ID=if_else(Type=="Loyfer et al. - Healthy",sapply(str_split(ID,"_"),"[",1),ID))
+
+
+
+d<-inner_join(d,meta %>% select(ID,Type),by=c("id"="ID"))
+
+
+```
+
+
+
+```{r}
+
+
+d$cell_type<-gsub("moss_","",d$cell_type)
+d$cell_type<-gsub("loyfer_","",d$cell_type)
+d$cell_type<-gsub("-META","",d$cell_type)
+d$cell_type<-gsub("_","-",d$cell_type)
+d$cell_type<-gsub("-","\n",d$cell_type)
+
+d<-d %>% mutate(cell_type=if_else(cell_type %in% c("Blood\nT\nCD8","Blood\nT\nCD4"),"Blood\nT",cell_type))
+
+d2<-d %>% group_by(id,Type,cell_type) %>% summarize(perc=sum(perc))
+#d2$cell_type<-d2$cell
+d2$Type<-factor(d2$Type,levels=c("Loyfer et al. - Healthy","No Known Liver Disease","Fibrosis/Cirrhosis","Liver Cancer"))
+
+l<-(d2 %>% filter(Type=="Loyfer et al. - Healthy") %>% group_by(cell_type) %>% summarize(m=median(perc)) %>% arrange(-m))$cell_type
+
+
+l<-c(l[!grepl("Liver",l)],l[grepl("Liver",l)])
+
+d2$cell_type<-factor(d2$cell_type, levels=l)
+
+
+```
+
+
+```{r S16, echo=FALSE, fig.width=16, fig.height=5, dev=c("png", "pdf")}
+
+my_comparisons <- list( c("Loyfer et al. - Healthy","No Known Liver Disease"), c("Loyfer et al. - Healthy","Fibrosis/Cirrhosis"))
+
+
+
+
+
+
+ggplot(d2 %>% filter(Type != "Liver Cancer"), aes(x=Type,y=perc/100,fill=Type))+theme_classic()+scale_fill_manual(values=c("gray10","gray50","darkblue"))+ylab("Proportion of cfDNA")+xlab("")+theme(legend.position="bottom",axis.text.x=element_blank(),strip.background=element_blank())+geom_boxplot(alpha=.5,outlier.shape=NA,position=position_dodge(width=1),width=.5)+geom_point(position=position_jitterdodge(jitter.width=.5,dodge.width=1))+
+  stat_compare_means(comparisons = my_comparisons, method="wilcox.test")+
+  facet_wrap(vars(cell_type),scales="free_y",nrow=1)+labs(fill="")
+
+
+
+
+
+```
+
+
+```{r 5C, echo=FALSE, fig.width=10, fig.height=5, dev=c("png", "pdf")}
+
+my_comparisons <- list( c("Loyfer et al. - Healthy","No Known Liver Disease"), c("Loyfer et al. - Healthy","Fibrosis/Cirrhosis"))
+
+
+
+
+
+
+ggplot(d2 %>% filter(Type != "Liver Cancer") %>% filter(cell_type %in% c("Blood\nMonocytes","Liver\nEndothelium","Liver\nMacrophages","Liver\nHepatocytes")), aes(x=Type,y=perc/100,fill=Type))+theme_classic()+scale_fill_manual(values=c("gray10","gray50","darkblue"))+ylab("Proportion of cfDNA")+xlab("")+theme(legend.position="bottom",axis.text.x=element_blank(),strip.background=element_blank())+geom_boxplot(alpha=.5,outlier.shape=NA,position=position_dodge(width=1),width=.5)+geom_point(position=position_jitterdodge(jitter.width=.5,dodge.width=1))+
+  stat_compare_means(comparisons = my_comparisons, method="wilcox.test")+
+  facet_wrap(vars(cell_type),scales="free_y",nrow=1)+labs(fill="")
+
+
+
+
+
+```
+
+
+```{r S17A, echo=FALSE, fig.width=10, fig.height=5, dev=c("png", "pdf")}
+
+my_comparisons2 <- list( c("Loyfer et al. - Healthy","No Known Liver Disease"), c("Loyfer et al. - Healthy","Fibrosis/Cirrhosis"),c("Loyfer et al. - Healthy","Liver Cancer"),c("Fibrosis/Cirrhosis","Liver Cancer"))
+
+
+ggplot(d2 %>% filter(cell_type %in% c("Liver\nEndothelium","Liver\nHepatocytes")), aes(x=Type,y=perc/100,fill=Type))+theme_classic()+scale_fill_manual(values=c("gray10","gray50","darkblue","indianred"))+ylab("Proportion of cfDNA")+xlab("")+theme(legend.position="bottom",axis.text.x=element_blank(),strip.background=element_blank())+geom_boxplot(alpha=.5,outlier.shape=NA,position=position_dodge(width=1),width=.5)+geom_point(position=position_jitterdodge(jitter.width=.5,dodge.width=1))+
+  stat_compare_means(comparisons = my_comparisons2, method="wilcox.test")+
+  facet_wrap(vars(cell_type),scales="free_y",nrow=1)+labs(fill="")
+
+```
+
+
+
+

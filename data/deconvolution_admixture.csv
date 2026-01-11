@@ -1,0 +1,13 @@
+"","V1","buffy100_buffy100","lab90_10_lab90_10","liver100_liver100","Expected"
+"1","moss_Blood-Megakaryocytes",2.26,0,0,2.034
+"2","loyfer_Blood-B",0.77,1.15,0,0.693
+"3","loyfer_Blood-Granulocytes",61.5,58.55,0,55.35
+"4","loyfer_Blood-Monocytes",10.52,7.06,0,9.468
+"5","loyfer_Blood-NK",4.03,3.85,0,3.627
+"6","loyfer_Blood-T-CD4",6.64,6.45,2.85,6.261
+"7","loyfer_Blood-T-CD8",14.27,14.47,3.96,13.239
+"8","loyfer_Bone_marrow-Erythrocyte_progenitors",0,0.02,0.63,0.063
+"9","loyfer_Vascular-Endothelium-META",0,0,9.64,0.964
+"10","loyfer_Liver-Endothelium",0,1.27,3.9,0.39
+"11","loyfer_Liver-Hepatocytes",0,5.2,70.05,7.005
+"12","loyfer_Liver-Macrophages",0,1.96,8.96,0.896

@@ -1,0 +1,89 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+load_all(here("output","useful.stuff.aa"))
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r}
+
+d1<-fread(here("data","deconvolution_tissue_hlady.csv"))
+d1<-d1[,2:201]
+d1$V1<-gsub("moss_","",d1$V1)
+d1$V1<-gsub("loyfer_","",d1$V1)
+d1$V1<-gsub("-META","",d1$V1)
+d1$V1<-gsub("_","-",d1$V1)
+d1$V1<-gsub("-","\n",d1$V1)
+
+d1<-d1 %>% gather(key=id,value=perc,-V1)
+
+d1$cell<-d1$V1
+d1$type<-sapply(str_split(d1$id,":_"),"[",2)
+d1<-d1 %>% mutate(type=if_else(type %in% c("CC","Cbil","CG","CI","CirrEtOH","CirrHBV","CirrHCV"),"Cirrhosis",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("Hbil"),"Biliary Tumor",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("HC","HCCEtOH","HCCHCV"),"HCC",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("HCC_cell_line"),"HCC Cell Line",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("normal_hepatocyte"),"Normal hepatocyte cells",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("HM"),"Metastatic tumor",type))
+d1<-d1 %>% mutate(type=if_else(type %in% c("Normal"),"Normal Liver",type))
+
+d1<-d1 %>% filter(!type %in% c("unclassified","Biliary Tumor","Metastatic tumor"))
+
+d1$type<-factor(d1$type,levels=c("Normal Liver","Cirrhosis","HCC","Normal hepatocyte cells","HCC Cell Line"))
+
+data<-d1
+
+
+
+```
+
+
+```{r}
+data$type<-factor(data$type,levels=c("Normal Liver","Normal hepatocyte cells","Cirrhosis","HCC","HCC Cell Line"))
+```
+
+```{r tissue, echo=FALSE, fig.width=10, fig.height=5, dev=c("png", "pdf")}
+
+
+c<-c("Liver\nEndothelium","Liver\nHepatocytes")
+my_comparisons <- list( c("Normal Liver","Cirrhosis"), c("Normal Liver","HCC"),c("Cirrhosis","HCC"))
+
+data$cell_type<-data$cell
+data_plot <- data %>% filter(cell_type %in% c) %>% filter(type != "HCC Cell Line" & type != "Normal hepatocyte cells")
+data_plot$cell_type<-factor(data_plot$cell_type,levels=c)
+ggplot(data_plot ,aes(x=type,y=perc))+geom_boxplot(outlier.shape=NA,aes(fill=type),alpha=.5,width=.5)+geom_jitter(width=.25)+facet_wrap(vars(cell_type),nrow=1,scales="free_y")+theme_classic()+scale_fill_manual(values=c("gray50","darkblue","indianred"))+ylab("Percentage of DNA")+theme(legend.position="bottom",axis.text.x=element_blank(),strip.background = element_blank())+xlab("Tissue")+ stat_compare_means(comparisons = my_comparisons, method="wilcox.test")+labs(fill="")
+
+
+
+```
+
+
+
+
+
+

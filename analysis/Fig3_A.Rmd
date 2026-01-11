@@ -1,0 +1,42 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+
+library(readxl)
+
+
+```
+
+
+```{r boxplots, fig.width=15, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+dat$name<-dat$type
+n<-dat %>% group_by(training,name) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","name"))
+dat$name<-paste0(dat$name,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("No Known Liver Disease\n(n=291)","No Known Liver Disease\n(n=106)","Liver Disease/Early Fibrosis\n(n=61)","Liver Disease/Early Fibrosis\n(n=30)","Advanced Fibrosis/Cirrhosis\n(n=71)","Advanced Fibrosis/Cirrhosis\n(n=85)"))
+
+dat<-dat %>% mutate(training=if_else(training=="Discovery","Discovery (n=423)","Validation (n=221)"))
+
+ggplot(dat,aes(x=name,y=score,fill=name))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.1)+geom_jitter(size=.25,color="black",alpha=.5,width=.05)+facet_grid(.~training,scales="free_x")+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18),axis.text.x=element_text(size=12),axis.text.y=element_text(size=12))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+scale_fill_manual(values=c("gray50","gray50","steelblue","steelblue","darkblue","darkblue"))+theme(legend.position="none")
+
+
+```
+

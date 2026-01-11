@@ -1,0 +1,18 @@
+"","training","type","type2","type3","n","tot","perc"
+"1","Discovery","Advanced Fibrosis/Cirrhosis","Alcohol","Advanced Fibrosis/Cirrhosis",11,71,0.154929577464789
+"2","Discovery","Advanced Fibrosis/Cirrhosis","HCV","Advanced Fibrosis/Cirrhosis",50,71,0.704225352112676
+"3","Discovery","Advanced Fibrosis/Cirrhosis","NASH","Advanced Fibrosis/Cirrhosis",3,71,0.0422535211267606
+"4","Discovery","Advanced Fibrosis/Cirrhosis","Other","Advanced Fibrosis/Cirrhosis",7,71,0.0985915492957746
+"5","Discovery","Non-Cirrhotic Controls","HBV","Non-Cirrhotic Controls",28,352,0.0795454545454545
+"6","Discovery","Non-Cirrhotic Controls","HCV","Non-Cirrhotic Controls",33,352,0.09375
+"7","Discovery","Non-Cirrhotic Controls","No Known Liver Disease","Non-Cirrhotic Controls",291,352,0.826704545454545
+"8","Validation","Advanced Fibrosis/Cirrhosis","Alcohol","Advanced Fibrosis/Cirrhosis",14,85,0.164705882352941
+"9","Validation","Advanced Fibrosis/Cirrhosis","HBV","Advanced Fibrosis/Cirrhosis",18,85,0.211764705882353
+"10","Validation","Advanced Fibrosis/Cirrhosis","HCV","Advanced Fibrosis/Cirrhosis",8,85,0.0941176470588235
+"11","Validation","Advanced Fibrosis/Cirrhosis","NASH","Advanced Fibrosis/Cirrhosis",10,85,0.117647058823529
+"12","Validation","Advanced Fibrosis/Cirrhosis","Other","Advanced Fibrosis/Cirrhosis",35,85,0.411764705882353
+"13","Validation","Non-Cirrhotic Controls","HBV","Non-Cirrhotic Controls",7,136,0.0514705882352941
+"14","Validation","Non-Cirrhotic Controls","HCV","Non-Cirrhotic Controls",1,136,0.00735294117647059
+"15","Validation","Non-Cirrhotic Controls","NASH","Non-Cirrhotic Controls",20,136,0.147058823529412
+"16","Validation","Non-Cirrhotic Controls","Other","Non-Cirrhotic Controls",2,136,0.0147058823529412
+"17","Validation","Non-Cirrhotic Controls","No Known Liver Disease","Non-Cirrhotic Controls",106,136,0.779411764705882

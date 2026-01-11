@@ -1,0 +1,137 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+
+library(readxl)
+
+```
+
+
+```{r healthy_age, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="No Known Liver Disease")
+dat<-dat %>% mutate(Age_group=if_else(Age<50,"<50","50+"))
+dat<-dat %>% mutate(Age_group=if_else(Age<60 & Age>=50,"50-59",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age<70 & Age>=60,"60-69",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age<80 & Age>=70,"70-79",Age_group))
+dat<-dat %>% mutate(Age_group=if_else(Age>=80,"80+",Age_group))
+dat$Age_group<-factor(dat$Age_group,levels=c("<50","50-59","60-69","70-79","80+"))
+n<-dat %>% group_by(training,Age_group) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","Age_group"))
+dat$name<-paste0(dat$Age_group,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("<50\n(n=13)","50-59\n(n=163)","50-59\n(n=27)","60-69\n(n=101)","60-69\n(n=38)","70-79\n(n=27)","70-79\n(n=20)","80+\n(n=8)"))
+
+p1d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p1v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+```
+
+```{r healthy_sex, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="No Known Liver Disease")
+n<-dat %>% group_by(training,Sex) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","Sex"))
+dat$name<-paste0(dat$Sex,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("Female\n(n=146)","Male\n(n=145)","Female\n(n=46)","Male\n(n=60)"))
+
+p2d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p2v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+```
+
+```{r healthy_htn, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="No Known Liver Disease") %>% filter(Hypertension != "unknown")
+n<-dat %>% group_by(training,Hypertension) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","Hypertension"))
+dat$name<-paste0(dat$Hypertension," Hypertension\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("No Hypertension\n(n=83)","No Hypertension\n(n=8)","Yes Hypertension\n(n=46)","Yes Hypertension\n(n=10)"))
+
+p3d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p3v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+```
+
+```{r healthy_diabetes, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="No Known Liver Disease") %>% filter(Diabetes != "unknown")
+n<-dat %>% group_by(training,Diabetes) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","Diabetes"))
+dat$name<-paste0(dat$Diabetes," Diabetes\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("No Diabetes\n(n=118)","Yes Diabetes\n(n=11)","No Diabetes\n(n=12)","Yes Diabetes\n(n=6)"))
+
+p4d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p4v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+```
+
+```{r healthy_bmi, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="No Known Liver Disease") %>% filter(BMI != "unknown" & BMI != "N/A")
+dat<-dat %>% mutate(BMI_group=if_else(as.numeric(BMI)>25,"BMI>25","BMI <= 25"))
+n<-dat %>% group_by(training,BMI_group) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","BMI_group"))
+dat$name<-paste0(dat$BMI_group,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("BMI <= 25\n(n=8)","BMI>25\n(n=10)"))
+
+
+p5v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="gray50")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+```
+
+```{r discovery, fig.width=8, fig.height=8, dev=c("png", "pdf")}
+
+plot_grid(p1d,p2d,p3d,p4d,nrow=2)
+```
+
+
+```{r validation, fig.width=8, fig.height=8, dev=c("png", "pdf")}
+
+x<-plot_grid(p1v,p2v,nrow=1,rel_widths=c(2,1))
+y<-plot_grid(p3v,p4v,p5v,nrow=1)
+
+plot_grid(x,y,nrow=2)
+```
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Describe your project.
+```{r}
+library(plyr)
+library(dplyr)
+library(devtools)
+library(tidyverse)
+library(data.table)
+library(here)
+library(readxl)
+library(ggpubr)
+library(ggrepel)
+library(caret)
+library(glmnet)
+library(recipes)
+library(devtools)
+
+```
+
+
+```{r}
+
+dat<-fread(here("data","All_MICA_withscores.csv"))
+
+d1<-dat
+d1<-d1 %>% mutate(type=if_else(type=="low CCI","Low CCI (0,1,2)","High CCI (3+)"))
+n<-d1 %>% group_by(type) %>% summarize(n=n())
+d1<-inner_join(d1,n,by="type")
+d1$type<-paste0(d1$type,"\n(n = ",d1$n,")")
+d1$type<-factor(d1$type,levels=rev(unique(d1$type)))
+
+p1<-ggplot(d1,aes(x=type,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.5)+geom_jitter(width=.25,size=.25)+theme_classic()+stat_compare_means()+scale_fill_manual(values=c("gray50","darkgreen"))+theme(legend.position="none")+xlab("")+ylab("Fragmentation Comorbidity Index")
+
+all<-d1
+
+
+```
+
+
+
+
+```{r boxplots, echo=FALSE, fig.width=3, fig.height=4, dev=c("png", "pdf")}
+p1
+```
+
+
+
+

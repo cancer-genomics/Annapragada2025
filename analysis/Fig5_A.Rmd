@@ -1,0 +1,109 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Describe your project.
+```{r}
+library(plyr)
+library(dplyr)
+library(tidyverse)
+library(data.table)
+library(readxl)
+library(ggpubr)
+library(ggrepel)
+library(here)
+library(devtools)
+
+```
+
+```{r volcano, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+#########
+data<-fread(here("data","CV_volcano.csv"))
+data<-data %>% select(-V1)
+data$d<- -1*data$d
+
+data$logp<-(-1)*log10(data$p)
+
+m<-read.table(here("data","Monarch_Cirrhosis.tsv"))
+m2<-read.table(here("data","Monarch_Liverfibrosis.tsv"))
+m2$V1<-m2$V1 %>% toupper()
+m2<-m2 %>% filter(!V1 %in% m$V1)
+data<-data %>% mutate(sig=if_else(p<=.05/25054,"TRUE","FALSE"))
+data<-data %>% mutate(LC=if_else(gene %in% m$V1,"Liver Cirrhosis Gene Set","Not in LC Gene Set"))
+data<-data %>% mutate(LC=if_else(gene %in% m2$V1,"Liver Fibrosis Gene Set",LC))
+
+data<-data %>% mutate(label=if_else((sig=="TRUE" & LC=="Liver Cirrhosis Gene Set")|(sig=="TRUE" & LC=="Liver Fibrosis Gene Set"),gene,NA))
+
+p1<-ggplot(data %>% filter(LC=="Not in LC Gene Set"),aes(x=d,y=logp,alpha=sig))+scale_alpha_manual(values=c(.2,1))+
+  geom_point(color="gray70")+theme_classic()+geom_hline(yintercept=-log10(.05/25054))+
+  geom_point(data=data %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp),color="darkblue")+
+  geom_point(data=data %>% filter(LC=="Liver Fibrosis Gene Set"),aes(x=d,y=logp),color="steelblue")+
+  geom_text_repel(data=data %>% filter(LC!="Not in LC Gene Set"),aes(label=label))+
+  #geom_text_repel(data=data %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp,label=label,alpha=sig))+
+  xlab("Discovery Cohort Effect Size\nLiver Fibrosis/Cirrhosis vs. No Known Liver Disease")+ylab("-log10(p)")+theme(legend.position="none",axis.text=element_text(size=12))+ylim(0,16)+xlim(-1.5,1.5)
+p1
+```
+
+```{r volcano_val, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+data2<-fread(here("data","volcano_val.csv"))
+data2<-data2 %>% select(-V1)
+data2$d<- -1*data2$d
+
+data2$logp<-(-1)*log10(data2$p)
+
+m<-read.table(here("data","Monarch_Cirrhosis.tsv"))
+m2<-read.table(here("data","Monarch_Liverfibrosis.tsv"))
+m2$V1<-m2$V1 %>% toupper()
+m2<-m2 %>% filter(!V1 %in% m$V1)
+data2<-data2 %>% mutate(sig=if_else(p<=.05/25054,"TRUE","FALSE"))
+data2<-data2 %>% mutate(LC=if_else(gene %in% m$V1,"Liver Cirrhosis Gene Set","Not in LC Gene Set"))
+data2<-data2 %>% mutate(LC=if_else(gene %in% m2$V1,"Liver Fibrosis Gene Set",LC))
+
+data2<-data2 %>% mutate(label=if_else((sig=="TRUE" & LC=="Liver Cirrhosis Gene Set")|(sig=="TRUE" & LC=="Liver Fibrosis Gene Set"),gene,NA))
+
+p2<-ggplot(data2 %>% filter(LC=="Not in LC Gene Set"),aes(x=d,y=logp,alpha=sig))+scale_alpha_manual(values=c(.2,1))+
+  geom_point(color="gray70")+theme_classic()+geom_hline(yintercept=-log10(.05/25054))+
+  geom_point(data=data2 %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp),color="darkblue")+
+  geom_point(data=data2 %>% filter(LC=="Liver Fibrosis Gene Set"),aes(x=d,y=logp),color="steelblue")+
+  geom_text_repel(data=data2 %>% filter(LC!="Not in LC Gene Set"),aes(label=label),max.overlaps=20)+
+  #geom_text_repel(data=data %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp,label=label,alpha=sig))+
+  xlab("Validation Cohort Effect Size\nLiver Fibrosis/Cirrhosis vs. No Known Liver Disease")+ylab("-log10(p)")+theme(legend.position="none",axis.text=element_text(size=12))+ylim(0,16)+xlim(-1.5,1.5)
+p2
+
+```
+
+```{r volcano_rand, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+data2<-fread(here("data","rand_volcano2.csv"))
+data2<-data2 %>% select(-V1)
+data2$d<- -1*data2$d
+
+data2$logp<-(-1)*log10(data2$p)
+
+m<-read.table(here("data","Monarch_Cirrhosis.tsv"))
+m2<-read.table(here("data","Monarch_Liverfibrosis.tsv"))
+m2$V1<-m2$V1 %>% toupper()
+m2<-m2 %>% filter(!V1 %in% m$V1)
+data2<-data2 %>% mutate(sig=if_else(p<=.05/25054,"TRUE","FALSE"))
+data2<-data2 %>% mutate(LC=if_else(gene %in% m$V1,"Liver Cirrhosis Gene Set","Not in LC Gene Set"))
+data2<-data2 %>% mutate(LC=if_else(gene %in% m2$V1,"Liver Fibrosis Gene Set",LC))
+
+data2<-data2 %>% mutate(label=if_else((sig=="TRUE" & LC=="Liver Cirrhosis Gene Set")|(sig=="TRUE" & LC=="Liver Fibrosis Gene Set"),gene,NA))
+
+p3<-ggplot(data2 %>% filter(LC=="Not in LC Gene Set"),aes(x=d,y=logp,alpha=sig))+scale_alpha_manual(values=c(.2,1))+
+  geom_point(color="gray70")+theme_classic()+geom_hline(yintercept=-log10(.05/25054))+
+  geom_point(data=data2 %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp),color="darkblue")+
+  geom_point(data=data2 %>% filter(LC=="Liver Fibrosis Gene Set"),aes(x=d,y=logp),color="steelblue")+
+  geom_text_repel(data=data2 %>% filter(LC!="Not in LC Gene Set"),aes(label=label))+
+  #geom_text_repel(data=data %>% filter(LC=="Liver Cirrhosis Gene Set"),aes(x=d,y=logp,label=label,alpha=sig))+
+  xlab("No Known Liver Disease Effect Size\nDiscovery Cohort vs. Validation Cohort")+ylab("-log10(p)")+theme(legend.position="none",axis.text=element_text(size=12))+xlim(-1.5,1.5)+ylim(0,16)
+p3
+
+```
+
+
+

@@ -1,0 +1,2001 @@
+"","tool","population","sensitivity","specificity"
+"1","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.381559253931764,0.815702221176196
+"2","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.547998384955916,0.85964767987679
+"3","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.415917043712696,0.855539377384087
+"4","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424743628921709,0.844641565803388
+"5","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.390014943299999,0.821230397774509
+"6","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.47044542615693,0.799806953586429
+"7","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.514786073110055,0.766519431617798
+"8","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.504346845439528,0.794134521190308
+"9","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.557231508803687,0.856888816232735
+"10","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.501571915498876,0.83263243274621
+"11","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.542818125704551,0.852418195510882
+"12","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.651228738402614,0.824910449742306
+"13","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.37503233356878,0.832013272321585
+"14","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.454587441306377,0.843680352946782
+"15","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.532109067197915,0.836040014627056
+"16","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.559426700866457,0.845661219125574
+"17","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.42659816768184,0.845119408127678
+"18","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.592651035958695,0.810677988104645
+"19","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.669520670854566,0.773923645670415
+"20","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.522485275397085,0.839357399246631
+"21","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.328489920125395,0.830042954052947
+"22","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.553895196760695,0.82595456735414
+"23","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.692337187427399,0.838777401362089
+"24","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.606221107945912,0.795485742820474
+"25","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.396935944090481,0.79874857367425
+"26","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.642323861074056,0.852506349630626
+"27","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.595804274779953,0.842666527214006
+"28","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.306431220818973,0.832865972510783
+"29","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.416594424930141,0.834741016990016
+"30","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.533565562179741,0.784137961209203
+"31","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.459257587553933,0.844059132861315
+"32","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.670117431653474,0.779453848317454
+"33","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.562550625362798,0.881942388872055
+"34","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.452581140461418,0.804599742186076
+"35","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.515704941339776,0.849745140308301
+"36","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.389950772360115,0.778774632325237
+"37","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.41351761277044,0.857176053225758
+"38","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.417814935381047,0.804503555992341
+"39","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.377142845005128,0.851462312778986
+"40","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.346073415444542,0.829687392141188
+"41","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.511195662147143,0.825421542422849
+"42","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.663669711331269,0.822630317192125
+"43","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.455539856602315,0.851243888480047
+"44","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.579506183825559,0.829683169731476
+"45","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.552970304048087,0.802296407718026
+"46","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.599630125570802,0.85026066595824
+"47","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.658399407260883,0.762289611633735
+"48","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.435893272127137,0.791143544853928
+"49","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.528091950252327,0.789532359321612
+"50","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.655769445953163,0.784606236338932
+"51","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.544106990257081,0.849564495573545
+"52","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.744460294880489,0.860752419284206
+"53","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.466901920434745,0.867812849545908
+"54","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.417471624178642,0.826211311132895
+"55","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.597172255506313,0.827207538648205
+"56","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.591816029408655,0.83449360094747
+"57","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.607433723384271,0.794168695892856
+"58","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.515090178504124,0.829101824386448
+"59","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.595894644337149,0.787107294637892
+"60","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.518638068501766,0.838399032754788
+"61","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45749164374038,0.838595640748871
+"62","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.370721437841294,0.825241114871932
+"63","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.569538254341467,0.832149125489033
+"64","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.358953519373528,0.817267164030739
+"65","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.538228914018821,0.839742734432359
+"66","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.42136843042461,0.780188386132937
+"67","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.481184001634475,0.802191516954783
+"68","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.641242230294055,0.821399767786083
+"69","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.614750795222462,0.77701674381801
+"70","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.520481450578064,0.79467961330089
+"71","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.427894605381767,0.837647775611006
+"72","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.596917633584312,0.859957967914669
+"73","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.652724790850106,0.8195061399632
+"74","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.711553166287069,0.81641970625974
+"75","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.579358510948123,0.820574313658604
+"76","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.307273341995754,0.856258320895372
+"77","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.492584481115562,0.815295619071888
+"78","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.385601838344385,0.824987296545565
+"79","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.35340349599068,0.828333932901449
+"80","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.299673741691095,0.799167402415392
+"81","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.582745058397363,0.83169607339703
+"82","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.47630452161233,0.843135557003584
+"83","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.501161747753902,0.838918136904342
+"84","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.428988981331442,0.802193753578942
+"85","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496041981115565,0.79056348977044
+"86","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.503986606598052,0.798012971266965
+"87","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.478002498692174,0.82107286923433
+"88","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.498728796726125,0.842729061886118
+"89","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.56322421395757,0.789562282258021
+"90","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.671288593818021,0.836513597508166
+"91","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.449874454543186,0.814452941529745
+"92","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.467636411846563,0.873889066298677
+"93","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.540994624947283,0.827318519570926
+"94","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.746943652919354,0.828757844909945
+"95","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.5536928857661,0.824485678795898
+"96","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.609510310721196,0.824495977803015
+"97","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.711760375627624,0.799646791608823
+"98","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.580959448607233,0.79156286387647
+"99","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530596411303416,0.804050827875803
+"100","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.467237240436181,0.827409591416727
+"101","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.536412136002968,0.785181711821861
+"102","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.57234712741453,0.785014550050486
+"103","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.551206166636843,0.84913071956877
+"104","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.409011206317493,0.820939881245876
+"105","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.483965287185515,0.80929625539278
+"106","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.628943034856477,0.815163689919807
+"107","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.535283424313659,0.802400424090541
+"108","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.440617948190686,0.807983464821544
+"109","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.408855077081344,0.7859936173524
+"110","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.58564599600176,0.81188063228295
+"111","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.524225587488827,0.831394391338348
+"112","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.427156633403393,0.827330106878259
+"113","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.306154013471995,0.838300852860527
+"114","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.40438665067366,0.829680475858885
+"115","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.402880787232759,0.848159051528497
+"116","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.404240172662325,0.808394812555953
+"117","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.547421317636656,0.813822433142322
+"118","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.566182413318306,0.787845963842368
+"119","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.450178503300569,0.795170574991377
+"120","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.506781308737503,0.846974592556585
+"121","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.376283434682248,0.778673796214793
+"122","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.628512086477951,0.815823227645874
+"123","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.489682217801296,0.796666617516385
+"124","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.568839339969003,0.758156263646291
+"125","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.580266852679415,0.822538750572812
+"126","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.305197447307305,0.818763504163318
+"127","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.55925076893689,0.853928860588434
+"128","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.455526191019504,0.798626503008499
+"129","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.36167460522624,0.81180909102188
+"130","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.525441701062439,0.829306995100913
+"131","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.443943412446897,0.831153247093779
+"132","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.389159472533125,0.851753036301226
+"133","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.629513734022504,0.847062913472613
+"134","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.641957699567935,0.849333018287333
+"135","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.335026980305727,0.816126202829376
+"136","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.31429945824783,0.823413848076191
+"137","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.247030062919748,0.852451071306247
+"138","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.616444993839386,0.841078171324573
+"139","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.71505545344429,0.867178741274465
+"140","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.421857097866463,0.825465453169497
+"141","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.60322422767326,0.831270170903751
+"142","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.501829889166661,0.828253148437823
+"143","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.470206433370244,0.80499064452988
+"144","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.431762625853535,0.835429715099354
+"145","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.524076662972763,0.838197413938105
+"146","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.473444360283107,0.860138164256018
+"147","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.431959703937651,0.856602784968433
+"148","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.593714302819183,0.840526029153365
+"149","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.477091946415568,0.822306129983441
+"150","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.667743815776904,0.829346249555262
+"151","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.609979157939287,0.810977923399709
+"152","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.553414036632488,0.843799272277916
+"153","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.442047286912791,0.75247527262912
+"154","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.595496517293118,0.816448667827075
+"155","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.378093847440842,0.871832566825541
+"156","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.483253914290495,0.812072276111962
+"157","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.64996072185027,0.823407046907158
+"158","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.32550216796212,0.884973134114814
+"159","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.375093072729812,0.791995582599428
+"160","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45507572670771,0.770848101045939
+"161","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.428216225173547,0.790773591453908
+"162","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.436267287416505,0.82271210818991
+"163","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.572120965693418,0.85661802929142
+"164","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.534993009967759,0.891168947387506
+"165","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.612285187338092,0.777411457105565
+"166","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.35145335970195,0.839938865243801
+"167","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.366725289569873,0.839566982249208
+"168","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.492474990425172,0.817881301259976
+"169","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.541165645165219,0.764634837345185
+"170","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.462222575040852,0.77132691898686
+"171","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.492805974559458,0.817290970043338
+"172","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.50313919012212,0.82023816360106
+"173","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.605402974310999,0.838755756069524
+"174","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.518946323681631,0.841305340344847
+"175","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.426489913220491,0.837497570726447
+"176","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.567919916238361,0.857300610903108
+"177","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.536139987658201,0.812113147313289
+"178","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.736213302540043,0.793700244923908
+"179","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.523255658622577,0.77703237802335
+"180","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.482961964951229,0.827603438993791
+"181","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.550949580553111,0.883808413596258
+"182","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.435943680754848,0.872195764963286
+"183","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.564678905812533,0.816590491044262
+"184","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424504340857322,0.829863168951352
+"185","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.57720864371606,0.835824340247051
+"186","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565764571560556,0.775884225909243
+"187","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.291272402170108,0.815721752556992
+"188","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.488672539852652,0.763606922822363
+"189","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.690648895265213,0.796936266267639
+"190","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.76929402707497,0.810785781908246
+"191","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.339670730739166,0.882075530774673
+"192","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.491846464751923,0.830286264885501
+"193","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.522172738734747,0.809634308868553
+"194","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.407856857438904,0.78006666863124
+"195","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.380853405786733,0.826316993112303
+"196","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.446249480042499,0.811832524013432
+"197","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.566999762888786,0.799139967347969
+"198","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.645948754346785,0.79936580441156
+"199","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.528392137442415,0.829238239659745
+"200","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.458413897491318,0.806369849945457
+"201","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.60053496930688,0.828239052060252
+"202","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.665394048157001,0.771572165545562
+"203","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.274895952862552,0.877158010249673
+"204","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.587499855144532,0.820432559914363
+"205","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.522716214359526,0.823345992471555
+"206","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.383282036586231,0.837292881268329
+"207","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.695935432317625,0.804243386658247
+"208","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.433642700391682,0.797988451856917
+"209","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.567527080748488,0.864377581450176
+"210","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.640378175459328,0.805459319019542
+"211","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.527146825812127,0.824537633430083
+"212","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.406137606945105,0.82978560212716
+"213","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.518215773310594,0.79618425897111
+"214","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.319306415762963,0.77093029942458
+"215","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.543948096923059,0.83972897401956
+"216","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.522604185063284,0.777293726936763
+"217","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526504740710181,0.806873672285524
+"218","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.434281717001387,0.826118310937562
+"219","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.569682227195815,0.821935168704904
+"220","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.681551715395033,0.82446613800326
+"221","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.579626599920524,0.818848737197683
+"222","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.298161601189634,0.81937316231628
+"223","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.607867625999901,0.868968609517762
+"224","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.474540628323741,0.847537506872478
+"225","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.601202771324395,0.788397174197969
+"226","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.477897391625908,0.868139598178548
+"227","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.222033838324436,0.824681971988398
+"228","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.501207300088122,0.827749539413666
+"229","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.556379946325952,0.781693196425235
+"230","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.337072637032593,0.849119148564629
+"231","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.492931404056722,0.831801279559327
+"232","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.47062510043391,0.882790907611756
+"233","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.577830194781749,0.811855819417082
+"234","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.723930705823202,0.799662013867696
+"235","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.327684532158829,0.808824327881365
+"236","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.370079419657333,0.805167077386351
+"237","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.371428188787862,0.804794333798179
+"238","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.384598483761084,0.812881831018981
+"239","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.580984902987998,0.818261452104029
+"240","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.73032016965609,0.83577099547894
+"241","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.393420750679593,0.829045665451268
+"242","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.392500244883155,0.860414132797146
+"243","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.557510684238242,0.836963049170429
+"244","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.507678877769668,0.807944954010825
+"245","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.643578248621616,0.779014630997466
+"246","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.552290324435676,0.815434262452162
+"247","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.485158509591231,0.802473677409069
+"248","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.568875394880362,0.835919063499319
+"249","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.58029748226452,0.835246352893837
+"250","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.538870457483497,0.818224929549823
+"251","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496573085302996,0.834749582952718
+"252","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.354823512373365,0.826819419821398
+"253","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.623774735427432,0.831082044687868
+"254","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.465180153264673,0.808155378656365
+"255","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.642536679662828,0.842716261575235
+"256","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.587545643955813,0.825392973315268
+"257","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.470727085885136,0.815314493342633
+"258","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.525464811316158,0.823195617739723
+"259","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.619027502627136,0.868406642617895
+"260","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.363130575127684,0.846363299717204
+"261","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.531223962287693,0.79722790517797
+"262","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.644913113465581,0.83309140505538
+"263","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.674587190754717,0.817904754757598
+"264","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.520222864755047,0.817921459783849
+"265","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.431260966995391,0.832854377638735
+"266","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.618010252957706,0.798360046133309
+"267","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.598607416298538,0.815129636290015
+"268","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.378102987235888,0.80194320393013
+"269","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.393675352639285,0.836737469228093
+"270","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.529512062150194,0.817455160694221
+"271","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38721722255429,0.824792424060924
+"272","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.41910979829561,0.832644024119627
+"273","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.668014685175589,0.847179147517518
+"274","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.396860648894254,0.773174528320549
+"275","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.48528249519545,0.815743350631392
+"276","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.446830653638446,0.822595388816189
+"277","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.417720801022064,0.832185553574411
+"278","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.547511831112997,0.875597142560063
+"279","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.477271956222957,0.830623554723928
+"280","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.581762733619403,0.784391409610798
+"281","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.345100995623942,0.81387906725848
+"282","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.264301901240134,0.778033217033515
+"283","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.435026773973324,0.869060553371827
+"284","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.497503665612185,0.836070644475038
+"285","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.52201539321853,0.873572387458331
+"286","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.669031773591847,0.778330667898328
+"287","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.543468104901979,0.77359799807528
+"288","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.533563690544696,0.80344908618712
+"289","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.359682655991865,0.793257974352035
+"290","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.631956322162357,0.768161343318037
+"291","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.507119030232946,0.865971875369693
+"292","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.459835926433169,0.840156898789317
+"293","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.43884864075399,0.824503781092008
+"294","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508894830054842,0.839974557097994
+"295","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.475834533215428,0.806685514153175
+"296","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.613538668666671,0.81630881469853
+"297","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.349897679263936,0.811616082217473
+"298","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.669342007809011,0.799638457653566
+"299","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.29134584687022,0.90083852808654
+"300","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.361589332968861,0.821689283972962
+"301","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.416214212412043,0.831278468158531
+"302","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.585092949598304,0.860987360812581
+"303","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.554914753456268,0.789533441882732
+"304","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.50988693112512,0.840840634671791
+"305","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.431603141825344,0.81822983175211
+"306","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.61023738576358,0.835900777602354
+"307","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516418464131644,0.815018125839269
+"308","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.58988141894433,0.812533375625653
+"309","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.51956988794314,0.834493113589122
+"310","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.596009405911408,0.83776206507987
+"311","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.601295580630253,0.841392131479339
+"312","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.605843763879648,0.831147627584373
+"313","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.674470548247607,0.820897983962851
+"314","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.531018310155872,0.833071877314847
+"315","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.434614996824859,0.812242098410154
+"316","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.633028105133862,0.826762660769711
+"317","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.593855647739053,0.795999037757451
+"318","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.549344826580955,0.861396331709498
+"319","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.453941913460305,0.82632227483197
+"320","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496099903764173,0.785696519103154
+"321","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.451190698887455,0.799492922829088
+"322","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.535964461478252,0.807672942696821
+"323","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.483046080142409,0.817790480047752
+"324","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.418889210942145,0.810435229849779
+"325","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.658931269885871,0.84272268193101
+"326","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516222180023684,0.822083139275019
+"327","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.720496610497686,0.796460237633127
+"328","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.41763796869085,0.869246988636874
+"329","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.674958916491109,0.775932355842318
+"330","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.621296933155936,0.793977239149661
+"331","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.307954123879,0.885752004195956
+"332","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.486918682627503,0.812791309861355
+"333","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.370665056596663,0.849911790966657
+"334","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.538980115520617,0.813454579301034
+"335","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.644992252879929,0.815340524757987
+"336","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.46925761347087,0.806772660592525
+"337","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.390659071006044,0.802689509914959
+"338","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.590639305148013,0.838478645335108
+"339","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.489171012459955,0.846917468056042
+"340","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.775871021025787,0.863700270619603
+"341","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.486535152476537,0.850752095545894
+"342","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.451033379538344,0.821025805616101
+"343","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.441326964866178,0.82150804393013
+"344","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.5688063904907,0.788480614855892
+"345","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.460531219581103,0.823848715182806
+"346","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.382889823938907,0.780627153620993
+"347","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.459368290840122,0.765133694315755
+"348","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.532691633105895,0.820016326782197
+"349","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.643468873399362,0.864780480782491
+"350","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.296256920228439,0.826770453845225
+"351","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.664466386814516,0.838538231160171
+"352","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.499950427872069,0.791890624517587
+"353","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.140080185098419,0.830264393425267
+"354","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.359749665420842,0.766210745615664
+"355","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.558731506332062,0.813605548939102
+"356","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.541108533779614,0.80420827562331
+"357","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530804046482388,0.827162755904141
+"358","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.448797094839832,0.87343047217838
+"359","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.471876866785359,0.858314163600764
+"360","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.415627366366267,0.810723443253368
+"361","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.676070482546407,0.799532706759622
+"362","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.427360903760704,0.797823527434654
+"363","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.528456589203303,0.7849709833867
+"364","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.595731849264265,0.752731642529094
+"365","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.631757946723194,0.869689922059449
+"366","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.624997264136655,0.872660952815972
+"367","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.323882776085368,0.829813363383961
+"368","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.312276424300596,0.814852207559051
+"369","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.277582706075786,0.852712607109854
+"370","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.584249527240841,0.795001026808894
+"371","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.41105411639585,0.822513154569744
+"372","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.576251903148818,0.818849861347438
+"373","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.463120075297925,0.8034376836461
+"374","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.685691673536836,0.79478964227838
+"375","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.395637948565,0.816318223814263
+"376","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.534854744157148,0.845964087005604
+"377","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.474998506798364,0.828223608735607
+"378","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526408106827939,0.803973369559562
+"379","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.456410217459805,0.803986568366761
+"380","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.544693585690496,0.844742774842163
+"381","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.395310453996455,0.834618577102952
+"382","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.397615758289725,0.835129108403205
+"383","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.640500283213312,0.780776336133245
+"384","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.54272521394467,0.831880322104135
+"385","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.593367597499851,0.901387966375893
+"386","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.419568450031035,0.785324581278611
+"387","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.491471469064937,0.837251641542832
+"388","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.488681933535647,0.80754647765943
+"389","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.360167618161501,0.848234802553862
+"390","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.750970604081276,0.795296213516058
+"391","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.511261273514167,0.847491940641218
+"392","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.653441440927405,0.815478767919416
+"393","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.606066567855057,0.819678446040902
+"394","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.327433305199935,0.810495749646562
+"395","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.635197209099885,0.86486893977223
+"396","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.578665925306397,0.807910862726592
+"397","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.681006962478473,0.822931541896127
+"398","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.439805823120875,0.807628232536567
+"399","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.452550016749924,0.811678749248848
+"400","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565259562028743,0.794102866911561
+"401","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.552115378637622,0.842711585202107
+"402","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.335029862590027,0.828923838428349
+"403","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.381228454479998,0.771119232069837
+"404","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.454075215515443,0.820610459760646
+"405","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.495235115281949,0.870028051399588
+"406","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.338016901800315,0.798636917948991
+"407","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.306331299851781,0.828132004038967
+"408","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.54517799415805,0.877514298127042
+"409","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.625094104446461,0.8519928868199
+"410","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424149308152785,0.800141848547883
+"411","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.540237592553227,0.828219093649184
+"412","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.268441102046943,0.81336394165972
+"413","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.435329731397368,0.78373176953345
+"414","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.487072011309844,0.837405930682544
+"415","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.561492425856881,0.82826296206332
+"416","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.659997117418802,0.806903617033653
+"417","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.567589865162752,0.746431753017102
+"418","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.290034638065245,0.840436300494815
+"419","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.604724937910767,0.838386182039324
+"420","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.324206428489915,0.780996320895419
+"421","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.537686562617536,0.807576136754468
+"422","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.433575096816151,0.79940630659637
+"423","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.461480821297092,0.842259602381802
+"424","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.504437101040607,0.866070023070241
+"425","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45531886058443,0.819872649065685
+"426","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.540554821643348,0.802330756351953
+"427","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.620574167056695,0.828103778380487
+"428","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.55766771515785,0.841293327601149
+"429","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.698658710933954,0.797673528515824
+"430","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.380146695619695,0.84061585128119
+"431","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424389217104357,0.707123861938376
+"432","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.438873778401377,0.806149046696647
+"433","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.619752471132273,0.76028707254827
+"434","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.610660641039911,0.809011897583371
+"435","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.386603775147374,0.852363477047975
+"436","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.412587295935628,0.83321462995814
+"437","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.658490025024994,0.857492656104168
+"438","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.423446742189956,0.823532979120465
+"439","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516305760678844,0.747866939946669
+"440","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.654200951634145,0.813173285346428
+"441","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.267067252613425,0.781297458787087
+"442","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.476370327932805,0.834671405669647
+"443","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.446727491791493,0.839242054831788
+"444","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.465064733745409,0.801068913378911
+"445","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.55056367528332,0.768359796229663
+"446","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.62586931066995,0.837514462785171
+"447","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.511562182115084,0.772868831671157
+"448","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.744384387677922,0.8040146655543
+"449","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.510764416372088,0.803007848279334
+"450","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508803345056788,0.796952214516063
+"451","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.285883438204521,0.817704878880735
+"452","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526985617319737,0.852075733136006
+"453","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.567727846369964,0.835914929755459
+"454","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.625530833722105,0.841966180822386
+"455","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.474727367188034,0.882365229915925
+"456","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.419327664327216,0.862838493169123
+"457","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.507766211788748,0.785070397662481
+"458","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.523068038473066,0.828217508884033
+"459","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.308620704019526,0.835432178752695
+"460","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.271903971030874,0.81625168807908
+"461","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.642499661263342,0.781050918806585
+"462","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.33792654584991,0.776895111011521
+"463","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526787294129435,0.799495126562684
+"464","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.515742821205331,0.832707009378888
+"465","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496067660950294,0.805907781660959
+"466","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.486684105276219,0.840116259394037
+"467","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.485759871782553,0.839339720701031
+"468","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.381969528065186,0.823279968905815
+"469","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.387212129525458,0.834814355499865
+"470","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.527682034549073,0.779808648894539
+"471","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.44797349680445,0.853854497978992
+"472","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.440240663965325,0.791451925143058
+"473","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.521619183571059,0.798435101233995
+"474","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.638726741581339,0.828722744440788
+"475","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.368093125562898,0.816880583925085
+"476","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.338998034470046,0.840802604904291
+"477","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.497538862290029,0.81965651626271
+"478","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.541316736490288,0.818224871227666
+"479","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.336873315514357,0.748595767323692
+"480","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.560814880126993,0.821505532379672
+"481","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.457696006396781,0.809876414976017
+"482","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.579871227352238,0.829201735954545
+"483","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.281260764525244,0.89466860694864
+"484","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.507388335121693,0.792608730137287
+"485","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.602167300401552,0.822660426227926
+"486","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.587152292748668,0.828454829375381
+"487","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.578244120195477,0.83560342534868
+"488","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.607287611384458,0.806261183140907
+"489","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.469280487064308,0.848059685670002
+"490","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.563845482669559,0.791472766980674
+"491","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.349641728142767,0.823890914170333
+"492","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.667407014559148,0.799446513427325
+"493","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.539589536858705,0.8207232139153
+"494","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.781883233000758,0.84444490543757
+"495","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.449171430916622,0.810550913995745
+"496","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.523911576764775,0.817119945872939
+"497","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.53596991914225,0.83154390928887
+"498","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.433708653192245,0.823972308265064
+"499","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.418411092482755,0.823982161737237
+"500","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.600321220507494,0.797675530313584
+"501","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.608977774708103,0.837494110362086
+"502","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.32732130926341,0.835736741833867
+"503","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.548729028493018,0.832956185074216
+"504","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.605911312128357,0.818284861851303
+"505","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.474800633590236,0.819153876990981
+"506","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.469529737727497,0.809466436507743
+"507","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.378643214270604,0.81238066443063
+"508","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.282181198451131,0.799659153801873
+"509","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.334613743567051,0.814899701632671
+"510","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516659341258582,0.832287981485126
+"511","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.564583344357284,0.81187579018554
+"512","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.48182865194564,0.830470889538179
+"513","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.504660456620417,0.836883487205998
+"514","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.466918353315494,0.796715298062868
+"515","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.736082847903542,0.841283349709652
+"516","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.428304593555102,0.804564268852445
+"517","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.286641649953025,0.775101172359959
+"518","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.503288691099368,0.812721070316542
+"519","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38747878134035,0.786953828295022
+"520","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.40815058574872,0.846344643756538
+"521","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.616708586528441,0.855391908966652
+"522","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.505518709398367,0.849511388094593
+"523","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.471678045051592,0.82343072365987
+"524","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508072675597923,0.850500559396265
+"525","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.386691001323145,0.800874393404531
+"526","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.435075768631387,0.823529884829533
+"527","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.372107096281822,0.811696999798012
+"528","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565696416662503,0.76952337207673
+"529","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.329006164253136,0.790466727101126
+"530","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.284050325283436,0.814690990218552
+"531","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.577766059685624,0.838150629806665
+"532","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.56900547172839,0.812526022574969
+"533","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.515839148608119,0.833990622524151
+"534","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.555984193143437,0.826218859353375
+"535","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.468539005435134,0.797455111844505
+"536","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.608635660783403,0.816620741234262
+"537","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.237914876711903,0.827413236719926
+"538","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.482058065742059,0.857745235195058
+"539","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.487795398886069,0.85665194107176
+"540","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.512712486141062,0.843999297730787
+"541","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.624304147817808,0.787587591462127
+"542","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.344191052756932,0.825780967813207
+"543","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.32704198912833,0.854370494882036
+"544","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.702677817658082,0.831696439583447
+"545","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516988643813299,0.776120034090983
+"546","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.382128238701575,0.765351941468763
+"547","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.409207873593396,0.816060655176419
+"548","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.643878827797265,0.828259869749699
+"549","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.560934868315381,0.798768894475794
+"550","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.505421501787505,0.814055012158113
+"551","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.453724863424195,0.821221049927663
+"552","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.625663400882201,0.818020275734741
+"553","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.569785032379948,0.855086863486055
+"554","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.664890875687182,0.840812591629176
+"555","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38862279352794,0.782749133450026
+"556","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.407475608169493,0.86081497777603
+"557","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.486915226508697,0.823690330752186
+"558","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.550650306913879,0.805943986798268
+"559","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.619092786354702,0.856342351027161
+"560","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.598053110689506,0.765896764661848
+"561","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.458416183586711,0.817174081754923
+"562","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.650542498654123,0.845533361720659
+"563","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.459869041023706,0.759959172532135
+"564","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.515770169348314,0.806050718085379
+"565","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.694488782587114,0.836151788336889
+"566","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.671646065973643,0.755254401418983
+"567","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.643227901337184,0.817320371474372
+"568","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.405205445285038,0.851634499612538
+"569","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.447602235171922,0.767472377556731
+"570","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.436071692603318,0.818318534380365
+"571","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.554380880711376,0.826025098597172
+"572","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.363572668451773,0.81655001916045
+"573","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.562669001286389,0.858978455752463
+"574","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.412538952465149,0.83592751202185
+"575","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.603052742875741,0.844409931833012
+"576","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.421163689499469,0.855702045032373
+"577","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.426237188769885,0.817006870028734
+"578","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.620816144563405,0.810804778683343
+"579","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.546779255140711,0.817753854056002
+"580","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.375652983737745,0.806506784751566
+"581","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.484508163518968,0.84752116254842
+"582","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.559791808399499,0.806837679604651
+"583","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.538815348955154,0.842670171511425
+"584","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.445854064597436,0.810406781629275
+"585","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496274763997338,0.84670935853533
+"586","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.520169790936836,0.784018861631643
+"587","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.501279934349173,0.844863112885747
+"588","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.350104967430726,0.858127649678184
+"589","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565192347211846,0.840094464679949
+"590","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.586653595270161,0.816826519592995
+"591","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45407043422184,0.833827676048861
+"592","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.371739820898399,0.811340973994488
+"593","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530056473865199,0.850505780197408
+"594","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530060836322507,0.823445772327226
+"595","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.553943411081287,0.812865478957704
+"596","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.548175478944985,0.84860666601589
+"597","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.555863253639935,0.833866921318687
+"598","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.570748976969927,0.813378456975333
+"599","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.487838471441873,0.834954996499464
+"600","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.39519818746827,0.801267478301149
+"601","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.611063325558018,0.807006682418399
+"602","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.504445477886784,0.849220798020817
+"603","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.546050546128498,0.85043255051788
+"604","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.607837353362177,0.807767481321885
+"605","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.397174115372634,0.800529315258254
+"606","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.360661114824928,0.829701390298808
+"607","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.554340343674667,0.8003672331223
+"608","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530185352810819,0.836333613820415
+"609","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.39865292729922,0.823536850711973
+"610","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.523915128842308,0.797833340709537
+"611","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.581269227146241,0.83625755529739
+"612","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.531460197943985,0.816409477151096
+"613","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45209282668571,0.770533139517876
+"614","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.332425485496267,0.763857429381979
+"615","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.532414020108601,0.817133976855459
+"616","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.577634813999571,0.845223350150674
+"617","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.634120239466835,0.841075248893994
+"618","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.640864204918658,0.81902399760203
+"619","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.473691814917263,0.794513890548166
+"620","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.57129483809312,0.820255993736214
+"621","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.321777411882033,0.848661021871105
+"622","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.642987050926431,0.766665469318026
+"623","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.466108907130363,0.860347243805343
+"624","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.584385767571894,0.837925674193924
+"625","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.598839144580983,0.81553174455929
+"626","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.47889331414791,0.83913990176461
+"627","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.650806893047475,0.836246801983436
+"628","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.538703605259773,0.827001603223093
+"629","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.478168670159128,0.851770910293673
+"630","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.520088899009224,0.835683301231005
+"631","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.650518296546395,0.810450198710651
+"632","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.517114511580339,0.815616318590487
+"633","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.541077855083065,0.803448325915988
+"634","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.660794122032243,0.853711377249759
+"635","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.595700602695852,0.862301157314243
+"636","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.741186739574801,0.848954052224054
+"637","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.417309826602483,0.807800529697602
+"638","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.614138792579604,0.795587095722438
+"639","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.745699330878027,0.843421373715456
+"640","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.373790357518552,0.879026059624805
+"641","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.446718709959064,0.830038746634492
+"642","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.509017911530974,0.821224532964562
+"643","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.561612663051115,0.809094421497058
+"644","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.335341204658322,0.838511453921401
+"645","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.331816681059828,0.821521951415519
+"646","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.460871277201704,0.788513650636163
+"647","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.574961260342508,0.807952908627085
+"648","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.457531695631801,0.815452300708695
+"649","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.394235858130643,0.84034200444603
+"650","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.656422430562092,0.769975036035882
+"651","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.494901378497052,0.838707542864036
+"652","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424715809649443,0.819682983772897
+"653","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.608005680757124,0.82235012209179
+"654","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.536453577722789,0.838713200920323
+"655","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565480236457172,0.838383609957032
+"656","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.563740303855466,0.806713494081315
+"657","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.3954853466097,0.861850143134036
+"658","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.356555870593943,0.824882491236604
+"659","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.599069470165553,0.833397264421903
+"660","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.524374991104895,0.823414733130544
+"661","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.323060361529943,0.860741737772864
+"662","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.570092068925628,0.84164742083022
+"663","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.37304295633436,0.810149688461429
+"664","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.397875578153395,0.830614844622848
+"665","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.477818896318727,0.85883852584769
+"666","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.454320658704591,0.813136460371659
+"667","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.361562492867,0.825277525990855
+"668","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.714625598859074,0.813008408700924
+"669","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.489695452247331,0.830343318858912
+"670","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.528333463000644,0.819457644757382
+"671","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.393975551461667,0.809039466916
+"672","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38095031615927,0.792437796964431
+"673","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.565327304384133,0.820486066313378
+"674","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.420167628855286,0.823698980458831
+"675","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.59318605716495,0.83699070860789
+"676","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.554931192947609,0.795530487856851
+"677","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.430421378549137,0.833348929385051
+"678","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496396818658166,0.778866374955557
+"679","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.651225507194249,0.843660379574098
+"680","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.668499920736373,0.883143325544039
+"681","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.603765864509239,0.829496460513821
+"682","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.531130923473879,0.835091120825307
+"683","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.36519877553365,0.849192515478362
+"684","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.300725871035285,0.813928880723184
+"685","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.361318122653985,0.811530028535374
+"686","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.649955199289633,0.847300798081881
+"687","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.318561867709973,0.812700499014678
+"688","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.393452739200525,0.816971111461913
+"689","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508953106182532,0.834806686929487
+"690","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.480042343419542,0.813903809646131
+"691","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.718739354485198,0.844976899807301
+"692","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.373422541909473,0.796259813646038
+"693","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.481097684615764,0.770159718372985
+"694","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.483440764281468,0.801128260127681
+"695","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.692284916265963,0.839715282688259
+"696","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.65861548721798,0.855923412870824
+"697","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.643059188655807,0.802673431588534
+"698","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.243296007278597,0.829605456736754
+"699","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.462660486457712,0.836190328018779
+"700","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.379495237072638,0.840558227399404
+"701","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.409295201838092,0.82005610109291
+"702","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.774188666359737,0.791344538350586
+"703","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.517155548976886,0.850029531772146
+"704","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.504101706031375,0.825315805131509
+"705","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.485016273885934,0.775934314048489
+"706","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.599851220693032,0.787888632300309
+"707","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.470431484387966,0.840775099698441
+"708","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.632627282795319,0.824305585730168
+"709","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.406277320338647,0.852196591323721
+"710","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.522214494510741,0.824409456718815
+"711","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.303203131471439,0.811224975887037
+"712","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.356739295838041,0.797618021173984
+"713","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.457455128130359,0.843803810939361
+"714","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.552127801981836,0.833066876123073
+"715","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.314571201183719,0.830754937418389
+"716","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.543072081178553,0.826043222568201
+"717","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.48792821337625,0.801479254569695
+"718","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.382410383361726,0.784593087227788
+"719","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.43724869629429,0.805151134797322
+"720","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.506116256730269,0.843756240859598
+"721","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.382777118677949,0.881970852958793
+"722","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38640804410728,0.828849003620989
+"723","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.546291674092845,0.833412893602433
+"724","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.389518221002335,0.827291582047968
+"725","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.469832253269491,0.828802931702588
+"726","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.458975195730042,0.868046103600898
+"727","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526560025559506,0.856933686553035
+"728","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.593185415828345,0.85353641257814
+"729","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.361383382527333,0.749963217693812
+"730","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.64954137458901,0.849326680795125
+"731","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.622215077009124,0.809122089507449
+"732","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.413286087088475,0.766519347938234
+"733","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.54953485661085,0.826618134022242
+"734","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.416053731337876,0.811069545133746
+"735","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.510606654669775,0.829064159016563
+"736","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.52661589147296,0.836508006842333
+"737","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.561683251044384,0.822068479982692
+"738","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.39294369753023,0.818611459103017
+"739","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.301092816162361,0.799395733486205
+"740","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.470258058813824,0.843656806650927
+"741","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.431020405396872,0.838108434629429
+"742","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.409914913479045,0.813272813212226
+"743","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.437184946618856,0.798530803647862
+"744","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.378821520055492,0.854010193476736
+"745","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45884040612523,0.81546657257405
+"746","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.480063284032454,0.824568851584872
+"747","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.442407918614744,0.838930571898386
+"748","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.532966823387779,0.812742398128614
+"749","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.611874564529401,0.796712557071915
+"750","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.357083585236313,0.798287422370934
+"751","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.546749757528155,0.843479463125624
+"752","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.454468388538651,0.821443587956581
+"753","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.560969823509468,0.846429996247914
+"754","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.455802354156935,0.838916861844561
+"755","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.37674438447163,0.855747136581973
+"756","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.64247431088198,0.823371141254223
+"757","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.437402677659972,0.856900008524455
+"758","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.657717037902379,0.80671387088348
+"759","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.421083612333283,0.849899427766983
+"760","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.535268140042473,0.857496763692483
+"761","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.724523696197519,0.822676726121494
+"762","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.478088330881318,0.8258867178323
+"763","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.388445115544421,0.840733262844376
+"764","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.544047244467952,0.805419846966802
+"765","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.582228809259403,0.857683578144188
+"766","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.349500092701623,0.783461205465986
+"767","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.451110219489061,0.810596458062496
+"768","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.305691417215847,0.830496494827075
+"769","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.61592201716141,0.79126474308924
+"770","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.402477239566087,0.819773613505494
+"771","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.493833832387228,0.8137352505276
+"772","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.458698319274082,0.857942220850938
+"773","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.567693427215273,0.843073943420812
+"774","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.630391382720005,0.818147379079467
+"775","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.416330297328742,0.854027262053795
+"776","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.461155049534296,0.8182538225526
+"777","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.589123515494999,0.830241922574217
+"778","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.433850813566822,0.840508807795287
+"779","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.41258042376245,0.843789301727413
+"780","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.37501306601152,0.80757759915873
+"781","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.632861642832901,0.8210509862646
+"782","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.500972977175604,0.803608427539272
+"783","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.546570215025617,0.835241376060182
+"784","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.601098199126116,0.836920482120799
+"785","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.456155324626737,0.834273236171781
+"786","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.425536201612837,0.84115610374717
+"787","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.582295866058128,0.852137572970355
+"788","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.493375760725255,0.849208820603293
+"789","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526122940555533,0.8167391736597
+"790","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.613309506351092,0.796301184809273
+"791","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496360038508985,0.83469856617997
+"792","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.445112767861624,0.832579864245428
+"793","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.641086536479878,0.824991408973167
+"794","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.412410251073963,0.848505212211859
+"795","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.624838612725378,0.857428681012152
+"796","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.253907658472865,0.833291519937307
+"797","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.412591806686812,0.818102402664987
+"798","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.639951730210706,0.818103695551772
+"799","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.43251990386334,0.821098271715837
+"800","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.476635904517416,0.849899941919581
+"801","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.59267349021861,0.848757564289889
+"802","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.497550719894473,0.832038972840286
+"803","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.545693391906444,0.860377257543906
+"804","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.486852043344932,0.811248027165846
+"805","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.570892823365503,0.827535429695799
+"806","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.651278598158435,0.834102524605014
+"807","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.579784495043331,0.841543937225334
+"808","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.724214868798918,0.81938787149761
+"809","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.34756948180434,0.83492875881007
+"810","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.465693430434212,0.838034974087666
+"811","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530507772852542,0.852175268729194
+"812","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.529453841539743,0.846047239329926
+"813","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.458737559283974,0.787786019938817
+"814","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.400307040775927,0.798390971889347
+"815","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.526547229290226,0.815879558149649
+"816","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.512840262997021,0.827669758969192
+"817","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.47790480296167,0.820828173447743
+"818","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.562627031759858,0.845065017890087
+"819","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.207168428035469,0.830170567317571
+"820","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.449203565038422,0.813911407774082
+"821","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.407091098682292,0.83646296957344
+"822","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.530237949275451,0.83055902472665
+"823","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.374895245823986,0.788144279816845
+"824","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.38490261055325,0.825759689601333
+"825","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.590753219120683,0.812425808501695
+"826","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.484368726671393,0.811672235902638
+"827","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424249570298158,0.814613603900131
+"828","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.411329820233957,0.853541913951364
+"829","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.54111784886642,0.822153030280202
+"830","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.50788201400832,0.800951741883641
+"831","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.378791780506951,0.791691908009943
+"832","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.499771216576136,0.869756403537586
+"833","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.684622926620454,0.849346333081205
+"834","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.535011298402366,0.856372232358748
+"835","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.677389980468224,0.812661960493077
+"836","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.464425292689105,0.785530258510131
+"837","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.585721270147581,0.821747690485766
+"838","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.603037751535779,0.835922946025778
+"839","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.640136363415691,0.853977301200621
+"840","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.52358672606814,0.82870833399805
+"841","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.4359999216805,0.79933940629899
+"842","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.468263968654984,0.801353172657973
+"843","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.471862145421364,0.82740317807278
+"844","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.413098529251065,0.785023088888594
+"845","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.621043326941104,0.860786906533055
+"846","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.380213958265433,0.838458175408453
+"847","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.359811043583973,0.847433573696379
+"848","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.580341024851365,0.800043442593049
+"849","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.320804908867326,0.779045026137298
+"850","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.298064279812031,0.805068174930752
+"851","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.732986281415034,0.811048190364231
+"852","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.439248752792767,0.800743222610128
+"853","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.399704146595875,0.797708565275358
+"854","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.516014301186694,0.824679734795701
+"855","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.566962087709408,0.823289564595714
+"856","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.418650177852518,0.82672901759243
+"857","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.540496729953314,0.831451553672558
+"858","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.533067501612778,0.788782961827454
+"859","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.314173808129385,0.754533580330948
+"860","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.639430489820502,0.864743370222915
+"861","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.481243378221207,0.820260566481702
+"862","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.245600034560046,0.785827746673628
+"863","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.395398938251447,0.805288847225051
+"864","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.366322310824243,0.829006825116602
+"865","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.571028728101486,0.836830664640256
+"866","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.64625553286961,0.792132055259047
+"867","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.600754930049033,0.877987806697219
+"868","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.463530573326166,0.837383231734778
+"869","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.420205692940045,0.794106070753282
+"870","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.303908585567898,0.817260165247507
+"871","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.333012574963026,0.845206336751305
+"872","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.709525049150773,0.832045828590081
+"873","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.584829776615634,0.842332919066238
+"874","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.420876911498763,0.805779153953555
+"875","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.49161246644554,0.853343489447914
+"876","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.54563181080423,0.79846561696361
+"877","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.527117876732925,0.799595043212986
+"878","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.462602250083096,0.83693064038104
+"879","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.392735043805623,0.808523953826058
+"880","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.701326539462625,0.844923263007968
+"881","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.551487922480984,0.775643623788671
+"882","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.558429947298497,0.856860376172029
+"883","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.571242795820072,0.792255951298532
+"884","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.494517590460062,0.819710781914834
+"885","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.382604835126409,0.875688549912018
+"886","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.684516024130783,0.830458090934495
+"887","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.40675482508429,0.828738639423746
+"888","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.605294673445163,0.808341533036078
+"889","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.346067697562865,0.846084219992063
+"890","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.388097570087447,0.787211747228116
+"891","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.459860103525296,0.82068202642806
+"892","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.385760612517095,0.795269802514288
+"893","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508914047323533,0.795253403900731
+"894","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.490972868558989,0.781288390748628
+"895","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.762915600310546,0.855154012801525
+"896","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.46840781903835,0.817450859722482
+"897","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.52528610748985,0.782555147191979
+"898","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.410296677780918,0.791475889497669
+"899","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.548445454417393,0.819458350014818
+"900","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.332680531867292,0.874794140055319
+"901","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.496478644469447,0.76814510687173
+"902","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.465065047893991,0.7655167621977
+"903","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.269671617577811,0.842660012106602
+"904","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.61623505140306,0.799654182231271
+"905","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.570275742246167,0.828816668564946
+"906","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.449910127535506,0.777273830741716
+"907","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.620704572676286,0.826577740198493
+"908","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.477907358900743,0.833769517688763
+"909","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.395486480600218,0.823817492253408
+"910","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.432685762132393,0.759190264303087
+"911","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.679504952410182,0.816863853430687
+"912","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.306310917109596,0.834940912524399
+"913","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.472667607747947,0.802979039126042
+"914","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.510995029194537,0.788893360557999
+"915","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.580926598668835,0.818869132978354
+"916","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.513153523931987,0.866028452980052
+"917","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.5685731281092,0.781490888222301
+"918","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.43004079688997,0.817397761171235
+"919","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.46493462411723,0.840187514493125
+"920","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.608955361159315,0.779327023110971
+"921","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.498283092651956,0.835951012342489
+"922","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.616195680164652,0.780648270408334
+"923","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.49229726546402,0.815348709608104
+"924","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.559825547560803,0.784203193828912
+"925","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.534514398166101,0.779992754967184
+"926","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.479123577887019,0.816479935957317
+"927","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424226984891095,0.760588682621334
+"928","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.500701161449138,0.85135744212531
+"929","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.578116499686684,0.840434758239552
+"930","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.478694019545858,0.84920314683472
+"931","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.34442561409094,0.788538388144907
+"932","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.724539945045444,0.825789120667786
+"933","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.532856465308848,0.869661126867095
+"934","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.73244768347698,0.767164613753977
+"935","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.600376720802222,0.854999070289867
+"936","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.338650609231383,0.842592784064386
+"937","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.730690216771246,0.855175922986614
+"938","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.450574440174822,0.808570713021681
+"939","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.443099016954088,0.772849443078811
+"940","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.361918524034615,0.818580911293217
+"941","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.379490700608213,0.881597101360767
+"942","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.383906892666609,0.793994126236537
+"943","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.582942110796881,0.799559845563159
+"944","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.475029903415343,0.783669412466192
+"945","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.404523960062658,0.794460809156664
+"946","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.218177182681512,0.797881652505737
+"947","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.231661003821294,0.834166787392739
+"948","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.657141979673168,0.801463779456549
+"949","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.482586322386585,0.865053687249911
+"950","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.585082208478189,0.837010619087683
+"951","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.614911814692468,0.83210046238635
+"952","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.622177529175577,0.859489479339057
+"953","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.452831877989838,0.818101439174412
+"954","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.367015815630764,0.786184970369148
+"955","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.62996415866967,0.824776389230158
+"956","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.705324782930247,0.820804392188609
+"957","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.573851501360731,0.82751255175173
+"958","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.65006738032997,0.837007447141938
+"959","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.481565201061338,0.807014665869152
+"960","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.527950073474089,0.777649402427716
+"961","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.596058082726326,0.844386353298356
+"962","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.461007111536584,0.794039181969768
+"963","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.391118288712595,0.803323018175048
+"964","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.402815232518855,0.838670097756303
+"965","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.437921065623674,0.811455997060216
+"966","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.264088610574149,0.831944528458843
+"967","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.628965030432453,0.84310018021375
+"968","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.45385746003337,0.817113540901288
+"969","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.685757251638903,0.803825228394851
+"970","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.430703079085045,0.861415650783921
+"971","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.529468523836799,0.758320800975986
+"972","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.542390858699561,0.84124824301709
+"973","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.419486504816312,0.876251387945587
+"974","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.406181724638399,0.803792243596908
+"975","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.550852160021108,0.770084032445626
+"976","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.424059340078151,0.816099087491069
+"977","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.392076350637976,0.847887851226275
+"978","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.351031639373465,0.819164626793459
+"979","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.608208700924932,0.793697904272741
+"980","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.404814241308489,0.794527510884444
+"981","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.472190931937808,0.814468606435826
+"982","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.49924354493988,0.884302307465639
+"983","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.505954591734417,0.846544653920006
+"984","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.395818833352865,0.844647255660844
+"985","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.430795778527033,0.795178971137908
+"986","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.417732312720037,0.747484678638285
+"987","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.556549835849262,0.789991691842232
+"988","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.684025650991398,0.782113478035165
+"989","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.448105751786258,0.848498556267921
+"990","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.653048785581763,0.837935322001535
+"991","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.548533373034748,0.813754706912333
+"992","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.508728156114803,0.839388627164384
+"993","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.534573773687756,0.859364343138093
+"994","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.64681335976136,0.814083726841778
+"995","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.524042655553057,0.832433407894105
+"996","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.411513285216552,0.816901113442638
+"997","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.541877749626668,0.85302364381702
+"998","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.311618109264768,0.812628770966551
+"999","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.393973006992183,0.7948518301618
+"1000","cfDNA Fragmentome LCr Score","Pre-fibrotic liver disease",0.474515668802013,0.817532304519856
+"1001","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0863378809974769,0.825446701823961
+"1002","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0324558454746416,0.86576603128846
+"1003","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0543067390931121,0.847128674179744
+"1004","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.121663263710617,0.861963475804308
+"1005","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0515666269354936,0.85904797479231
+"1006","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11150611162946,0.697105280280585
+"1007","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0257705124319951,0.913101254644269
+"1008","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.119778503379018,0.908037993176693
+"1009","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0573054794015029,0.836257861898938
+"1010","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.061282827298359,0.731863280631181
+"1011","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0937647283858656,0.878147236917774
+"1012","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.022085903739901,0.906900003177597
+"1013","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0659390154174329,0.917027664370976
+"1014","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.168836786116488,0.930094200454536
+"1015","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0487812943539367,0.890523277167024
+"1016","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.055772190115084,0.95096286562701
+"1017","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120845675270664,0.910431936006358
+"1018","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.127181147239802,0.900308444750789
+"1019","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115320465866792,0.697071318577004
+"1020","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.104497481338055,0.937077686628176
+"1021","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.105624095465312,0.873676396516315
+"1022","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0835862975943693,0.908273136164555
+"1023","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0943907013294882,0.939999999950415
+"1024","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.160587762353874,0.902424703082173
+"1025","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.160420384396713,0.84080213017114
+"1026","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.161422812410169,0.650645032368113
+"1027","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0898993857568757,0.833052287880655
+"1028","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0563344865543941,0.85636503768595
+"1029","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1813669993248,0.809656226637122
+"1030","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.129580806627525,0.807097203019575
+"1031","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117942962218606,0.831311881108686
+"1032","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0665228405591986,0.871950170361176
+"1033","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0384464448503445,0.786888898142469
+"1034","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0878223727300183,0.837146613451083
+"1035","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.219822722843243,0.937118244675469
+"1036","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.140209113616567,0.87921774434361
+"1037","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0881163509753853,0.771844674105852
+"1038","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0867603099277337,0.892344974407298
+"1039","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122035173070841,0.756893641919323
+"1040","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137109558882534,0.960490170229416
+"1041","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0632063215470772,0.967807303979906
+"1042","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.144754222723538,0.95089257226176
+"1043","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.111124872435657,0.833908965163795
+"1044","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157802291506546,0.96215876365052
+"1045","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.074298863516268,0.807748920701606
+"1046","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0548571959868134,0.795853271151144
+"1047","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130386661349053,0.885503852984011
+"1048","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.184047037249584,0.969996603199348
+"1049","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.143458637635627,0.520195173169219
+"1050","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.29254828622605,0.741570951922696
+"1051","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0385606294194042,0.71150471714042
+"1052","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.127669903046156,0.851790281128124
+"1053","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0949865153858189,0.703332623412093
+"1054","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0391679745843434,0.868666669011389
+"1055","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0684325352006765,0.826219987107874
+"1056","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.024790026364151,0.946348404273493
+"1057","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.171845382366843,0.792033070828642
+"1058","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.150478093534921,0.871315500526037
+"1059","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0602502077368677,0.970915642304799
+"1060","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0763136441993495,0.859119325521975
+"1061","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102273160079456,0.895158169951408
+"1062","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0334402923741277,0.853310874177332
+"1063","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0494376045501447,0.875764807646758
+"1064","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0538033299123441,0.726290255557928
+"1065","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.154834183713932,0.962226380350669
+"1066","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.113981296570457,0.902833878020275
+"1067","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.079739532415953,0.857948229857484
+"1068","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0718888686417715,0.813019571271326
+"1069","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0317021887286706,0.8259500397391
+"1070","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.140926968668597,0.712356613281524
+"1071","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0354237611167812,0.858866108541987
+"1072","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.13240770327855,0.808682623003682
+"1073","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0726581761945592,0.787619811014462
+"1074","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.029832649484159,0.748618443675092
+"1075","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.153142183094769,0.711716809043233
+"1076","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0324986773253384,0.958428269803349
+"1077","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0690727595319337,0.863886147062379
+"1078","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0885013262377826,0.82271120656076
+"1079","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.198039322944407,0.84116371860305
+"1080","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.182355693876078,0.801004411577696
+"1081","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103622161197608,0.855075374460199
+"1082","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0632680628738119,0.669012770010011
+"1083","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0363801462953476,0.745845732698587
+"1084","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.135762537979845,0.829951060348131
+"1085","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0231790381184703,0.810532169437891
+"1086","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.14227668423429,0.821105664452164
+"1087","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125296114106157,0.825389704957409
+"1088","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101933257431163,0.87388037829217
+"1089","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.148589664374379,0.831140855421625
+"1090","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.197868721650269,0.753174795913988
+"1091","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0819309710164317,0.792651592132929
+"1092","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0814493967311395,0.896041993929378
+"1093","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.151985013644667,0.733350631020555
+"1094","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123831214128753,0.718937149498821
+"1095","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0975282288848259,0.853639983900264
+"1096","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0460636127963108,0.874825886137525
+"1097","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0658283391982209,0.838510787887819
+"1098","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.275907786836404,0.780244005093953
+"1099","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0117215191881414,0.856134585758523
+"1100","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0435842729204482,0.854623299289618
+"1101","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.106360392380671,0.899233255881684
+"1102","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.226150615840348,0.92374841702521
+"1103","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.172616118759762,0.918836070695701
+"1104","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0643887968580527,0.897395332003457
+"1105","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0309094219326938,0.835267157374607
+"1106","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0123097215435033,0.898062918319798
+"1107","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130464307624585,0.730921119511909
+"1108","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0243041064668524,0.841084199313263
+"1109","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103252634127752,0.715528659979155
+"1110","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0867783210085496,0.789711956280255
+"1111","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0919305869193117,0.666579665849523
+"1112","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.145865221175313,0.872769022281194
+"1113","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.210153400769527,0.806744889479902
+"1114","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0933277337793465,0.904410748977128
+"1115","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.146346590459339,0.951074411313534
+"1116","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0568059369942646,0.83520845320285
+"1117","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0372697742153484,0.964800871959342
+"1118","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0346941371668526,0.62563414235087
+"1119","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107996891185013,0.820735134055248
+"1120","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.081260658769617,0.809861869305102
+"1121","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.180267187469714,0.83918362209431
+"1122","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0514784468866595,0.771150228884386
+"1123","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0934701802095044,0.849749977402468
+"1124","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0158310651834173,0.737829906337579
+"1125","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.124795175714675,0.653856540699264
+"1126","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0251896193054246,0.838464148433368
+"1127","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123128237356266,0.798511251485448
+"1128","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0855953897090756,0.953233940958149
+"1129","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.141282013265844,0.886589831422813
+"1130","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0424202148167646,0.905671458992371
+"1131","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0525871399823161,0.825526493890617
+"1132","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0810758969868507,0.926298418960054
+"1133","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0840531754418441,0.819910471348814
+"1134","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00334455158414988,0.923266159556261
+"1135","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0270136915382345,0.810265085985586
+"1136","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125562377547994,0.853640738341696
+"1137","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.186691797817394,0.893278099599274
+"1138","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0928692020704341,0.763976233164046
+"1139","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0307218943617779,0.882386949286244
+"1140","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0694079149489891,0.969105309096559
+"1141","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0358301200409031,0.910618973852842
+"1142","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0549241200095828,0.912552448305658
+"1143","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0727678462916179,0.827693941515066
+"1144","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.151333176950167,0.899492094141785
+"1145","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.055762845232921,0.885148593377599
+"1146","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0448780461265659,0.876021236354914
+"1147","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00915923462510756,0.753356206974624
+"1148","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.224221803012134,0.769059755209069
+"1149","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0985413445204002,0.939898891489888
+"1150","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0668933497785097,0.795456355940049
+"1151","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.139800208413726,0.86240323145772
+"1152","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.108787900934395,0.783248255435807
+"1153","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.145946375425912,0.838409653273536
+"1154","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0109634822953613,0.911611961235254
+"1155","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0390699022968601,0.786033097825048
+"1156","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.059392112137457,0.85634857594687
+"1157","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0637441426739638,0.967732270192913
+"1158","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.16582720889925,0.864511351680711
+"1159","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.196786946201799,0.77332352583621
+"1160","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.04600850093486,0.812486358249088
+"1161","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0820590880819036,0.902944582690887
+"1162","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0469441806137857,0.947987347097763
+"1163","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0784712027471701,0.925666012260924
+"1164","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0210868096619566,0.858203404334992
+"1165","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101425924973751,0.656701381580791
+"1166","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157005226227941,0.877925311828242
+"1167","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0726368985758037,0.840526373568182
+"1168","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0369302661070629,0.84926645419148
+"1169","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.194983091846182,0.922688656870732
+"1170","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.158150550649013,0.949170506925451
+"1171","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0286816840286433,0.865145330432756
+"1172","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0789760979493531,0.787220231082357
+"1173","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.131066880910101,0.947277599135054
+"1174","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0520983432926943,0.943999493501521
+"1175","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.14034415849703,0.906021157397744
+"1176","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.180261617306865,0.835849267543192
+"1177","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0759695698376684,0.87737485603789
+"1178","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155418608640121,0.669233366235123
+"1179","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.142833959745429,0.895956621251785
+"1180","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11139723141652,0.866753516210756
+"1181","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0237631824662726,0.914243458274464
+"1182","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0861390499368257,0.798730302253953
+"1183","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0578626276159946,0.772119594077082
+"1184","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.217989371303355,0.879986832425594
+"1185","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0491897020455255,0.958013154587031
+"1186","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0847681729772966,0.936471306743391
+"1187","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0952916196361511,0.881384667338559
+"1188","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0370488640849584,0.791889701015741
+"1189","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0853106171713233,0.843764553924243
+"1190","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0908374286672873,0.860160074195042
+"1191","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0633038044239637,0.805203290499977
+"1192","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0563113976397783,0.900893900255097
+"1193","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.220221311081394,0.844370299783999
+"1194","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137694642008609,0.870969264669786
+"1195","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.237749255021072,0.801361516068447
+"1196","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103098066721323,0.930488264313679
+"1197","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.062658848809106,0.758459485570413
+"1198","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0816750019285599,0.807384155221578
+"1199","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0464569301641854,0.880558687199336
+"1200","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.124897152675825,0.910608546569853
+"1201","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00832810009755995,0.81475502476842
+"1202","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00574922011888778,0.856060712646739
+"1203","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137391209491739,0.965962675978923
+"1204","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.18240436405088,0.843805819244333
+"1205","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0444703626543859,0.758782689793952
+"1206","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.169142882167421,0.715188519030605
+"1207","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0669540145859173,0.802649828917797
+"1208","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0937800368977728,0.865464922725292
+"1209","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0738784234958273,0.745547074486449
+"1210","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.12099709003678,0.74757307873869
+"1211","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0597837625496372,0.747341213175685
+"1212","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.13008745820542,0.610786048341327
+"1213","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117586449459777,0.763369078578674
+"1214","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.064104345450701,0.903236143782686
+"1215","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.065053538336978,0.874569732944502
+"1216","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.154529631968561,0.893956214977933
+"1217","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0472518313816261,0.894973597002561
+"1218","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0633263376194361,0.933908443363516
+"1219","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.27960394951598,0.891532422997976
+"1220","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0368891430869329,0.783513402613323
+"1221","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0843301814996685,0.928446157418916
+"1222","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0551746622585971,0.906340171936115
+"1223","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.184750482263157,0.823127814713069
+"1224","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.119011875653211,0.906089806281795
+"1225","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0486864983012852,0.933660391703333
+"1226","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0475693892922889,0.928562300891923
+"1227","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0469064318048396,0.864314865583824
+"1228","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0141105037589856,0.924066942759671
+"1229","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0874380611720663,0.758405441071685
+"1230","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.015557010884418,0.907189246822907
+"1231","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.191848896956203,0.932169815026213
+"1232","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.159999763584674,0.837954800714595
+"1233","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.075628579747166,0.717542144583646
+"1234","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0252984378449084,0.973540222358505
+"1235","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0404814781944717,0.917576434185842
+"1236","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0831413410364302,0.914573832107702
+"1237","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.300002771226623,0.872616738704374
+"1238","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0464625149635522,0.932989080891584
+"1239","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.086717132698655,0.718889654252453
+"1240","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0812224737154551,0.927793299925122
+"1241","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.177350267867349,0.909969720200358
+"1242","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.076336826763497,0.728599649508181
+"1243","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0283162757518363,0.900682123912902
+"1244","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0938756332283607,0.888650985745189
+"1245","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.183572893403928,0.90098647447243
+"1246","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0315156647707878,0.793103317571806
+"1247","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0738136200561689,0.95445167742421
+"1248","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0745378368772778,0.856359021041586
+"1249","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.131080301727603,0.867741604167258
+"1250","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0159173540744528,0.936882140204187
+"1251","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0469926499210029,0.96705331851757
+"1252","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0604430367621824,0.953235047567918
+"1253","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.088769218206614,0.829484808760356
+"1254","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0512263547660008,0.875903091402722
+"1255","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0596367553289655,0.759083361163313
+"1256","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.17721905478509,0.757424314558215
+"1257","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117893877027528,0.768369670608167
+"1258","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0709785420750911,0.946119921490118
+"1259","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.142460334079351,0.800493369079937
+"1260","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0629255102556769,0.916734072990075
+"1261","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0604601496470638,0.807230423057349
+"1262","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0584536768488695,0.799572363793974
+"1263","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0405951170451393,0.942702881755664
+"1264","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0538596191466637,0.904697940933323
+"1265","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.151076874314377,0.856892759185152
+"1266","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.106026955576013,0.758659484744073
+"1267","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.131161752653989,0.832399469005284
+"1268","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0937058803052854,0.722260920360915
+"1269","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.18879863996186,0.859813965190246
+"1270","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0816826063690427,0.862266460442965
+"1271","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0366334353940388,0.787043104739813
+"1272","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0735682991431402,0.799632504916661
+"1273","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.070040089584643,0.794748649259582
+"1274","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0263876787291578,0.877246328737739
+"1275","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0603659866994804,0.860184458361702
+"1276","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157183092643322,0.76951762979574
+"1277","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.129916386945835,0.903610707611506
+"1278","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.149831092071424,0.958263513745601
+"1279","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0617509568148396,0.847748848342706
+"1280","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.162562655477528,0.817257719053955
+"1281","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0752158374612158,0.861658027424123
+"1282","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0732960256524908,0.862961665787587
+"1283","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.113103995961816,0.967133206994077
+"1284","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0881795955143679,0.924328139816225
+"1285","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0604040092840629,0.958834962084881
+"1286","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101050107960679,0.774092192837352
+"1287","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0873635719866021,0.852326069468881
+"1288","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0627542553400732,0.85113887653352
+"1289","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0981096489424308,0.777842676600016
+"1290","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.301296002194348,0.807952480910852
+"1291","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0549311755964568,0.767522088331233
+"1292","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.110260725841245,0.791351291835426
+"1293","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152097995579002,0.9192011460071
+"1294","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.113663210222864,0.693004595241914
+"1295","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.271216910105453,0.944492888603556
+"1296","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.129432024693651,0.870869991639065
+"1297","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0409659082700951,0.855362545088544
+"1298","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.132561847714288,0.939657785355152
+"1299","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.129263731350945,0.950841323400127
+"1300","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.105801658909661,0.952488833379063
+"1301","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.142654190710755,0.805743122727975
+"1302","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103755830072064,0.857508640275555
+"1303","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0601075405334988,0.943763342044977
+"1304","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0545756031626736,0.875427579579067
+"1305","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118943638131567,0.880476894361941
+"1306","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0952545811721685,0.981691112797646
+"1307","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101123029331679,0.82487708627499
+"1308","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0581929557057167,0.873048970421869
+"1309","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.22639386698852,0.673397645690492
+"1310","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0654674649988322,0.797355911981541
+"1311","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0895121916098285,0.773569850370034
+"1312","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.127860848965408,0.814647399420894
+"1313","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.218000659545706,0.75653481307495
+"1314","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0341348156426469,0.806522655166404
+"1315","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0075712117473891,0.823210435644599
+"1316","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0316703738058664,0.762006032550947
+"1317","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0530058371655062,0.80481381650053
+"1318","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0500630988638014,0.916191847721819
+"1319","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0651972440695057,0.902797381627468
+"1320","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0846077947462408,0.847740365698901
+"1321","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0197733190530231,0.915543475536989
+"1322","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107273695074685,0.884421369005957
+"1323","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120899527667625,0.751275093160246
+"1324","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0754107042925369,0.934913929329811
+"1325","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0903238489953185,0.983842645873122
+"1326","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.114936088865034,0.869086677483908
+"1327","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0520450256929688,0.904519035959459
+"1328","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0256227008682451,0.866167044546609
+"1329","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.147401000272347,0.95133120188607
+"1330","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1446176075058,0.590803054250685
+"1331","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0540718492424327,0.819604983224483
+"1332","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0941436042698846,0.969749626226248
+"1333","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0551070444186769,0.879775186790145
+"1334","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0549323099095303,0.959118453470029
+"1335","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.147532976102325,0.821359771325827
+"1336","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0852348483571402,0.971872989585286
+"1337","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.212899477012371,0.85082873749457
+"1338","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.124183692170179,0.906743467651067
+"1339","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155613952391738,0.823011569298307
+"1340","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.158725595139112,0.858663348228234
+"1341","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0661269494012431,0.870688532556887
+"1342","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0716480085066721,0.848232966537418
+"1343","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.111470737730307,0.934191581741063
+"1344","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0582801743237895,0.869909047450804
+"1345","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.077975947070398,0.826389993014773
+"1346","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0573880587572512,0.929993484636664
+"1347","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0737225621635166,0.861623145164947
+"1348","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0671426826470909,0.860662539578984
+"1349","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0255398604399603,0.879559242098839
+"1350","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0766622021878878,0.862030906957785
+"1351","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0335987786355821,0.86829536200345
+"1352","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.150928329200613,0.854127781857419
+"1353","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.283510786012419,0.865757771176474
+"1354","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0674590574361904,0.915432656007155
+"1355","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0529730022966304,0.976089156397036
+"1356","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0628383288791462,0.885826561030288
+"1357","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0222907940190963,0.70365308130695
+"1358","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0168660756146842,0.869743469896663
+"1359","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157864766296671,0.695586808308468
+"1360","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.100255957708019,0.857784542135247
+"1361","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0731516171009614,0.978542042336607
+"1362","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11850326337544,0.981223839651728
+"1363","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1837049480634,0.937085026480485
+"1364","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.165300743514709,0.675585915714706
+"1365","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152657958310227,0.815093317994715
+"1366","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.215747750923022,0.720370360080064
+"1367","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0403983774491695,0.912084547990746
+"1368","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.188586721644261,0.875818997534666
+"1369","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0146545084597181,0.755190917700459
+"1370","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.12757708850058,0.755282745408027
+"1371","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0511282837711267,0.921561945564067
+"1372","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0648705255170669,0.667678925459562
+"1373","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0644673942906395,0.858490230380649
+"1374","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.223432150982137,0.700899766164549
+"1375","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.229660803438872,0.808332552531867
+"1376","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.128442874129788,0.772677484939068
+"1377","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0857645867338824,0.882260819448505
+"1378","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0433387644360688,0.885237591411524
+"1379","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0494574474137875,0.914152320666398
+"1380","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0458045278843084,0.955089302415513
+"1381","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0708961494566182,0.906699092494481
+"1382","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0861678745694429,0.859581026405968
+"1383","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.189757997527131,0.835497663625457
+"1384","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0342453408058212,0.88450786685975
+"1385","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.025931550542938,0.835857895007031
+"1386","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0392046410698476,0.905113476542106
+"1387","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.184953240374392,0.743535390834002
+"1388","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.096923319091508,0.785172266884537
+"1389","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102153744335391,0.76230853312284
+"1390","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0524375344650629,0.866481589201957
+"1391","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0658356780955515,0.909554715957844
+"1392","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0117736896615306,0.9520574254229
+"1393","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0297858048980675,0.859822216956987
+"1394","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.100292593628391,0.736284124623358
+"1395","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0868586429633167,0.94133007873091
+"1396","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130744071406253,0.919217661129489
+"1397","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.145154039189628,0.751223731952262
+"1398","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0238528543367648,0.946801897149278
+"1399","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.154683131428531,0.842414372044737
+"1400","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120463886137469,0.876984735864646
+"1401","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0785538485242245,0.650450224929826
+"1402","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103089836912239,0.880573251232494
+"1403","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11272029643601,0.801937370321467
+"1404","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0779736634357503,0.704536414360008
+"1405","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.143835706553096,0.882832912271253
+"1406","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.112297913049366,0.878298219236484
+"1407","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.112755813311385,0.909288874317735
+"1408","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.105072642160591,0.949223917452989
+"1409","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137129667001431,0.916040592289111
+"1410","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.140439411850113,0.837773294249745
+"1411","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0853700499980874,0.712695755787099
+"1412","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0408876674926026,0.80001046946043
+"1413","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0249999737395893,0.906130572335325
+"1414","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.100880612326335,0.800275317925958
+"1415","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.108665849843022,0.86213946582519
+"1416","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.154864076834998,0.95902816640557
+"1417","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0389168043643994,0.857679550450987
+"1418","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0865452735341792,0.891110333962045
+"1419","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.010075517889239,0.95516327259471
+"1420","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0441593656565214,0.836089880104798
+"1421","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.098610496479794,0.870984913139466
+"1422","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.10962045672717,0.824863740960257
+"1423","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.148290469157272,0.969985572645616
+"1424","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0922528836896109,0.733985494125584
+"1425","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0762507257975765,0.862467956518837
+"1426","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0746069832500675,0.887053955236087
+"1427","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0578244321497798,0.814112725395998
+"1428","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0467305681258364,0.892558184096939
+"1429","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.112750007640724,0.813286980950966
+"1430","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.019787690990099,0.894027595830641
+"1431","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.121823474085724,0.863244720610221
+"1432","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.200378941706043,0.73898524492497
+"1433","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.095323739629875,0.900131495506159
+"1434","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125675054926974,0.722976780044965
+"1435","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.2723100409272,0.919357684577177
+"1436","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.132205436080228,0.881395722855618
+"1437","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102394190228119,0.938512637368151
+"1438","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.034084152927747,0.860798193698943
+"1439","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0554193179727098,0.84240289841492
+"1440","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0871106530690127,0.738469510087226
+"1441","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.158193671913058,0.942039365638266
+"1442","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0904117365448548,0.888950330569885
+"1443","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118346843441383,0.912138024585947
+"1444","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0922404941202347,0.913433353304974
+"1445","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0579356426136624,0.830890304756428
+"1446","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0329178187454273,0.654841557097825
+"1447","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.128073905368729,0.885312952458496
+"1448","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.110074254359994,0.882300687353971
+"1449","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0698344155689011,0.753121669927271
+"1450","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0646499257313171,0.821170416578392
+"1451","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107801366907281,0.89948114761839
+"1452","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.064525350024057,0.639446484337001
+"1453","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0666177634769146,0.850096171360228
+"1454","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0323854499496768,0.908952946762586
+"1455","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.269028100781894,0.928910233087622
+"1456","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0435161961237413,0.862332873478982
+"1457","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.186401513869955,0.895383158887683
+"1458","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0338888313725364,0.864283647000141
+"1459","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137744105102026,0.722923549543388
+"1460","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.139327444881829,0.967647476845847
+"1461","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.133076857229595,0.961942011521537
+"1462","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0520039292498252,0.856676889533597
+"1463","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0541171943013415,0.842137891598505
+"1464","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0896735669994655,0.652754142642348
+"1465","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0958542649954442,0.831342409089074
+"1466","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0512746577039355,0.794813085978792
+"1467","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0769104918607369,0.879887904948631
+"1468","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.12505078622849,0.829093560429927
+"1469","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0817330155669674,0.79592056390518
+"1470","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155338569269082,0.840644413006239
+"1471","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.100876485472893,0.824167404154154
+"1472","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.173010986339272,0.71362947529545
+"1473","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0643650003099578,0.79550869307902
+"1474","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0512839581395868,0.738886622742627
+"1475","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0873356913148389,0.722437535296865
+"1476","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0499912298776213,0.86054807301562
+"1477","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0924145112030141,0.857183185641583
+"1478","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.134627268342137,0.868868744952053
+"1479","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155506802869746,0.772848583266341
+"1480","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0815588493683153,0.835311660704335
+"1481","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.077356337225443,0.787465093726371
+"1482","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0344037779130985,0.762332768597098
+"1483","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0742609013729943,0.947425821747823
+"1484","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0830077287784049,0.932887002108692
+"1485","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0625367295242103,0.960360698755836
+"1486","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0579139771643651,0.901848251943928
+"1487","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0697487684347201,0.888375213639841
+"1488","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.082524833565069,0.816724520011243
+"1489","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101160107815238,0.832741151080356
+"1490","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0527838380352308,0.930804025173653
+"1491","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.221264530061431,0.74027962252687
+"1492","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11767932697384,0.821192327319446
+"1493","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0531603793307054,0.846575233786642
+"1494","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152621838737673,0.916078367863254
+"1495","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.148795323562522,0.858745482347246
+"1496","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.149906082187983,0.866045537711915
+"1497","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.172453291034408,0.881038811186265
+"1498","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0254267925707641,0.694840020108467
+"1499","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.036898346462361,0.930016545615743
+"1500","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.219156036799323,0.880376956611034
+"1501","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117066324667258,0.831067026349641
+"1502","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0831120219314912,0.826538685715818
+"1503","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.100899018760141,0.917577500448576
+"1504","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0398743207621681,0.828938745546447
+"1505","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0453993554877761,0.712723304458914
+"1506","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0665733140038268,0.71777839579997
+"1507","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0397622290636816,0.864607837617829
+"1508","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125233145816901,0.77339480240504
+"1509","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0653725297648753,0.929661174815539
+"1510","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.167786296125636,0.784611436139199
+"1511","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0543608448456851,0.942065614911416
+"1512","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109698471650954,0.811458104795768
+"1513","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0951351444272699,0.845178263069056
+"1514","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0322896580037308,0.801818230883591
+"1515","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0335922056765765,0.835180854734305
+"1516","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0544753409020262,0.833659227538263
+"1517","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0752024889135389,0.971469487491035
+"1518","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.139757979648902,0.680985387617791
+"1519","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0634094340029534,0.925517169551422
+"1520","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0757384662751461,0.932414982535346
+"1521","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0953833257733239,0.881898832814846
+"1522","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.141049028587004,0.907024177195059
+"1523","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0933844777259254,0.886224946011078
+"1524","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0654617953707549,0.90847070985653
+"1525","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0713010004804623,0.767322900190118
+"1526","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.142153864601186,0.83987578635656
+"1527","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0662111587791579,0.924638392509753
+"1528","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.110097663664347,0.956116422850398
+"1529","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.138061143127379,0.827504257508306
+"1530","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11342331490029,0.804211891617636
+"1531","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0942457428516147,0.916241680370182
+"1532","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.153683048439256,0.876801165742881
+"1533","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.197097152895725,0.802953870637254
+"1534","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0462102580151663,0.920734758721505
+"1535","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.113335787528755,0.882674805566922
+"1536","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.140922881678648,0.712338481931588
+"1537","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0212912751198856,0.924770771943788
+"1538","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137918678488127,0.782511036609691
+"1539","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0537378308513766,0.861454755333016
+"1540","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.09646884842494,0.765261084300064
+"1541","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0652544880404169,0.722377261073784
+"1542","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.236457296237428,0.935658444131681
+"1543","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152396997624977,0.93370934543019
+"1544","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.086109746311018,0.862826570547559
+"1545","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.181807301782259,0.880103148721472
+"1546","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130610552008325,0.761990456633187
+"1547","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.153370586302686,0.862540287600097
+"1548","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0540474816463087,0.855454099789601
+"1549","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.138805258469595,0.91306959188364
+"1550","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.133280438665549,0.7614856632104
+"1551","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0757286313723372,0.848058031333297
+"1552","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117989873101845,0.730606746948624
+"1553","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.189641062912612,0.850135685769399
+"1554","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109983195812907,0.787023225803513
+"1555","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0363457767172259,0.822084236023355
+"1556","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0413430897270559,0.828010218012991
+"1557","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0683341301024557,0.868784556288719
+"1558","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.137168843277841,0.733487346513134
+"1559","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.238737840530831,0.869068879024469
+"1560","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155369438462573,0.895940658931033
+"1561","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0296134686018755,0.755008719358995
+"1562","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0261812414548267,0.865291341941252
+"1563","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.228528281138229,0.770040192613692
+"1564","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0732241507947728,0.734281945324352
+"1565","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.180929454024674,0.936242247849583
+"1566","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109437995496825,0.919051391061533
+"1567","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0508150802924281,0.939283640661419
+"1568","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0215136828613894,0.897625168482948
+"1569","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.150156717788514,0.803391212616005
+"1570","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0944044190500134,0.842803233170829
+"1571","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0864474026042392,0.810112635551936
+"1572","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0524874563972121,0.860180054196355
+"1573","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0792165183403476,0.793054268656016
+"1574","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.315019830789031,0.880990547822115
+"1575","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0675965269265272,0.912119135906798
+"1576","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0948645661874029,0.969897196240937
+"1577","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0442109367257266,0.817002819990139
+"1578","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0635411252782223,0.875906343570649
+"1579","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0545943712919727,0.692168546298425
+"1580","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.230828775955636,0.775181837175529
+"1581","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.108703968081189,0.783502939325939
+"1582","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.212274591236618,0.904777481189181
+"1583","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.134922304214461,0.71670057808099
+"1584","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0813718572870433,0.863193755605824
+"1585","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.150840826569897,0.770841017253559
+"1586","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0763650819240585,0.909539754076716
+"1587","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0289630733783941,0.869707080912403
+"1588","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0757712014900556,0.938070707510467
+"1589","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.155795305748886,0.752020628416363
+"1590","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.23530038377865,0.900507250974056
+"1591","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.195633513718976,0.940016008037596
+"1592","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0650614117215332,0.795959357914262
+"1593","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0479139350938643,0.867325196933118
+"1594","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.14005942269147,0.909766941920587
+"1595","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0315945328429584,0.74631496782132
+"1596","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0896160348413838,0.896403785062946
+"1597","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.186579496494068,0.755341188517535
+"1598","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.263068263797951,0.767313903377844
+"1599","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0603966342194388,0.888093545842551
+"1600","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.128922911894069,0.758322366503944
+"1601","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0552060884929212,0.944106480819888
+"1602","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0632032235023824,0.920177762825815
+"1603","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0382443272210138,0.837651097669104
+"1604","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0116957815576239,0.76421920822308
+"1605","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.18812242900311,0.841848362107036
+"1606","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0448810503291218,0.901038045451282
+"1607","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.164861327814775,0.894580571545793
+"1608","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0780632941644518,0.92895141200996
+"1609","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0716583561250062,0.8862683556028
+"1610","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0920985037896096,0.874329615582932
+"1611","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0403151476101716,0.558774898765348
+"1612","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0472986171802384,0.874805291235817
+"1613","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0533708415360795,0.754446371922042
+"1614","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109934507207805,0.904888160421304
+"1615","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.116979098473858,0.779361715899758
+"1616","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101157496519262,0.861204855508434
+"1617","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.127859466203592,0.668143413403778
+"1618","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0225148960295512,0.841692960510174
+"1619","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.150400408840482,0.863531449115298
+"1620","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.145849509503605,0.779822453659265
+"1621","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.106896234094144,0.938745104106339
+"1622","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157939046118901,0.811606787249238
+"1623","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.111438915872725,0.920564751887315
+"1624","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.116446836942318,0.856150062770687
+"1625","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0621787558280399,0.957329550405313
+"1626","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0240141398543355,0.851023421746669
+"1627","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.104500332127176,0.893150536360151
+"1628","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0699763952475723,0.9318400956776
+"1629","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.145309090264687,0.920079598232367
+"1630","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.080848997361738,0.915683942388365
+"1631","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.14801008519706,0.703012417451625
+"1632","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.049125664008641,0.915546453549478
+"1633","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0884951300348218,0.938340285609085
+"1634","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120385254842652,0.649633065006615
+"1635","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122730569993033,0.713301544738278
+"1636","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.134393660193652,0.939881172048034
+"1637","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.234391123410156,0.887478076878758
+"1638","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0247536449932596,0.809586470785613
+"1639","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.159706914288124,0.830624700062538
+"1640","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0665585552369502,0.841675063924045
+"1641","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0539248662849646,0.896993088229165
+"1642","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.192087686187053,0.730529349581839
+"1643","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122384962907492,0.852207195883428
+"1644","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11937622102755,0.935887212222778
+"1645","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0833022197196227,0.804585066214797
+"1646","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0188210191432186,0.829088864647504
+"1647","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.164090302947182,0.892625221828051
+"1648","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0637835094866208,0.972693381130633
+"1649","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123856094247928,0.958621224714804
+"1650","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.050175170621301,0.742716135712344
+"1651","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.140424191213818,0.834452928055504
+"1652","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0724803011219544,0.903639402857648
+"1653","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0425861167980849,0.807959051901698
+"1654","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0626820202572595,0.814427429869064
+"1655","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120198318375472,0.804654407542507
+"1656","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0779725658019684,0.772121624238457
+"1657","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0623980823065876,0.978567704220332
+"1658","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0975705591718643,0.862532810280461
+"1659","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.173066548517467,0.90381148708833
+"1660","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0691486926315475,0.899941170596577
+"1661","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.082432375779516,0.781623113911497
+"1662","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.233759888071157,0.907297708908808
+"1663","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0273854372732945,0.933965177662908
+"1664","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0631092198551124,0.882479097444834
+"1665","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0868384667011937,0.933650983529224
+"1666","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.229960109612788,0.852217767531822
+"1667","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115766460936419,0.803181309972823
+"1668","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.029533178163941,0.875945528859585
+"1669","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115884606681423,0.946910413611891
+"1670","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157153202007564,0.915295635953623
+"1671","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.12509096935635,0.807500096950544
+"1672","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0553325961037867,0.85677995932584
+"1673","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0417319772678328,0.959020823993729
+"1674","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0513709897415316,0.89546725200639
+"1675","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0378565896887742,0.679437463116862
+"1676","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.161213828236,0.83820264047938
+"1677","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.058199004341057,0.879054198559945
+"1678","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107989072624589,0.831074465248278
+"1679","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0554242800395457,0.843157291096457
+"1680","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0689371392053091,0.8431841179929
+"1681","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.249811259026129,0.829955086588711
+"1682","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0446739262193045,0.779727332097259
+"1683","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0647056637715985,0.939618659284633
+"1684","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.02673778385602,0.920674407177419
+"1685","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0777245862289502,0.870395120137132
+"1686","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0944492412572649,0.821267101678189
+"1687","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.116454361395694,0.901705763401648
+"1688","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122026015969471,0.96030711425289
+"1689","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0373889815194398,0.822079766608723
+"1690","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.023397655794603,0.8587220520245
+"1691","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0898732903099544,0.938813890803524
+"1692","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0992112327351429,0.865049426245623
+"1693","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0188256750249896,0.809266765240862
+"1694","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.138213916798171,0.948281944229806
+"1695","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122213212128079,0.81273414678667
+"1696","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0383135591528234,0.817455807670794
+"1697","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.203062382736509,0.921430422426549
+"1698","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0133636351450705,0.87716950931661
+"1699","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0791238274989812,0.834699643354965
+"1700","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.162810818264216,0.97875738776693
+"1701","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152241814202698,0.878047620936304
+"1702","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0701346969518323,0.805662151155145
+"1703","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0465112397482807,0.89483801342235
+"1704","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0779158140525553,0.851960894233051
+"1705","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.019551973199991,0.847448089087547
+"1706","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0501610648003884,0.846446806456302
+"1707","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0284448321098884,0.901036806462725
+"1708","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.154729116460042,0.750963417946403
+"1709","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.148227416825152,0.896133476639882
+"1710","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0289769527455769,0.968868052702894
+"1711","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.233678523594277,0.887136616370155
+"1712","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118123732140655,0.985892996835608
+"1713","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.110965457421358,0.819341705860551
+"1714","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.161700261336791,0.701774781026564
+"1715","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.216766310235561,0.894972635778982
+"1716","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0835790352721723,0.830919568941443
+"1717","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0938015323461757,0.928928440492451
+"1718","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.188712176870314,0.893291761265573
+"1719","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.142105518276234,0.916343420783899
+"1720","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0792069883381127,0.723141185563419
+"1721","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0496112206683264,0.861283788717705
+"1722","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0768028431213325,0.905911309886377
+"1723","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0345734677432839,0.947326037205646
+"1724","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.143683557499274,0.780012365409498
+"1725","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0411034324217802,0.729556649462492
+"1726","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0860470970412202,0.956562688530596
+"1727","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0618139228507952,0.827084749292289
+"1728","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109155980162367,0.923387316031092
+"1729","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.126518357454284,0.901104919727246
+"1730","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.164656925770065,0.967337494834718
+"1731","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0333421829330065,0.751362723907733
+"1732","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0343501158497901,0.907693970361583
+"1733","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.144848660706259,0.872487125863384
+"1734","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0891242708176052,0.821328483515267
+"1735","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0696739764342436,0.935785710824084
+"1736","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102995474359503,0.834339415938703
+"1737","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.179566032945309,0.954255969950864
+"1738","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0218071023559026,0.796964682843962
+"1739","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0874401016328301,0.93837993326454
+"1740","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0673202523665435,0.88929677099037
+"1741","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130890602016282,0.868964825870185
+"1742","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0676363017051664,0.878361145797986
+"1743","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102281953999697,0.827315763209346
+"1744","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.211164581031231,0.899767952338508
+"1745","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0729376720733633,0.926451322499191
+"1746","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0832188755377062,0.836484609206065
+"1747","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0956887817871422,0.73020333047235
+"1748","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123739989818293,0.79037582896837
+"1749","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.114528369546082,0.701446239887231
+"1750","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00927528034415768,0.823166853635607
+"1751","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0995674249095953,0.90460725932331
+"1752","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.090433267260467,0.973311582488814
+"1753","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0873005086495382,0.868797868658742
+"1754","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0726259928623221,0.881943464790124
+"1755","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0485952421833563,0.94408702976255
+"1756","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.113441841866275,0.898581667765163
+"1757","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0786890115267146,0.906641635290592
+"1758","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0607345316090532,0.715905577908358
+"1759","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0711688739289906,0.806574223938164
+"1760","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.372068845093975,0.945062533270425
+"1761","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0636272270915942,0.912560814290279
+"1762","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.244808265000181,0.91068453781932
+"1763","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0474564351532698,0.737928097433878
+"1764","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.157510344985335,0.789237485286526
+"1765","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.21218680051055,0.785586104433979
+"1766","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.122802022533938,0.870298821444614
+"1767","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.040199202302699,0.840721186247652
+"1768","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.126821312320226,0.775525982061947
+"1769","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.220395770028276,0.917613377105244
+"1770","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.210607549864946,0.798438197270944
+"1771","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0340480535482994,0.808969986394924
+"1772","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0485953764909278,0.969521225162004
+"1773","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0816727305818757,0.81021295172145
+"1774","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0574575010188542,0.842138736815741
+"1775","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.109377908123362,0.938569886824536
+"1776","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.259824576830328,0.894568746927686
+"1777","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.212818183186076,0.873245461740121
+"1778","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.124856757353504,0.889914182429272
+"1779","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0431383209912483,0.748046109805743
+"1780","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.104034426027843,0.75628581821078
+"1781","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101960623918633,0.737666295127968
+"1782","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0977146220496292,0.738834263729973
+"1783","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.236658024856535,0.926849436741876
+"1784","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0713252024905833,0.832521867782953
+"1785","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0134296204445934,0.889467262828366
+"1786","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0190539221167657,0.837532382100796
+"1787","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0303416814976202,0.663345220801071
+"1788","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.00159191460187651,0.770047452347076
+"1789","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0946306945322724,0.851411912101106
+"1790","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0948462819422227,0.828730518890655
+"1791","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.20631492774185,0.895572462956755
+"1792","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.135087080634815,0.716409944143219
+"1793","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1403140431728,0.90849020953233
+"1794","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0590576908833875,0.921095817792
+"1795","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.102186416812708,0.794845350715057
+"1796","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.133934134683973,0.837222556588381
+"1797","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0817098376728474,0.853754773189866
+"1798","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0568018422811073,0.903887495052452
+"1799","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0442710914601536,0.831120223957635
+"1800","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0870505684491472,0.784792817030467
+"1801","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0924797728331589,0.872304974557496
+"1802","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120926738009863,0.886524926546078
+"1803","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0859313030144592,0.865743871280036
+"1804","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0871034678160486,0.892232312181194
+"1805","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.104841368155472,0.795284101707907
+"1806","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0752869293485853,0.855441743119324
+"1807","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0848266095093636,0.946527761582348
+"1808","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0245255461634779,0.881671183410722
+"1809","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125950847304993,0.917685840520154
+"1810","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0936127973140504,0.802410656402133
+"1811","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0412578340459133,0.91988864711504
+"1812","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0740990074074047,0.728698437052933
+"1813","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.172911397670429,0.581387939556777
+"1814","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0363064959666645,0.825807929688831
+"1815","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.181229939820412,0.806634383070749
+"1816","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1409849156964,0.852882828011762
+"1817","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103677070851797,0.916287080435424
+"1818","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0318987947109843,0.875796567499281
+"1819","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107130905782526,0.878341552648438
+"1820","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0473554698174806,0.928904308552001
+"1821","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0799792842078129,0.934469393067083
+"1822","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.172527279931973,0.859366748575178
+"1823","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115557099880499,0.839259153378097
+"1824","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0571824911372338,0.843302804304032
+"1825","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0581216025728917,0.93286898471981
+"1826","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0534827939409462,0.843032773080812
+"1827","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.10728693713317,0.827477685695599
+"1828","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.193927099129428,0.720513149774283
+"1829","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.12960025988898,0.768993318998119
+"1830","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.108544383062365,0.81365315155247
+"1831","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0419146524985843,0.936094505793016
+"1832","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.219878333030525,0.815387343556671
+"1833","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.107601423330364,0.861215091612091
+"1834","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0167094720855337,0.885967412951733
+"1835","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123547668038403,0.803555613175506
+"1836","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.156203506856564,0.687389515492105
+"1837","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0539691867042591,0.82809442313817
+"1838","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.214135578773011,0.892066725374124
+"1839","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0619016317487137,0.923797061648559
+"1840","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0166829718491461,0.918555063184976
+"1841","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0862264176906103,0.680093548940142
+"1842","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0495100280203592,0.857850432537922
+"1843","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.130295554040546,0.926899028990482
+"1844","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0960366046611438,0.870273639943573
+"1845","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.179458077318889,0.654211847178615
+"1846","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.147674823972982,0.943578111685047
+"1847","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0517605390551732,0.764715199780787
+"1848","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0550167129582619,0.863969151993255
+"1849","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.037681017493924,0.88925499021228
+"1850","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.148690706131083,0.935568039834135
+"1851","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0543408144277376,0.498013202049439
+"1852","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0945170252419381,0.705295596946774
+"1853","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0162315982308822,0.938834294669404
+"1854","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0855192399618288,0.885384769596789
+"1855","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118216259267019,0.813803817147456
+"1856","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0234590095303533,0.882433322606039
+"1857","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.203677392569777,0.777379292178407
+"1858","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.144744818626963,0.800241195252334
+"1859","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.16421757007704,0.828443898310246
+"1860","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0738212065418202,0.884255327341501
+"1861","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0934959563634023,0.845491611121426
+"1862","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0296661871933115,0.932521716698578
+"1863","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.263524629103431,0.895903876257744
+"1864","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0833813761877139,0.862817627095276
+"1865","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0932844409819544,0.83829447059793
+"1866","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103644740297581,0.720070052748069
+"1867","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.092422127499868,0.768897262662806
+"1868","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0984188770620309,0.835269371069443
+"1869","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0802876769242055,0.843981780670404
+"1870","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.103427873970322,0.895018241609213
+"1871","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.158143766725421,0.899574670259011
+"1872","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.151459983540097,0.91434454281198
+"1873","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0521302910420564,0.885540965573608
+"1874","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0608356967548096,0.778259363527568
+"1875","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0629692595809541,0.818939885469562
+"1876","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0892411880368868,0.700558870603653
+"1877","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.164886606885559,0.777927451454034
+"1878","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.11906969200928,0.856766340981932
+"1879","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0314658574549397,0.905100442995066
+"1880","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0877974780863693,0.868550522153347
+"1881","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0457513278707365,0.869310820686052
+"1882","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0354104531437965,0.718112421440592
+"1883","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0867390533489734,0.809279626402508
+"1884","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.121668769222138,0.843259095099158
+"1885","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0162054785548161,0.907116678584973
+"1886","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101420567097393,0.832697231061562
+"1887","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0146344464793066,0.898784169543867
+"1888","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0788106942466864,0.84087235326464
+"1889","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.112611270911811,0.866811436413715
+"1890","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.159523086756969,0.73655744727149
+"1891","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0834140893067143,0.754970472606321
+"1892","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.219052862044103,0.802357628454803
+"1893","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118278508426347,0.806736509732085
+"1894","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0291255615398825,0.760304754539761
+"1895","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.07275264525899,0.892180012354417
+"1896","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0892985744274178,0.802671752297653
+"1897","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0578915969669222,0.905802197717241
+"1898","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0133684283439832,0.885934551333643
+"1899","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.117803382782776,0.865348398727839
+"1900","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0580515189903154,0.803871366519852
+"1901","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115960705902865,0.957407115645823
+"1902","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.054382696184628,0.880701140668284
+"1903","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.105203633591755,0.87896379656716
+"1904","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.135446352220588,0.814836755191504
+"1905","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0350164599423556,0.920586071274989
+"1906","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0268178080221606,0.771428330758607
+"1907","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0276641273068882,0.831075250480995
+"1908","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0971922626416059,0.806781391929917
+"1909","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.143293342693152,0.90007709980316
+"1910","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0589963798385786,0.901744739018534
+"1911","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0362812584904228,0.931673011397581
+"1912","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.129101546233351,0.91706443868691
+"1913","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.097373693886891,0.892411027290394
+"1914","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.238820352463444,0.887520646700849
+"1915","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.127342848248418,0.695670496264477
+"1916","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0663518757249387,0.909245235884565
+"1917","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0307187512505288,0.924839216517471
+"1918","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0993565102819496,0.905200321392811
+"1919","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.149141379226257,0.970610354230766
+"1920","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0419899965389404,0.936567585702699
+"1921","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.174395257988379,0.915752305541806
+"1922","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0542225359366579,0.948086391208348
+"1923","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0492304727516895,0.932629483530837
+"1924","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0627869721545946,0.941567105999153
+"1925","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.080064817642841,0.809671957616539
+"1926","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.156049001019029,0.872080822657099
+"1927","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0508372473678635,0.78261909082476
+"1928","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0357050652895273,0.864992710745749
+"1929","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.201556963341576,0.685499999494568
+"1930","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118154114947326,0.916192507021389
+"1931","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.131553251982146,0.943151315352018
+"1932","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.105604534879137,0.860078589524463
+"1933","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0644186558399227,0.901012845544796
+"1934","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.158948037245736,0.721768258362348
+"1935","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0850196049992474,0.917136426992715
+"1936","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0895885703129191,0.886070349501313
+"1937","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.182823707928578,0.932110225883864
+"1938","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.156839550883705,0.79186042635473
+"1939","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.21673567309393,0.938048627728067
+"1940","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.104058135480887,0.833664333646443
+"1941","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.051883238315749,0.889026882746394
+"1942","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.123078001910159,0.866784239803943
+"1943","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.215805102619638,0.796870673041744
+"1944","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0778028021470328,0.958805132115354
+"1945","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0904097226725275,0.84471678570894
+"1946","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0836336022353553,0.814877424944605
+"1947","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.214199682307956,0.967657235479304
+"1948","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0719900217432662,0.78051533256384
+"1949","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.161739520413458,0.778191778696348
+"1950","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0504992168087248,0.884557532594823
+"1951","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0607104729009976,0.861842839643313
+"1952","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.065716992520181,0.796512386159007
+"1953","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0341841653782232,0.861456413161151
+"1954","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.024697311090597,0.816853241309243
+"1955","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.114894918603463,0.832166866231904
+"1956","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.248327637946495,0.671839789000913
+"1957","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0874421677920211,0.839443571227493
+"1958","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0373411498973601,0.85409135175033
+"1959","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.190797512568295,0.966171606385828
+"1960","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.114980748082124,0.900706100669477
+"1961","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.1193297498976,0.853807872592149
+"1962","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.19574047855985,0.866785050914871
+"1963","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.156588354662465,0.855316858282017
+"1964","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0695748552994489,0.942876241127659
+"1965","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0316869808424178,0.620413816375385
+"1966","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0552665834256436,0.679956522773303
+"1967","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0151889946654649,0.879374872457959
+"1968","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0692636296143697,0.917257258601165
+"1969","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0393190044337948,0.913607921108596
+"1970","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0431916892754924,0.895007788367744
+"1971","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125377609422451,0.862500433822782
+"1972","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0697016443869817,0.751979807449566
+"1973","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0274354286953125,0.707217142051708
+"1974","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0338535023417294,0.947464799436103
+"1975","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0324987112000211,0.911804719734734
+"1976","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.146976123636331,0.85370290750793
+"1977","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.118086917778074,0.934664698486836
+"1978","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.120462852438566,0.94168477805558
+"1979","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.125517438611251,0.815224819964165
+"1980","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.108655747324107,0.908521526679312
+"1981","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.187929266224234,0.937836814578279
+"1982","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0718885165170187,0.925287331459997
+"1983","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.121013090576951,0.856647057253879
+"1984","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0487106817378778,0.883656133756358
+"1985","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0497114444126091,0.847188386185022
+"1986","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.134249098844889,0.860350274055843
+"1987","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.152564125538795,0.873350181984179
+"1988","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0681317454184938,0.857672884083829
+"1989","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.115124192054166,0.830848697959461
+"1990","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.126562506997645,0.968845850543798
+"1991","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0980082266066396,0.777345760621388
+"1992","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.170492946484781,0.886063944690978
+"1993","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0358421005444967,0.818357717810011
+"1994","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.111463276122042,0.759202587835758
+"1995","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0465798671405786,0.864008240974492
+"1996","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0686906651281655,0.831237057216154
+"1997","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.101780771537601,0.805478055668128
+"1998","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0317414445711169,0.916697197101081
+"1999","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.255017824555951,0.80009267201918
+"2000","JHU - FIB-4 > 3.25","Pre-fibrotic liver disease",0.0574664406877,0.915168112117675

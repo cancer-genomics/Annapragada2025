@@ -1,0 +1,81 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r reads, echo=FALSE, fig.width=8, fig.height=6, dev=c("png", "pdf")}
+data<-fread(here("data","Methylation_Lengths.csv")) %>% select(-V1)
+```
+
+
+
+```{r all, echo=FALSE, fig.width=8, fig.height=12, dev=c("png", "pdf")}
+
+
+
+data<-data %>% group_by(id,Type,cell_type,group,seq_len<150) %>% summarize(n=sum(count)) 
+
+data<-data %>% mutate(len=if_else(`seq_len < 150`==TRUE,"Short","Long"))
+
+data<-data %>% select(id,Type,cell_type,n,len) %>% spread(key=len,val=n)
+
+data$ratio<-data$Short/(data$Long)
+
+data$Type<-factor(data$Type,levels=c("No Known Liver Disease","Fibrosis/Cirrhosis"))
+
+data<-data %>% mutate(group=if_else(group=="high_high_beta","Methylated","Unmethylated"))
+data<-data %>% mutate(cell_type=if_else(cell_type=="Hepatocytes","Liver Hepatocytes",cell_type))
+data<-data %>% mutate(cell_type=if_else(grepl("Liver",cell_type),cell_type,paste0("Blood ",cell_type)))
+data$cell_type<-gsub("Blood Vascular ","Vascular\n",data$cell_type)
+data$cell_type<-gsub("Blood ","Blood\n",data$cell_type)
+data$cell_type<-gsub("Liver ","Liver\n",data$cell_type)
+
+#Effect size ordering
+s<-data %>% filter(Type=="Fibrosis/Cirrhosis")
+s<-s %>% group_by(group,cell_type) %>% summarize(m=median(ratio)) %>% spread(key=group,value=m) %>% mutate(effect=`Unmethylated`/`Methylated`) %>% arrange(-effect)
+
+data$cell_type<-factor(data$cell_type,levels=s$cell_type)
+
+
+ggplot(data,aes(x=Type,y=ratio,alpha=group,fill=Type))+geom_boxplot(outlier.shape=NA)+geom_jitter(position=position_jitterdodge())+theme_classic()+
+  facet_wrap(vars(cell_type),ncol=2)+stat_compare_means(method="wilcox.test",show.legend = FALSE,label.y=1.8,aes(label = sprintf("p = %5.3f", as.numeric(..p.format..))))+ylab("Ratio of Short (<150bp) to Long (150-220bp)\nNucleosomal cfDNA fragments Genome-Wide")+scale_fill_manual(values=c("gray50","darkblue"))+scale_alpha_manual(values=c(.2,.8))+labs(fill="",alpha="Fragments containing CpGs with\ndifferential methylation for cell type")+theme(legend.position="right",axis.text.x=element_blank())+guides()+xlab("")
+
+
+
+```
+
+```{r 5D_subset, echo=FALSE, fig.width=5, fig.height=10, dev=c("png", "pdf")}
+
+ggplot(data %>% filter(cell_type %in% c("Liver\nMacrophages","Liver\nEndothelium","Blood\nMonocytes","Liver\nHepatocytes")),aes(x=group,y=ratio,alpha=group))+geom_boxplot(outlier.shape=NA,width=.25,aes(fill=Type))+
+  geom_jitter(width=.25)+
+  theme_classic()+facet_grid(cell_type~Type,scales="free")+stat_compare_means(method="wilcox.test",show.legend = FALSE,label="p.format")+ylab("Ratio of Short (<150bp) to Long (150-220bp) Nucleosomal cfDNA fragments Genome-Wide")+scale_fill_manual(values=c("gray50","darkblue"))+scale_alpha_manual(values=c(.1,.6))+labs(fill="",alpha="Fragments containing CpGs\nwith differential methylation\nfor cell type")+theme(legend.position="none",strip.background = element_blank())+guides(fill="none")+xlab("Fragments containing CpGs with Uniquely\ndifferential methylation for cell type")
+
+
+```
+
+

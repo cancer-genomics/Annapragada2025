@@ -1,0 +1,73 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+library(readxl)
+
+```
+
+
+```{r}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+```
+
+
+
+```{r resamp, fig.width=5, fig.height=5, dev=c("png", "pdf")}
+
+r<-read.table(here("data","SensSpec_resample.csv"),header=T,sep = ",")
+r<-r %>% mutate(name=if_else(name=="No Known Liver Disease\nProportion Correctly Ruled Out","No Known\nLiver Disease",name))
+r<-r %>% mutate(name=if_else(name=="Advanced Fibrosis/Cirrhosis\nProportion of Disease Detected","Advanced Fibrosis/\nCirrhosis",name))
+r<-r %>% mutate(name=if_else(name=="Liver Disease/Early Fibrosis\nProportion of Disease Detected","Liver Disease/\nEarly Fibrosis",name))
+r<-r %>% mutate(name2=if_else(name=="No Known\nLiver Disease","Specificity","Sensitivity"))
+
+r$name<-factor(r$name,levels=c("No Known\nLiver Disease","Liver Disease/\nEarly Fibrosis","Advanced Fibrosis/\nCirrhosis"))
+r$name2<-factor(r$name2,levels=c("Specificity","Sensitivity"))
+
+ggplot(r,aes(x=name,y=m,color=name,group=cohort))+geom_point(aes(shape=cohort),position=position_dodge(width=.5),size=3)+geom_segment(aes(y=l,yend=h),position=position_dodge(width=.5))+theme_classic()+ylim(0,1)+theme(legend.position="bottom",strip.background=element_blank(), strip.text.y=element_text(angle=360))+scale_color_manual(values=c("gray50","steelblue","darkblue"),guide = "none")+xlab("")+labs(color="",shape="",linetype="")+scale_shape_manual(values=c(1,16))+ylab("Proportion")+
+  facet_grid(.~name2,space="free",scales="free_x")
+
+```
+
+
+
+```{r pop, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+p1<-fread(here("data","global_diseaseprops.csv"))
+p2<-fread(here("data","thisstudy_diseaseprops.csv"))
+
+p2<-p2 %>% mutate(type2=if_else(type2=="No Known Liver Disease","No Known\nLiver Disease",type2))
+p2<-p2 %>% mutate(type3=if_else(type2=="No Known\nLiver Disease","No Known\nLiver Disease","Liver Disease/Early Fibrosis"))
+p2<-p2 %>% mutate(type3=if_else(type=="Advanced Fibrosis/Cirrhosis","Advanced Fibrosis/Cirrhosis",type3))
+p2$type3<-factor(p2$type3,levels=c("No Known\nLiver Disease","Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+p2<-p2 %>% mutate(type2=if_else(type2=="NASH","MASH",type2))
+p2$type2<-factor(p2$type2,levels=c("No Known\nLiver Disease","MASH","HBV","HCV","Alcohol","Other"))
+p2$type<-factor(p2$type,levels=c("Non-Cirrhotic Controls","Advanced Fibrosis/Cirrhosis"))
+
+p1<-p1 %>% mutate(type2=if_else(type2=="No Known Liver Disease","No Known\nLiver Disease",type2))
+p1<-p1 %>% mutate(type3=if_else(type2=="No Known\nLiver Disease","No Known\nLiver Disease","Liver Disease/Early Fibrosis"))
+p1<-p1 %>% mutate(type3=if_else(type=="Advanced Fibrosis/Cirrhosis","Advanced Fibrosis/Cirrhosis",type3))
+p1$type<-factor(p1$type,levels=c("Non-Cirrhotic Controls","Advanced Fibrosis/Cirrhosis"))
+p1<-p1 %>% mutate(type2=if_else(type2=="NASH","MASH",type2))
+
+p1<-rbind(p1,p1)
+p1$training<-c(rep("Discovery",9),rep("Validation",9))
+ggplot(p2,aes(x=type2,y=perc,color=type3,group=training))+geom_point(aes(shape=training),position=position_dodge(width=.5),size=3)+geom_segment(aes(y=0,yend=perc),position=position_dodge(width=0.5))+theme_classic()+facet_grid(type~.,space="free",scales="free_x")+ylim(0,1)+theme(legend.position="bottom",strip.background=element_blank(), strip.text.y=element_text(angle=270,size=10))+scale_color_manual(values=c("gray50","steelblue","darkblue"),guide = "none")+xlab("")+labs(color="",shape="",linetype="")+scale_shape_manual(values=c(1,16))+ylab("Proportion")+
+  geom_line(data=p1,aes(x=type2,y=total_prop,linetype="Global Population"),color="gray50")+scale_linetype_manual(values=c("dashed"))
+```
+
+

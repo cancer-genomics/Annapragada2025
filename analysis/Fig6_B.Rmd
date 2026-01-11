@@ -1,0 +1,55 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r}
+meta<-read_csv(here("data","All_MICA_withscores.csv"))
+
+b_plot<-fread(here("data","MICA_variable_bins.csv"))
+
+b_plot<-b_plot %>% select(-V1)
+```
+
+
+
+```{r all_bin, echo=FALSE, fig.width=20, fig.height=4, dev=c("png", "pdf")}
+
+a<-unique(b_plot$arm)
+b_plot <-  arrange(b_plot, bin) %>%
+    mutate(bin=factor(bin),
+           arm=factor(arm, levels=a))
+#for the purpose of scaling make the dummy "fake" Diabetes
+b_plot<-b_plot %>% mutate(dx=if_else(dx=="fake","Diabetes",dx))
+
+
+ggplot(b_plot,aes(x=bin,y=dx,fill=f))+geom_tile()+theme_classic()+facet_grid(.~arm,scales="free_x",space="free_x")+scale_fill_manual(values=c("white","hotpink"))+theme(legend.position="none",axis.text.x=element_blank(),
+                                                                                                                                                                        axis.ticks.x=element_blank(),strip.background=element_blank(),strip.text=element_text(size=13,angle=90),axis.text.y=element_text(size=20),
+                                                                                                                                                                        strip.clip = "off",axis.title.x = element_text(size=20))+xlab("Genome-wide 5Mb fragmentation bins in top 10% of variability for each disease")+ylab("")
+
+```
+
+

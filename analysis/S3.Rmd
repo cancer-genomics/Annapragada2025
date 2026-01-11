@@ -1,0 +1,80 @@
+---
+title: "chrY"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+
+coefs<-fread(here("data","Feature_Importance.csv"))
+#These are the models we actually want
+
+coefs<-coefs %>% mutate(class=if_else(grepl("zscore",features),"Frag.\nProfile","Epi"))
+coefs<-coefs %>% mutate(class=if_else(grepl("ratio",features),"Frag.\nProfile",class))
+coefs<-coefs %>% mutate(class=if_else(grepl("SINE",features),"SINE",class))
+coefs<-coefs %>% mutate(class=if_else(grepl("LTR",features),"LTR",class))
+coefs<-coefs %>% mutate(class=if_else(grepl("Satellite",features),"Sat.",class))
+
+
+
+```
+
+```{r AD, echo=FALSE, fig.width=4, fig.height=4, dev=c("png", "pdf")}
+
+coefs$perc<-abs(coefs$scaled_coefs)/sum(abs(coefs$scaled_coefs))
+coefs2<-coefs %>% group_by(class) %>% summarize(perc=sum(perc))
+
+
+coefs2$cat<-factor(coefs2$class,levels=c("Epi","SINE","LTR","Sat.","Frag.\nProfile"))
+
+coefs2$ymax = cumsum(coefs2$perc)
+coefs2$ymin = c(0, head(coefs2$ymax, n=-1))
+coefs2$ymed<-(coefs2$ymax-coefs2$ymin)/2 + coefs2$ymin
+ggplot(coefs2, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=cat,label=cat)) +
+     geom_rect() +
+     coord_polar(theta="y") + 
+     xlim(c(2, 4)) +theme_void()+scale_fill_manual(values=c("maroon3","mediumpurple3","mediumorchid3","mediumpurple1","darkorange2"))+
+  theme(legend.position="none")+geom_label(aes(x=3.5,y=ymed),size=4,color="white",nudge_x=c(0,0,.2,.4,0))
+
+
+```
+
+
+```{r coef, echo=FALSE, fig.width=5, fig.height=8, dev=c("png", "pdf")}
+
+coefs$cat<-factor(coefs$class,levels=c("Epi","SINE","LTR","Sat.","Frag.\nProfile"))
+
+coefs$features<-gsub("zscore_","Zscore - Arm ",coefs$features)
+coefs$features<-gsub("ratio_pc_2","Short:Long Ratios - PC2 ",coefs$features)
+coefs$features<-gsub("class_SINE_pc_1","SINEs - PC1 ",coefs$features)
+coefs$features<-gsub("class_LTR_pc_1","LTRs - PC1 ",coefs$features)
+coefs$features<-gsub("class_Satellite_pc_1","Satellites - PC1 ",coefs$features)
+coefs$features<-gsub("states_1_5_pc_1","Activating Chromatin bins - PC1 ",coefs$features)
+coefs$features<-gsub("states_7_9_pc_1","3' Transcription bins - PC1 ",coefs$features)
+
+o<-coefs %>% arrange(abs(scaled_coefs))
+coefs$features<-factor(coefs$features,levels=o$features)
+ggplot(coefs,aes(x=features,y=scaled_coefs,color=cat))+geom_point()+theme_classic()+geom_segment(aes(y=0,yend=scaled_coefs))+scale_color_manual(values=c("maroon3","mediumpurple3","mediumorchid3","mediumpurple1","darkorange2"))+labs(color="Feature Family")+coord_flip()+ylab("Scaled Coefficient")+xlab("")+theme(legend.position="right")
+
+
+```
+
+
+
+
+
+
+
+
+
+

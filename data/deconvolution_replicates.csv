@@ -1,0 +1,13 @@
+"","V1","CGAD476P_Healthy","CGAD476P_rep_Healthy","CGLI409P_Cirrhosis","CGLI409P_rep_Cirrhosis"
+"1","moss_Blood-Megakaryocytes",26.95,28.98,25.37,24.47
+"2","loyfer_Blood-B",4.36,4.95,0,0
+"3","loyfer_Blood-Granulocytes",35.32,28.7,26.59,23.08
+"4","loyfer_Blood-Monocytes",2.54,0,20.43,23.45
+"5","loyfer_Blood-NK",2.28,13.97,4.67,5.65
+"6","loyfer_Blood-T-CD4",4.04,1.12,0,0
+"7","loyfer_Blood-T-CD8",0,0,0,0
+"8","loyfer_Bone_marrow-Erythrocyte_progenitors",14.82,17.76,11.04,12.3
+"9","loyfer_Vascular-Endothelium-META",0,0,0.16,3.48
+"10","loyfer_Liver-Endothelium",2.94,0,6.73,0.98
+"11","loyfer_Liver-Hepatocytes",0,0,0,0
+"12","loyfer_Liver-Macrophages",6.75,4.52,5,6.59

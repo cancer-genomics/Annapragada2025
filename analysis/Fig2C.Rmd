@@ -1,0 +1,231 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(circlize)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r}
+meta<-read_csv(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+data<-fread(here("data","circos_fragmentation.csv")) %>% select(-V1)
+
+CV<-meta %>% filter(training=="Discovery") %>% filter(type=="Advanced Fibrosis/Cirrhosis")
+data<-data %>% filter(id %in% CV$id)
+```
+
+```{r}
+artemis3<-fread(here("data","circos_repeats.csv")) %>% select(-V1)
+artemis3$type<-factor(artemis3$type,levels=c("No Known Liver Disease","Advanced Fibrosis/Cirrhosis"))
+artemis3$c2<-factor(artemis3$c2,levels=c("FALSE","No Known Liver Disease","Advanced Fibrosis/Cirrhosis"))
+
+
+artemis3<-artemis3 %>% filter(type=="Advanced Fibrosis/Cirrhosis") %>% filter(training=="Discovery")
+
+
+```
+
+
+```{r}
+dat<-fread(here("data","circos_epi_disc_cirrhosis.csv")) %>% select(-V1)
+cf<-unique(dat$cf)
+dat<-dat %>% select(-cf)
+
+```
+
+
+```{r plotcircos, fig.width=7, fig.height=7, dev=c("png", "pdf")}
+
+data1<-data #%>% filter(id %in% c("CGAD100_P","CGAD7_P","CGLI90P","CGLI24P","CGPLH944P","CGLI107P"))
+ids<-unique(data1$id)
+data1$bin<-as.numeric(data1$bin)
+data1<- data1 %>% mutate(chr=if_else(chr == "chr19","19",chr))
+data1<- data1 %>% mutate(chr=if_else(chr == "chr20","20",chr))
+data1<- data1 %>% mutate(chr=if_else(chr == "chr21","21",chr))
+data1<- data1 %>% mutate(chr=if_else(chr == "chr22","22",chr))
+
+data1$chr<-factor(data1$chr,levels=c(paste0("chr",seq(1:18)),19,20,21,22))
+circos.par("track.height" = 0.25,gap.degree=c(rep(1,21),10),start.degree=90)
+circos.initialize(data1$chr, x = data1$bin)
+for (i in 1:length(ids)) {
+  d<-data1 %>% filter(id==ids[i])
+  color="gray90"
+  if(unique(d$med<.9 & d$type=="Advanced Fibrosis/Cirrhosis")){
+    color="darkblue"
+  }
+
+  if(unique(d$med<.9 & d$type=="No Known Liver Disease")){
+    color="black"
+  }
+
+  circos.track(factors = d$chr, x = d$bin, y = d$ratio.centered,track.index=1,ylim=c(-.15,.2),bg.border="white",
+             panel.fun = function(x, y) {
+               circos.lines(x = x, y = y,col=color)
+             })
+}
+
+circos.track(data1$chr, y = data1$ratio.centered,track.index=1,ylim=c(-.15,.2),bg.border="white",
+    panel.fun = function(x, y) {
+        circos.text(CELL_META$xcenter, 
+            CELL_META$cell.ylim[2] + mm_y(.5), 
+            CELL_META$sector.index,cex=1)
+
+})
+
+
+
+
+
+for(a in c("chr1")) {
+  circos.yaxis(side = "left", sector.index = a,tick.length=1,at=c(-.15,0,.2),labels.cex=.5)
+}
+
+
+
+circos.clear()
+
+
+############
+lines<-artemis3 #%>% filter(fam=="LINE")
+lines$bin<-seq(1:786)
+par(new = TRUE) # <- magic
+
+lines<-lines %>% mutate(fam=if_else(fam=="RNA/DNA\nElements","TE",fam))
+
+circos.par("track.height" = 0.25,"canvas.xlim" = c(-1.5, 1.5), "canvas.ylim" = c(-1.5, 1.5),gap.degree=c(rep(1,4),10),start.degree=90)
+circos.initialize(lines$fam, x = lines$bin)
+
+fs<-unique(lines$f)#[1:10]
+
+
+for(i in 1:786) {
+  for(a in c("Advanced Fibrosis/Cirrhosis")) {
+  l<-lines %>% filter(f==fs[i]) %>% filter(type==a)
+  color="gray50"
+    if(l$c2=="Advanced Fibrosis/Cirrhosis") {
+    color="darkblue"
+  }
+    if(l$c2=="No Known Liver Disease") {
+    color="black"
+  }
+  l$color<-color
+  circos.track(factors = l$fam, x = l$bin, y = l$perc,ylim=c(0,.25),track.index=1,bg.border="white",
+             panel.fun = function(x, y) {
+              circos.segments(x1=x,x0=x,y1=y,y0=(y-y),col=color)
+             })
+  }
+}
+
+circos.track(lines$fam, y = lines$perc,track.index=1,ylim=c(0,.25),bg.border="white",
+    panel.fun = function(x, y) {
+        circos.text(CELL_META$xcenter, 
+            CELL_META$cell.ylim[2] + mm_y(.5), 
+            CELL_META$sector.index,cex=1)
+
+})
+
+
+
+for(a in c("LINE")) {
+  circos.yaxis(side = "left", sector.index = a,tick.length=1,at=c(0,.25),labels.cex=.5)
+}
+
+
+
+circos.clear()
+
+###################
+par(new = TRUE) # <- magic
+
+circos.par("track.height" = 0.25,"canvas.xlim" = c(-2.5, 2.5), "canvas.ylim" = c(-2.5, 2.5),gap.degree=c(rep(1,6),10),start.degree=90)
+circos.initialize(dat$state, x = dat$bin2)
+
+#color="gray50"
+#circos.track(factors = dat$state, x = dat$bin2, y = dat$h_sd,ylim=c(0,.55),track.index=1,bg.border="white",
+#             panel.fun = function(x, y) {
+#              circos.lines(x=x,y=y,col=color)
+#             })
+
+
+circos.track(dat$state, x = dat$bin2,track.index=1,ylim=c(0,3),bg.border="white",
+    panel.fun = function(x, y) {
+        if(CELL_META$sector.index %in% c("Activating","H3K36me3","H4K20me1")) {
+            circos.text(CELL_META$xcenter, 
+            CELL_META$cell.ylim[2] + mm_y(6), 
+            CELL_META$sector.index,cex=.8,facing = "inside", niceFacing = FALSE)
+        } else {
+            circos.text(CELL_META$xcenter, 
+            CELL_META$cell.ylim[2]+ mm_y(2), 
+            CELL_META$sector.index,cex=.8,facing = "inside", niceFacing = FALSE)
+        }
+      
+      })
+
+
+dat_c<-dat %>% filter(f>cf)
+dat_g<-dat %>% filter(f<=cf)
+color="darkblue"
+circos.track(factors = dat_c$state, x = dat_c$bin2, y = dat_c$f,ylim=c(0,3),track.index=1,bg.border="white",
+             panel.fun = function(x, y) {
+              circos.points(x=x,y=y,col=color,pch=20,cex=.25)
+             })
+
+color="gray50"
+circos.track(factors = dat_g$state, x = dat_g$bin2, y = dat_g$f,ylim=c(0,3),track.index=1,bg.border="white",
+             panel.fun = function(x, y) {
+              circos.points(x=x,y=y,col=color,pch=20,cex=.25)
+             })
+
+circos.track(dat$state, y = dat$bin2,track.index=1,ylim=c(0,3),bg.border="white",
+    panel.fun = function(x, y) {
+    circos.axis(h="bottom",labels=FALSE,major.tick=FALSE)
+})
+for(a in c("3' Transcription")) {
+  circos.yaxis(side = "left", sector.index = a,tick.length=1,at=c(0,3),labels.cex=.5)
+}
+
+
+circos.clear()
+
+```
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

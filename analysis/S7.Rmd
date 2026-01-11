@@ -1,0 +1,40 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+
+library(readxl)
+
+```
+
+
+```{r boxplots, fig.width=16, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat$type<-factor(dat$type,levels=c("No Known Liver Disease","Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+dat$source<-gsub(" \\(","\n(",dat$source)
+
+dat$source<-paste0(dat$source,"\n",dat$training)
+dat$source<-factor(dat$source, levels=c("COCOS Trial\n(Netherlands)\nDiscovery","Endoscopy III trial\n(Denmark)\nDiscovery","LUCAS Cohort\n(Denmark)\nValidation","BIOIVT\n(Westbury, NY)\nDiscovery","Johns Hopkins Hospital\n(Baltimore, MD)\nDiscovery","INCAP\n(Guatemala City, Guatemala)\nValidation","Fundeni Clinical Institute\n(Bucharest, Romania)\nValidation"))
+
+ggplot(dat,aes(x=type,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.1)+geom_jitter(size=.25,color="black",alpha=.5,width=.05)+facet_grid(.~source,scales="free_x",space="free")+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=9),axis.text.x=element_blank(),axis.text.y=element_text(size=12))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+scale_fill_manual(values=c("gray50","steelblue","darkblue"))+theme(legend.position="bottom")
+
+
+```
+
+
+

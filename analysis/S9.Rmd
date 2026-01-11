@@ -1,0 +1,91 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+
+library(readxl)
+```
+
+
+```{r cx2, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+library(survival)
+library(survminer)
+dat<-fread(here("data","Rogen_Survival.csv")) %>% select(-V1)
+transplant<-dat %>% mutate(surv=`Transplant Free Survival`)
+
+transplant<-transplant %>% mutate(censor=if_else(Type=="Last contact, no transplant",0,1))
+#transplant<-transplant %>% mutate(censor=if_else(Type=="Transplant",0,1))
+
+
+d<-as.data.frame(transplant) #%>% filter(source=="Rogen") #%>% filter(Type != "Transplant") #%>% filter(grepl("HEP",source_id))
+med<-0.200591259
+#med<-round(median(d$score),2)
+#med<-d %>% group_by(Project) %>% summarize(med=median(SINE))
+#d<-inner_join(d,med,by="Project")
+
+d$survival <- with(d, Surv(surv, censor))
+d<-d %>% mutate(med_grp=if_else(score<=med,0,1))
+fit <- survfit(survival ~ med_grp, data = d)
+fig <- ggsurvplot(fit, data = d,
+           surv.median.line = "hv", ## Add medians survival
+           ## Add p-value and tervals
+           pval = FALSE,
+           conf.int = FALSE,
+           ## Add risk table
+           risk.table = FALSE,
+           tables.height = 0.2,
+           tables.theme = theme_cleantable(),
+           axes.offset=FALSE,
+           ## Color palettes. Use custom color: c("#E7B800", "#2E9FDF"),
+           ## or brewer color (e.g.: "Dark2"), or ggsci color (e.g.: "jco")
+           ##palette = c("#E7B800", "#2E9FDF"),
+           legend=c(0.75, 0.9),
+           legend.title="", 
+           palette=c("blue", "red"),
+           legend.labs=c("cfDNA Fragmentome LCr Score Low", "cfDNA Fragmentome LCr Score High"),
+           ##legend.labs=labels,
+           ggtheme = theme_classic(base_size=12) # Change ggplot2 theme
+           ) +
+    ylab("Transplant Free Survival") +
+    xlab("Days")
+  medians <- surv_median(fit)$median
+  breaks <- round(sort(c(seq(0, max(transplant$surv), by=max(transplant$surv)/2), medians)),0)
+#breaks <- breaks[ breaks != 1000 ]
+  breaks<-round(breaks,1)
+  fig$plot <- fig$plot  +
+    scale_x_continuous(breaks=breaks, expand=expansion(mult=c(0, 0.01)))
+  X2 <- survdiff(Surv(surv,censor) ~ med_grp, data=d)$chisq
+  p <- round(1-pchisq(X2, df=1), 4)
+  if(p < 0.001){
+      plabel <- "P < 0.001"
+  } else {
+      plabel <- paste0("P = ", round(p, 3))
+  }
+  fig$plot <- fig$plot + annotate("text", x=max(transplant$surv)/3, y=0.75, label=plabel,
+                                size=5)
+  a<-fig$plot
+  
+
+  a
+
+
+```
+
+
+
+
+
+

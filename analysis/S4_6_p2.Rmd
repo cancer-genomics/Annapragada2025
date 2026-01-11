@@ -1,0 +1,187 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+
+library(readxl)
+
+```
+
+
+```{r pre_fibrotic, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="Liver Disease/Early Fibrosis")
+dat<-dat %>% mutate(type2=if_else(type2=="NASH","MASLD/MASH",type2))
+n<-dat %>% group_by(training,type2) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","type2"))
+dat$name<-paste0(dat$type2,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("HBV\n(n=28)", "HBV\n(n=7)", "HCV\n(n=33)", "HCV\n(n=1)", "MASLD/MASH\n(n=20)","Other\n(n=2)"))
+
+p1d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="steelblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p1v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="steelblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+```
+
+
+```{r cirrhosis, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="Advanced Fibrosis/Cirrhosis")
+dat<-dat %>% mutate(type2=if_else(type2=="NASH","MASLD/MASH",type2))
+
+n<-dat %>% group_by(training,type2) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","type2"))
+dat$name<-paste0(dat$type2,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("HBV\n(n=18)", "HCV\n(n=50)", "HCV\n(n=8)", "Alcohol\n(n=14)","Alcohol\n(n=11)","MASLD/MASH\n(n=3)", "MASLD/MASH\n(n=10)","Other\n(n=7)","Other\n(n=35)"))
+
+p2d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p2v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+```
+
+```{r discovery, fig.width=8, fig.height=4, dev=c("png", "pdf")}
+
+plot_grid(p1d,p2d,nrow=1,rel_widths=c(1,1.6))
+```
+
+
+```{r validation, fig.width=8, fig.height=4, dev=c("png", "pdf")}
+
+plot_grid(p1v,p2v,nrow=1,rel_widths=c(1,1.6))
+```
+
+
+
+```{r child_pugh, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="Advanced Fibrosis/Cirrhosis") %>% filter(Child_Pugh != "unknown")
+n<-dat %>% group_by(training,Child_Pugh) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","Child_Pugh"))
+dat$name<-paste0("Child-Pugh ",dat$Child_Pugh,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("Child-Pugh A\n(n=15)","Child-Pugh A\n(n=13)","Child-Pugh B\n(n=14)","Child-Pugh B\n(n=8)","Child-Pugh C\n(n=10)"))
+
+p3d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p3v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+```
+
+
+```{r diagnosis, fig.width=5, fig.height=4, dev=c("png", "pdf")}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(type=="Advanced Fibrosis/Cirrhosis")
+dat<-dat %>% mutate(Fibroscan_Dx=if_else(dx_fibroscan=="Yes","Confirmed Fibroscan","Clinical and/or Imaging diagnosis"))
+n<-dat %>% group_by(training,Fibroscan_Dx) %>% dplyr::summarize(n=n())
+
+dat %>% group_by(training,Fibroscan,Fibroscan_Dx) %>% dplyr::summarize(n=n(),m=median(score))
+
+dat<-inner_join(dat,n,by=c("training","Fibroscan_Dx"))
+dat$name<-paste0(dat$Fibroscan_Dx,"\n(n=",dat$n,")")
+
+p4d<-ggplot(dat %>% filter(training=="Discovery"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+
+p4v<-ggplot(dat %>% filter(training=="Validation"),aes(x=name,y=score))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3,fill="darkblue")+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=18))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+stat_compare_means()
+```
+
+
+```{r Fibrosis, fig.width=8, fig.height=4, dev=c("png", "pdf")}
+
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+dat<-dat %>% filter(Fibroscan!="unknown")
+n<-dat %>% group_by(training,type,Fibroscan) %>% dplyr::summarize(n=n())
+
+dat<-inner_join(dat,n,by=c("training","type","Fibroscan"))
+dat$name<-paste0(dat$Fibroscan,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=c("F0\n(n=4)", "F0\n(n=9)","F0-1\n(n=2)", "F1\n(n=9)","F1\n(n=27)", "F1\n(n=21)","F2\n(n=2)","F2\n(n=5)", "F3\n(n=18)", "F3\n(n=7)","F4\n(n=64)","F4\n(n=20)"))
+dat$type<-factor(dat$type,levels=c("No Known Liver Disease","Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+
+p5d<-ggplot(dat %>% filter(training=="Discovery") %>% filter(type=="Advanced Fibrosis/Cirrhosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("darkblue"))+stat_compare_means()
+
+
+p5v<-ggplot(dat %>% filter(training=="Validation") %>% filter(type=="Advanced Fibrosis/Cirrhosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("darkblue"))+stat_compare_means()
+
+
+
+```
+
+```{r discovery2, fig.width=14, fig.height=3, dev=c("png", "pdf")}
+
+plot_grid(p3d,p4d,p5d,nrow=1)
+```
+
+
+```{r validation2, fig.width=14, fig.height=3, dev=c("png", "pdf")}
+
+plot_grid(p3v,p4v,p5v,nrow=1)
+```
+
+Aneuploidy
+```{r}
+dat<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+d<-fread(here("data","LCr_zscores.csv")) %>% select(id,arm,zscore) %>% group_by(id) %>% summarize(an=sum(abs(zscore)))
+
+dat<-inner_join(dat,d,by="id")
+ctrl<-dat %>% filter(type=="No Known Liver Disease" & training=="Discovery") 
+t<-quantile(ctrl$an,seq(0,1,.05))[20]
+
+dat<-dat %>% mutate(anp=if_else(an>t,"Evidence for Aneuploidy","No Evidence"))
+
+n<-dat %>% group_by(training,type,anp) %>% dplyr::summarize(n=n())
+
+dat %>% group_by(training,type,anp) %>% dplyr::summarize(n=n(),m=median(score))
+
+dat<-inner_join(dat,n,by=c("training","type","anp"))
+dat$name<-paste0(dat$anp,"\n(n=",dat$n,")")
+
+dat$name<-factor(dat$name,levels=rev(sort(unique(dat$name))))
+
+dat$type<-factor(dat$type,levels=c("No Known Liver Disease","Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+
+
+p6da<-ggplot(dat %>% filter(training=="Discovery") %>% filter(type=="Advanced Fibrosis/Cirrhosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("darkblue"))+stat_compare_means(method="wilcox.test")+ylim(0,1)
+
+p6db<-ggplot(dat %>% filter(training=="Discovery") %>% filter(type=="Liver Disease/Early Fibrosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("steelblue"))+stat_compare_means(method="wilcox.test")+ylim(0,1)
+
+
+p6va<-ggplot(dat %>% filter(training=="Validation") %>% filter(type=="Advanced Fibrosis/Cirrhosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("darkblue"))+stat_compare_means(method="wilcox.test")+ylim(0,1)
+
+p6vb<-ggplot(dat %>% filter(training=="Validation") %>% filter(type=="Liver Disease/Early Fibrosis"),aes(x=name,y=score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.3)+geom_jitter(size=.25,color="black",alpha=.5,width=.15)+theme_classic()+labs(fill="")+theme(strip.background = element_blank(),strip.text=element_text(size=10))+ylab("cfDNA Fragmentome LCr Score")+xlab("")+theme(legend.position="none")+scale_fill_manual(values=c("steelblue"))+stat_compare_means(method="wilcox.test")+ylim(0,1)
+
+
+
+```
+
+```{r aneuploidy, fig.width=10, fig.height=3, dev=c("png", "pdf")}
+
+plot_grid(p6db,p6da,nrow=1)
+
+plot_grid(p6vb,p6va,nrow=1)
+
+```
+
+

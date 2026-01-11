@@ -1,0 +1,58 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(viridis)
+library(pROC)
+
+library(readxl)
+
+```
+
+
+```{r All, fig.width=7, fig.height=3, dev=c("png", "pdf")}
+
+d1<-fread(here("data","SensSpec_byfib4.csv"))
+
+
+d1<-d1 %>% filter(set %in% c("Fib4 Positive","Fib4 Negative","Fib4 Intermediate"))
+
+d1<-d1 %>% mutate(set=if_else(set=="Fib4 Positive","FIB-4 Positive\n(FIB-4 > 3.25)",set))
+d1<-d1 %>% mutate(set=if_else(set=="Fib4 Intermediate","FIB-4 Indeterminate\n(FIB-4 1.45 - 3.25)",set))
+d1<-d1 %>% mutate(set=if_else(set=="Fib4 Negative","FIB-4 Negative\n(FIB-4 < 1.45)",set))
+
+
+d1<-d1 %>% filter(name != "No Known Liver Disease")
+#d1<-d1 %>% mutate(name=if_else(name=="No Known Liver Disease","No Known Liver Disease\nProportion Correctly Ruled Out",name))
+#d1<-d1 %>% mutate(name=if_else(name=="Pre-Fibrotic Liver Disease","Pre-Fibrotic Liver Disease\nProportion of Disease Detected",name))
+#d1<-d1 %>% mutate(name=if_else(name=="Fibrosis/Cirrhosis","Fibrosis/Cirrhosis\nProportion of Disease Detected",name))
+
+d1$name<-factor(d1$name,levels=c("Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+
+d1$set<-factor(d1$set,levels=c("FIB-4 Positive\n(FIB-4 > 3.25)","FIB-4 Indeterminate\n(FIB-4 1.45 - 3.25)","FIB-4 Negative\n(FIB-4 < 1.45)"))
+
+
+ggplot(d1,aes(x=cohort,y=perf,color=name,label=n2))+geom_point(aes(shape=cohort),size=3)+geom_segment(aes(y=Low,yend=High))+theme_classic()+
+  facet_grid(set~name,switch="y")+coord_flip()+ylim(0,1)+
+  theme(legend.position="bottom",axis.text.y=element_blank(),strip.text.y.left=element_text(angle=360),strip.background = element_blank(),strip.placement = "outside")+geom_text(nudge_x=.3,aes(y=.1),size=3)+
+  scale_color_manual(values=c("steelblue","darkblue"),guide = "none")+xlab("")+labs(color="",shape="")+scale_shape_manual(values=c(1,16))+ylab("Proportion detected by cfDNA Fragmentome LCr Score")
+
+
+#panel.grid.major.x=element_line(),
+```
+
+
+
+

@@ -1,0 +1,227 @@
+---
+title: "Fragmentation profiles"
+site: workflowr::wflow_site
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+chunk_output_type: console
+---
+
+```{r caching, echo=FALSE}
+knitr::opts_chunk$set(autodep = TRUE)
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(fs)
+library(grid)
+library(data.table)
+library(cowplot)
+library(devtools)
+library(here)
+library(readxl)
+library(cowplot)
+library(ggpubr)
+
+# 2 lines below added because of some idiosyncrasies of linux
+options(bitmapType="cairo")
+Sys.setenv(MKL_THREADING_LAYER="GNU")
+```
+
+```{r reads, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+data<-fread(here("data","frag_lengths.csv"))
+data<-data %>% select(-V1)
+
+
+meta<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+#meta<-meta %>% filter(set=="Discovery")
+meta <- meta %>% filter(type == "No Known Liver Disease" | type=="Advanced Fibrosis/Cirrhosis")
+
+
+dat1 <- data %>% select(width,count,id)
+
+
+#get total counts
+dat2<-dat1 %>% group_by(id) %>% summarize(total=sum(count))
+
+dat1<-inner_join(dat1,dat2,by="id")
+
+dat1<-inner_join(dat1,meta,by="id")
+
+dat1$perc<-dat1$count/dat1$total
+
+meta1<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+
+meta1<-meta1 %>% filter(source %in% c("Endoscopy III trial (Denmark)"))
+
+comp<-dat1%>% filter(id %in% meta1$id)
+
+
+dat2<-dat1 %>% group_by(type,width,training) %>% summarize(p=mean(perc),s=sd(perc),high=p+s,low=p-s)
+comp<-comp %>% group_by(type,width,training) %>% summarize(p_comp=mean(perc),s_comp=sd(perc),high_comp=p_comp+s_comp,low_comp=p_comp-s_comp)
+comp<-comp %>% ungroup() %>% select(-type,-training)
+
+dat2<-inner_join(dat2,comp,by=c("width"))
+dat2$mean_diff<-dat2$p-dat2$p_comp
+dat2$low_diff<-dat2$low-dat2$low_comp
+dat2$high_diff<-dat2$high-dat2$high_comp
+
+
+p1<-dat2 %>% select(type,width,training,mean_diff,low_diff,high_diff) %>% ungroup()
+n<-dat1 %>% group_by(type,training) %>% summarize(n=n()/116)
+p1<-inner_join(p1,n,by=c("type","training"))
+p1$type2<-paste0(p1$type,"\n(n=",p1$n,")")
+p1$set<-factor(p1$training,levels=c("Discovery", "Validation"))
+
+p1$type2<-factor(p1$type2,levels=c("No Known Liver Disease\n(n=291)","No Known Liver Disease\n(n=106)",
+                                       "Advanced Fibrosis/Cirrhosis\n(n=71)","Advanced Fibrosis/Cirrhosis\n(n=85)"))
+  
+
+
+
+
+
+ggplot(p1 %>% filter(set=="Discovery"),aes(x=width,y=mean_diff))+geom_line(aes(color=type2))+theme_classic()+geom_ribbon(aes(ymin=low_diff,ymax=high_diff,fill=type2),alpha=.33)+ylab("Difference in Proportion of fragments\nCompared to Discovery Cohort without Liver Disease")+xlab("Fragment Length")+geom_hline(yintercept=0,linetype="dashed")+facet_grid(.~set)+
+    scale_color_manual(values=c("gray50","darkblue"))+
+  scale_fill_manual(values=c("gray50","darkblue"))+
+  theme(strip.background = element_blank(),text=element_text(size=14))+labs(colour="",fill="")
+
+ggplot(p1 %>% filter(set=="Validation"),aes(x=width,y=mean_diff))+geom_line(aes(color=type2))+theme_classic()+geom_ribbon(aes(ymin=low_diff,ymax=high_diff,fill=type2),alpha=.33)+ylab("Difference in Proportion of fragments\nCompared to Discovery Cohort without Liver Disease")+xlab("Fragment Length")+geom_hline(yintercept=0,linetype="dashed")+facet_grid(.~set)+
+    scale_color_manual(values=c("gray50","darkblue"))+
+  scale_fill_manual(values=c("gray50","darkblue"))+
+  theme(strip.background = element_blank(),text=element_text(size=14))+labs(colour="",fill="")
+
+
+
+p1 %>% arrange(-mean_diff) %>% filter(type2!="Advanced Fibrosis/Cirrhosis\n(n=71)")
+p1 %>% arrange(mean_diff) %>% filter(type2!="Advanced Fibrosis/Cirrhosis\n(n=71)")
+
+dat1 %>% filter(width==164) %>% filter(training=="Discovery") -> testp1
+wilcox.test(perc~type,testp1)
+
+dat1 %>% filter(width==178) %>% filter(training=="Discovery") -> testp1
+wilcox.test(perc~type,testp1)
+
+```
+
+```{r reads2, echo=FALSE, fig.width=5, fig.height=5, dev=c("png", "pdf")}
+meta<-fread(here("data","All_MICA_withscores.csv"))
+
+## fragmentation profiles - LUCAS (training)
+dat1 <- as_tibble(read_csv(here("data","frag_lengths_mica.csv"))) 
+
+
+#get total counts
+dat2<-dat1 %>% group_by(id) %>% summarize(total=sum(count))
+
+dat1<-inner_join(dat1,dat2,by="id")
+dat1<-inner_join(dat1,meta %>% select(id,type),by="id")
+
+dat1$perc<-dat1$count/dat1$total
+
+
+
+dat1<-dat1 %>% mutate(type=if_else(type=="low CCI","Low CCI","High CCI"))
+dat1$type<-factor(dat1$type,levels=c("Low CCI","High CCI"))
+
+
+dat2<-dat1 %>% group_by(type,width) %>% summarize(p=mean(perc),s=sd(perc),high=p+s,low=p-s)
+
+
+
+p1<-dat2 %>% select(type,width,p) %>% spread(key=type,value=p) %>% mutate(mean_diff=`High CCI`-`Low CCI`)
+p2<-dat2 %>% select(type,width,high) %>% spread(key=type,value=high) %>% mutate(high_diff=`High CCI`-`Low CCI`)
+p3<-dat2 %>% select(type,width,low) %>% spread(key=type,value=low) %>% mutate(low_diff=`High CCI`-`Low CCI`)
+p1<-inner_join(p1 %>% select(width,mean_diff),p2 %>% select(width,high_diff),by="width")
+p1<-inner_join(p1,p3 %>% select(width,low_diff),by="width")
+
+p1 %>% filter(mean_diff==max(p1$mean_diff))
+p1 %>% filter(mean_diff==min(p1$mean_diff))
+
+
+lw<-dat1 %>% filter(width==165)
+wilcox.test(perc~type,lw)
+
+
+lw<-dat1 %>% filter(width==180)
+wilcox.test(perc~type,lw)
+
+
+ggplot(p1,aes(x=width,y=mean_diff))+geom_line(aes(color="darkgreen"))+theme_classic()+geom_ribbon(aes(ymin=low_diff,ymax=high_diff),alpha=.33,show.legend="FALSE",fill="gray50")+ylab("Difference in Proportion of fragments, High CCI - Low CCI")+xlab("Fragment Length")+geom_hline(yintercept=0,linetype="dashed")+theme(axis.text=element_text(size=13),legend.position="right")+scale_color_manual(values=c("darkgreen"))
+
+
+```
+
+
+```{r plot_p_high, echo=FALSE, fig.width=12, fig.height=4, dev=c("png", "pdf")}
+a<-dat1 %>% group_by(id,type) %>% summarize(m=sum(width*count),t=sum(count),ave=m/t)
+
+a<-a %>% mutate(type=if_else(type=="Low CCI","Low CCI (0,1,2)\n(n=244)","High CCI (3+)\n(n=326)"))
+a$type<-factor(a$type,levels=c("Low CCI (0,1,2)\n(n=244)","High CCI (3+)\n(n=326)"))
+
+a<-inner_join(a,meta %>% select(-type),by="id")
+
+data<-a %>% filter(type=="High CCI (3+)\n(n=326)") %>% select(id,type,ave) %>% mutate(type="High CCI")
+dat1<-a %>% filter(type=="Low CCI (0,1,2)\n(n=244)") %>% select(id,type,ave) %>% mutate(type="Low CCI")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(Diabetes=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Diabetes")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Earlier cancer`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Prior Cancer")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Cardiovascular disease`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="CV Disease")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Connective tissue diease`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Connective Tissue\nDisease")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Heart insufficient`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Heart Insufficient")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Cerebral vaskular disease`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Cerebral Vascular\nDisease")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(Dementia=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave)%>%mutate(type="Dementia")
+data<-rbind(data,dat1)
+
+dat1<-a %>% filter(`Mild chronic liver disease`=="Yes" & type == "High CCI (3+)\n(n=326)") %>% select(id,type,ave) %>%mutate(type="Mild Chronic\nLiver Disease")
+data<-rbind(data,dat1)
+
+
+
+
+n<-data %>% group_by(type) %>% summarize(n=n())
+data<-inner_join(data,n,by="type")
+data$type<-paste0(data$type,"\n(n = ",data$n,")")
+data$type<-factor(data$type,levels=rev(unique(data$type)))
+
+m<-median((data %>% filter(type=="Low CCI\n(n = 244)"))$ave)
+
+data$type<-factor(data$type,levels=c("Low CCI\n(n = 244)","High CCI\n(n = 326)","Mild Chronic\nLiver Disease\n(n = 7)","Dementia\n(n = 7)","Heart Insufficient\n(n = 38)","Connective Tissue\nDisease\n(n = 41)","Cerebral Vascular\nDisease\n(n = 23)","Diabetes\n(n = 62)","Prior Cancer\n(n = 72)","CV Disease\n(n = 136)"))
+
+
+
+comp<-list(c("Low CCI\n(n = 244)","High CCI\n(n = 326)"),
+           c("Low CCI\n(n = 244)","Mild Chronic Liver Disease\n(n = 7)"),
+           c("Low CCI\n(n = 244)","Dementia\n(n = 7)"),
+           c("Low CCI\n(n = 244)","Heart Insufficient\n(n = 38)"),
+           c("Low CCI\n(n = 244)","Connective Tissue Disease\n(n = 41)"),
+           c("Low CCI\n(n = 244)","Cerebral Vascular Disease\n(n = 23)"),
+           c("Low CCI\n(n = 244)","Diabetes\n(n = 62)"),
+           c("Low CCI\n(n = 244)","Prior Cancer\n(n = 72)"),
+           c("Low CCI\n(n = 244)","CV Disease\n(n = 136)"))
+
+ps<-compare_means(ave~type,data,ref.group="Low CCI\n(n = 244)",p.adjust.method="BH")
+ps$type<-ps$group2
+ps$y.position<-175
+ggplot(data,aes(x=type,y=ave,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.5)+geom_jitter(width=.25,size=.3)+theme_classic()+xlab("")+ylab("Average Fragment Length")+scale_fill_manual(values=c("gray50","darkgreen","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2","hotpink2"))+theme(legend.position="none")+geom_hline(yintercept=m,linetype="dashed",color="gray50")+stat_pvalue_manual(ps,label="p.adj",x="group2")
+
+
+
+```
+
+
+

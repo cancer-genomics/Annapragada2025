@@ -1,0 +1,150 @@
+---
+title: "Performance"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(RColorBrewer)
+library(readxl)
+library(pROC)
+
+
+```
+
+```{r cx2, echo=FALSE, fig.width=5, fig.height=9, dev=c("png", "pdf")}
+t<-fread(here("data","score_threshold.csv"))$thresh[1]
+dat<-fread(here("data","All_Cross_Reactivity_Metadata_withscores.csv"))
+n<-dat %>% group_by(type) %>% summarize(n=n())
+data<-inner_join(dat,n,by=c("type"))
+data$type2<-paste0(data$type,"\n(n = ",data$n,")")
+data<-data %>% mutate(type2=if_else(type2=="Chronic Pancreatitis\n(n = 18)","Chronic\nPancreatitis\n(n = 18)",type2))
+data<-data %>% mutate(type2=if_else(type2=="Benign Lung Nodule\n(n = 67)","Benign\nLung\nNodule\n(n = 67)",type2))
+data<-data %>% mutate(type2=if_else(type2=="Autoimmune Disease\n(n = 11)","Autoimmune\nDisease\n(n = 11)",type2))
+
+data$type2<-factor(data$type2,levels=rev(c("Chronic\nPancreatitis\n(n = 18)","Benign\nLung\nNodule\n(n = 67)","Lung Cancer\n(n = 126)","Liver Cancer\n(n = 75)","Autoimmune\nDisease\n(n = 11)","CRP >10 mg/L\n(n = 22)","IL-6 >7 pg/mL\n(n = 17)")))
+
+ggplot(data %>% filter(type2 != "Liver Cancer\n(n = 75)" & type2 != "Lung Cancer\n(n = 126)"),aes(x=type2,y=score,fill=type2))+theme_classic(base_size=14)+geom_boxplot(outlier.shape=NA,alpha=.1,width=.2)+geom_jitter(width=.1,alpha=.5,size=.5)+scale_fill_manual(values=c("darkblue","darkblue","darkblue","darkblue","darkblue"))+theme(legend.position="none",strip.background.x=element_blank())+xlab("")+ylab("cfDNA Fragmentome LCr Score")+ylim(0,1)+geom_hline(yintercept=t,linetype="dotted",color="gray20")+coord_flip()
+
+```
+
+
+
+#add in the no known liver disease val set individuals
+```{r lucas_infl, echo=FALSE, fig.width=10, fig.height=6, dev=c("png", "pdf")}
+dat2<-fread(here("data","LUCAS_Proteins.csv"))
+a<-ggplot(dat2,aes(x=il6,y=score))+geom_point()+theme_classic()+stat_cor(method="spearman")+xlab("IL-6 (pg/mL)")+ylab("cfDNA Fragmentome LCr Score")+scale_x_log10()
+b<-ggplot(dat2,aes(x=crp,y=score))+geom_boxplot(outlier.shape=NA)+geom_jitter()+theme_classic()+stat_compare_means()+xlab("CRP (mg/L)")+ylab("cfDNA Fragmentome LCr Score")
+c<-ggplot(dat2,aes(x=`YKL-40 (ng/ml)`,y=score))+geom_point()+theme_classic()+stat_cor(method="spearman")+xlab("YKL-40 (ng/mL)")+ylab("cfDNA Fragmentome LCr Score")+scale_x_log10()
+
+
+d<-ggplot(dat2,aes(x=il6,y=`cfDNA_conc`))+geom_point()+theme_classic()+stat_cor(method="spearman")+xlab("IL-6 (pg/mL)")+ylab("cfDNA Concentration (ng/mL)")+scale_x_log10()
+e<-ggplot(dat2,aes(x=crp,y=`cfDNA_conc`))+geom_boxplot(outlier.shape=NA)+geom_jitter()+theme_classic()+stat_compare_means()+xlab("CRP (mg/L)")+ylab("cfDNA Concentration (ng/mL)")
+f<-ggplot(dat2,aes(x=`YKL-40 (ng/ml)`,y=`cfDNA_conc`))+geom_point()+theme_classic()+stat_cor(method="spearman")+xlab("YKL-40 (ng/mL)")+ylab("cfDNA Concentration (ng/mL)")+scale_x_log10()
+
+plot_grid(d,e,f,a,b,c,nrow=2)
+
+```
+
+
+
+
+
+```{r cx3, echo=FALSE, fig.width=6, fig.height=6, dev=c("png", "pdf")}
+
+dat2<-fread(here("data","HCC_Scores.csv"))
+set_spec<-.8
+dat2<-dat2 %>% mutate(type2=if_else(type=="Liver Cancer","cancer","healthy"))
+t2<-dat2 %>% dplyr::summarize(cohort="published",threshold=(roc(type2,score.delfi.gbm,levels=c("healthy","cancer")) %>% coords(transpose=FALSE) %>% filter(specificity>=set_spec))$threshold[1])
+t2<-t2$threshold[1]
+
+#c1<-c1 %>% mutate(type=if_else(id %in% lcc$id,"Liver Cancer, No Cirrhosis",type))
+#c1<-c1 %>% mutate(type=if_else(type=="Liver Cancer","Liver Cancer, with Cirrhosis",type))
+
+
+#c1$type<-factor(c1$type,levels=c("Pre-Fibrotic Liver Disease","Fibrosis/Cirrhosis","Liver Cancer, No Cirrhosis","Liver Cancer, with Cirrhosis"))
+c1<-dat2
+c1$type<-factor(c1$type,levels=c("Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis","Liver Cancer"))
+
+
+wilcox.test(score.delfi.gbm~type,c1 %>% filter(type %in% c("Liver Cancer","Advanced Fibrosis/Cirrhosis")))
+wilcox.test(score.delfi.gbm~type,c1 %>% filter(type %in% c("Liver Cancer","Liver Disease/Early Fibrosis")))
+
+wilcox.test(artemis_delfi~type,c1 %>% filter(type %in% c("Liver Cancer","Advanced Fibrosis/Cirrhosis")))
+wilcox.test(artemis_delfi~type,c1 %>% filter(type %in% c("Liver Cancer","Liver Disease/Early Fibrosis")))
+
+
+p1<-ggplot(c1,aes(y=score.delfi.gbm,x=artemis_delfi,color=type))+geom_point()+geom_vline(xintercept=t)+theme_classic()+geom_hline(yintercept=t2)+xlab("")+ylab("")+scale_color_manual(values=c("steelblue","darkblue","darkred"))+labs(color="")
+
+p2<-ggplot(c1,aes(x=type,y=score.delfi.gbm,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.25,color="gray50",alpha=.5)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("steelblue","darkblue","darkred"))+ylab("Published fragmentomic score for HCC Detection")
+
+p3<-ggplot(c1,aes(x=type,y=artemis_delfi,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.25,color="gray50",alpha=.5)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("steelblue","darkblue","darkred"))+ylab("cfDNA Fragmentome Score for Liver Cirrhosis")+coord_flip()
+
+pa<-plot_grid(p1+theme(legend.position="none"),p3,rel_heights = c(1,.3),nrow=2,align="v")
+
+pb<-plot_grid(p2,NULL,rel_heights = c(1,.3),nrow=2,align="h")
+
+plot_grid(pb,pa,rel_widths = c(.3,1),align="h")
+
+
+```
+
+```{r cx4, echo=FALSE, fig.width=5, fig.height=5, dev=c("png", "pdf")}
+
+sc<-fread(here("data","Lung_Cancer_Scores.csv"))
+t<-fread(here("data","score_threshold.csv"))$thresh[1]
+t3<-sc$published_thresh[1]
+
+p1<-ggplot(sc,aes(y=`DELFI score`,x=score,color=type))+geom_point()+geom_vline(xintercept=t)+theme_classic()+geom_hline(yintercept=t3)+xlab("")+ylab("")+scale_color_manual(values=c("darkgreen"))+labs(color="")+theme(legend.position="right")
+
+
+p2<-ggplot(sc,aes(x=type,y=`DELFI score`,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.25,color="gray50",alpha=.5)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("darkgreen"))+ylab("Published fragmentomic score for Lung Cancer Detection")
+
+p3<-ggplot(sc,aes(x=type,y=score,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.5,color="gray50",alpha=.25)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("darkgreen"))+ylab("cfDNA Fragmentome Score for Liver Cirrhosis")+coord_flip()
+
+pa<-plot_grid(p1+theme(legend.position="none"),p3,rel_heights = c(1,.2),nrow=2,align="v")
+
+pb<-plot_grid(p2,NULL,rel_heights = c(1,.2),nrow=2,align="h")
+
+plot_grid(pb,pa,rel_widths = c(.2,1),align="h")
+
+```
+
+
+
+```{r cx5, echo=FALSE, fig.width=5, fig.height=5, dev=c("png", "pdf")}
+c2<-fread(here("data","Mathios_Predictions.csv"))
+
+
+p1<-ggplot(c2,aes(y=delfi,x=artemis_delfi,color=type))+geom_point()+geom_vline(xintercept=t)+theme_classic()+geom_hline(yintercept=t3)+xlab("")+ylab("")+scale_color_manual(values=c("darkblue"))+labs(color="")+theme(legend.position="right")
+
+
+p2<-ggplot(c2,aes(x=type,y=delfi,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.25,color="gray50",alpha=.5)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("darkblue"))+ylab("Published fragmentomic score for Lung Cancer Detection")
+
+p3<-ggplot(c2,aes(x=type,y=artemis_delfi,fill=type))+geom_boxplot(outlier.shape=NA,width=.3,alpha=.5)+geom_jitter(width=.15,size=.5,color="gray50",alpha=.25)+theme_classic()+theme(axis.text=element_blank(),legend.position="none",axis.line = element_blank(),axis.ticks=element_blank()
+)+xlab("")+ylab("")+scale_fill_manual(values=c("darkblue"))+ylab("cfDNA Fragmentome Score for Liver Cirrhosis")+coord_flip()
+
+pa<-plot_grid(p1+theme(legend.position="none"),p3,rel_heights = c(1,.2),nrow=2,align="v")
+
+pb<-plot_grid(p2,NULL,rel_heights = c(1,.2),nrow=2,align="h")
+
+plot_grid(pb,pa,rel_widths = c(.2,1),align="h")
+
+```
+
+

@@ -1,0 +1,98 @@
+---
+title: "About"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+library(here)
+library(data.table)
+library(tidyverse)
+library(devtools)
+library(ggplot2)
+library(ggpubr)
+library(cowplot)
+library(readxl)
+
+```
+
+```{r}
+meta<-fread(here("data","TableS2.csv"))
+meta<-meta %>% select(-V1)
+
+
+
+```
+
+add scores
+```{r}
+score<-fread(here("data","All_LCr_Clinical_Metadata_withscores.csv"))
+score<-score %>% select(-V1)
+score<-score %>% select(id,score,training,type)
+meta<-inner_join(meta,score,by="id")
+```
+
+
+```{r batch, echo=FALSE, fig.width=12, fig.height=4, dev=c("png", "pdf")}
+m<-meta %>% group_by(type,training,batch) %>% summarize(med_score=median(score))
+m$set<-"Batch"
+
+
+m$type<-factor(m$type,levels=c("No Known Liver Disease","Liver Disease/Early Fibrosis","Advanced Fibrosis/Cirrhosis"))
+
+
+ggplot(m,aes(x=type,y=med_score,fill=type))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.5)+geom_jitter(size=.5,width=.25)+ facet_grid(.~training,scales="free_x")+theme_classic()+theme(legend.position="none")+xlab("")+ylab("Median cfDNA Fragmentome LCr Score in each batch")+labs(fill="")+scale_fill_manual(values=c("gray50","steelblue","darkblue"))+theme(legend.position="none")+stat_compare_means(ref.group="No Known Liver Disease")
+
+
+```
+
+```{r qc, echo=FALSE, fig.width=12, fig.height=4, dev=c("png", "pdf")}
+
+
+meta<-meta %>% mutate(q20_bin=if_else(q20_rate<.85,"80-85%","high"))
+
+meta<-meta %>% mutate(q20_bin=if_else(q20_rate<.9 & q20_rate>=.85,"85-90%",q20_bin))
+meta<-meta %>% mutate(q20_bin=if_else(q20_rate<.95 & q20_rate>=.9,"90-95%",q20_bin))
+meta<-meta %>% mutate(q20_bin=if_else(q20_rate<1 & q20_rate>=.95,"95-100%",q20_bin))
+
+meta<-meta %>% mutate(q30_bin=if_else(q30_rate<.85,"80-85%","high"))
+
+meta<-meta %>% mutate(q30_bin=if_else(q30_rate<.9 & q30_rate>=.85,"85-90%",q30_bin))
+meta<-meta %>% mutate(q30_bin=if_else(q30_rate<.95 & q30_rate>=.9,"90-95%",q30_bin))
+meta<-meta %>% mutate(q30_bin=if_else(q30_rate<1 & q30_rate>=.95,"95-100%",q30_bin))
+
+meta<-meta %>% mutate(input_bin=if_else(`Genomic Library Input (ng)`<5,"<5 ng","high"))
+
+meta<-meta %>% mutate(input_bin=if_else(`Genomic Library Input (ng)`< 15 & `Genomic Library Input (ng)`>=5,"5-15 ng",input_bin))
+meta<-meta %>% mutate(input_bin=if_else(`Genomic Library Input (ng)`>=15,"15+ ng",input_bin))
+
+meta$input_bin<-factor(meta$input_bin,levels=c("<5 ng","5-15 ng","15+ ng"))
+
+ggplot(meta,aes(x=input_bin,y=q20_rate))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.5)+geom_jitter(size=.5,width=.25)+ facet_grid(.~training,scales="free_x")+theme_classic()+theme(legend.position="none")+xlab("")+ylab("Sequencing Q20")+labs(fill="")+theme(legend.position="none")+stat_compare_means(ref.group = "<5 ng")+xlab("Genomic Library Input (ng)")+ylim(0.8,1)
+
+
+ggplot(meta,aes(x=input_bin,y=q30_rate))+geom_boxplot(outlier.shape=NA,alpha=.5,width=.5)+geom_jitter(size=.5,width=.25)+ facet_grid(.~training,scales="free_x")+theme_classic()+theme(legend.position="none")+xlab("")+ylab("Sequencing Q30")+labs(fill="")+theme(legend.position="none")+stat_compare_means(ref.group = "<5 ng")+xlab("Genomic Library Input (ng)")+ylim(0.8,1)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

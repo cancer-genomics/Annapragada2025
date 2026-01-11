@@ -1,0 +1,4 @@
+"","tool","sensitivity","specificity"
+"1","ARTEMIS_DELFI_blended",0.776470588235294,0.82592155319428
+"2","FIB4_high_external",0.39,0.95
+"3","FIB4_high_internal",0.6385542,0.8888889
