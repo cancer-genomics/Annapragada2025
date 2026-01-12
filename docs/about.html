@@ -289,7 +289,7 @@ $(document).ready(function () {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-ok text-success"
+workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -300,8 +300,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-</a>
+class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -314,9 +314,9 @@ class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 0
+aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>Annapragada2025/</code> <span
@@ -339,33 +339,36 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
-</a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
+changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate"
+<div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git
-repository, you know the exact version of the code that produced these
-results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and build the
+HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomcancergenomicsAnnapragada2025tree1073f801df9528eeea41d4b77d0b58a068c2f257targetblank1073f80a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomcancergenomicsAnnapragada2025tree7c47e19406ce6c1e2e7e5258df05a8da5223b80atargetblank7c47e19a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/cancer-genomics/Annapragada2025/tree/1073f801df9528eeea41d4b77d0b58a068c2f257" target="_blank">1073f80</a>
+<a href="https://github.com/cancer-genomics/Annapragada2025/tree/7c47e19406ce6c1e2e7e5258df05a8da5223b80a" target="_blank">7c47e19</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomcancergenomicsAnnapragada2025tree1073f801df9528eeea41d4b77d0b58a068c2f257targetblank1073f80a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomcancergenomicsAnnapragada2025tree7c47e19406ce6c1e2e7e5258df05a8da5223b80atargetblank7c47e19a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -375,7 +378,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/cancer-genomics/Annapragada2025/tree/1073f801df9528eeea41d4b77d0b58a068c2f257" target="_blank">1073f80</a>.
+<a href="https://github.com/cancer-genomics/Annapragada2025/tree/7c47e19406ce6c1e2e7e5258df05a8da5223b80a" target="_blank">7c47e19</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -396,16 +399,12 @@ Ignored files:
     Ignored:    output/useful.stuff.aa/raw-data/
 
 Untracked files:
-    Untracked:  data/MICA_variable_bins.csv
+    Untracked:  LICENSE
 
 Unstaged changes:
-    Modified:   analysis/Fig2A_6A_S_5A_21.Rmd
-    Modified:   analysis/Fig5_A.Rmd
-    Modified:   analysis/Fig5_B.Rmd
-    Modified:   analysis/Fig6_B.Rmd
-    Modified:   data/circos_fragmentation.csv
-    Deleted:    data/longbins_mica_processed.csv
-    Modified:   output/cohort_create.r
+    Modified:   analysis/about.Rmd
+    Modified:   analysis/index.Rmd
+    Modified:   analysis/license.Rmd
 
 </code></pre>
 <p>
@@ -451,36 +450,19 @@ Message
 <tbody>
 <tr>
 <td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/cancer-genomics/Annapragada2025/1073f801df9528eeea41d4b77d0b58a068c2f257/docs/about.html" target="_blank">1073f80</a>
-</td>
-<td>
-shay-279
-</td>
-<td>
-2026-01-09
-</td>
-<td>
-re-ran just for fun before zenodo upload
-</td>
-</tr>
-<tr>
-<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/cancer-genomics/Annapragada2025/blob/ad5f281d2af72569d60946fc38e0acd7ebffa26d/analysis/about.Rmd" target="_blank">ad5f281</a>
+<a href="https://github.com/cancer-genomics/Annapragada2025/blob/7c47e19406ce6c1e2e7e5258df05a8da5223b80a/analysis/about.Rmd" target="_blank">7c47e19</a>
 </td>
 <td>
 shay-279
 </td>
 <td>
-2025-11-19
+2026-01-11
 </td>
 <td>
-push stuff
+In Press version
 </td>
 </tr>
 <tr>
@@ -488,33 +470,16 @@ push stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/cancer-genomics/Annapragada2025/ad5f281d2af72569d60946fc38e0acd7ebffa26d/docs/about.html" target="_blank">ad5f281</a>
+<a href="https://rawcdn.githack.com/cancer-genomics/Annapragada2025/7c47e19406ce6c1e2e7e5258df05a8da5223b80a/docs/about.html" target="_blank">7c47e19</a>
 </td>
 <td>
 shay-279
 </td>
 <td>
-2025-11-19
+2026-01-11
 </td>
 <td>
-push stuff
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/cancer-genomics/Annapragada2025/blob/17bde7e9d767a66080ed7c3f2446f45d4bdc650c/analysis/about.Rmd" target="_blank">17bde7e</a>
-</td>
-<td>
-shay-279
-</td>
-<td>
-2025-11-19
-</td>
-<td>
-Start workflowr project.
+In Press version
 </td>
 </tr>
 </tbody>
@@ -526,9 +491,9 @@ Start workflowr project.
 </div>
 <p>This project is a workflowr repository containing code needed to
 generate all figures and analyses in Annapragada et. al., 2025 -
-“Cell-free DNA fragmentomes as molecular biomarkers of liver cirrhosis
-and other human diseases”. Please refer to the README in the top level
-directory for additional details.</p>
+“Cell-free DNA fragmentomes for non-invasive detection of liver
+cirrhosis and other diseases”. Please refer to the README in the top
+level directory for additional details.</p>
 </div>
 </div>
 </div>

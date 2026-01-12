@@ -9,4 +9,4 @@ editor_options:
 ---
 
 This project is a workflowr repository containing code needed to
-generate all figures and analyses in Annapragada et. al., 2025 - “Cell-free DNA fragmentomes as molecular biomarkers of liver cirrhosis and other human diseases”. Please refer to the README in the top level directory for additional details.
+generate all figures and analyses in Annapragada et. al., 2025 - “Cell-free DNA fragmentomes for non-invasive detection of liver cirrhosis and other diseases”. Please refer to the README in the top level directory for additional details.
