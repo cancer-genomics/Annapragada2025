@@ -1,7 +1,7 @@
 # Annapragada2025
 
 This project is a workflowr repository containing code needed to
-generate all figures and analyses in “Cell-free DNA fragmentomes for non-invasive detection of liver cirrhosis and other diseases” (Annapragada et. al., Science Translational Medicine, 2026)
+generate all figures and analyses in “Cell-free DNA fragmentomes for non-invasive detection of liver cirrhosis and other diseases” (Annapragada et. al., Science Translational Medicine, 2026): https://www.science.org/doi/10.1126/scitranslmed.adw2603
 
 
 There are 5 folders of interest in this workflowr.
